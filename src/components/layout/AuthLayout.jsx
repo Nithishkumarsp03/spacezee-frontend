@@ -27,7 +27,7 @@ function AuthLayout() {
   return (
     <Container
       fluid
-      className="vh-100 d-flex align-items-center justify-content-center"
+      className="vh-100 d-flex align-items-center justify-content-center p-0"
     >
       <Row className="w-100">
         <Col
