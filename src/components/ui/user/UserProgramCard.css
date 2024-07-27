@@ -1,0 +1,58 @@
+.user-program-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-program-card-header {
+  background-color: #00438b;
+  color: white;
+}
+
+.user-dropdown-toggle {
+  background-color: #00438b;
+  border: none;
+}
+
+.user-dropdown-toggle:hover {
+  background-color: #003366;
+}
+
+.user-program-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.user-program-tile:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+  color: #00438b;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container svg {
+  transition: transform 0.3s;
+}
+
+.user-program-tile:hover .icon-container svg {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 576px) {
+  .user-program-tile {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-program-tile {
+    margin-bottom: 20px;
+  }
+}

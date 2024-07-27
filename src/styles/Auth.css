@@ -1,0 +1,65 @@
+.password-toggle-icon {
+  position: absolute;
+  top: 73%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  color: #495057;
+}
+
+.form-control-password {
+  padding-right: 2.5rem;
+}
+
+.auth-left-content-box {
+  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  color: white;
+  height: 100vh;
+}
+
+.auth-left-footer a {
+  color: white !important;
+}
+
+.auth-left-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.auth-logo {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.auth-logo img {
+  height: 60px;
+}
+
+.auth-right-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.auth-back-btn .back-btn {
+  align-items: center;
+  color: #00438b;
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-start;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .auth-right-card {
+    box-shadow: none;
+    border: none;
+  }
+}
