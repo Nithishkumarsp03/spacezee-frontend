@@ -19,6 +19,7 @@ function ResetPasswordForm() {
 
   const query = useQuery();
   const token = query.get("token");
+  console.log(token);
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
