@@ -20,9 +20,10 @@ const authApi = baseApi.injectEndpoints({
       query: (userInfo) => ({
         url: "/auth/reset-password",
         method: "POST",
-        body: { email: userInfo.email, newPassword: userInfo.newPassword },
-        headers: {
-          authorization: userInfo.token,
+        body: {
+          email: userInfo.email,
+          newPassword: userInfo.newPassword,
+          token: userInfo.token,
         },
       }),
     }),

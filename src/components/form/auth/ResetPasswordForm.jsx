@@ -19,7 +19,7 @@ function ResetPasswordForm() {
 
   const query = useQuery();
   const token = query.get("token");
-  console.log(token);
+
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -33,8 +33,9 @@ function ResetPasswordForm() {
       const userInfo = {
         email: data.email,
         newPassword: data.password,
-        token,
+        token: token,
       };
+      console.log(userInfo);
       const res = await resetPassword(userInfo).unwrap();
 
       toast.success(res.message, { id: toastId, duration: 2000 });
