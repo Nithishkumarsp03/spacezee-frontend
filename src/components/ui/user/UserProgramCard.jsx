@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button, Dropdown, Container } from "react-bootstrap";
+import { Card, Button, Dropdown, Container, Row, Col } from "react-bootstrap";
 import {
   FaBook,
   FaTools,
@@ -8,8 +8,11 @@ import {
   FaQuestionCircle,
 } from "react-icons/fa";
 import "./UserProgramCard.css";
+import { useSelector } from "react-redux";
+import { selectCurrentUser } from "../../../redux/features/auth/authSlice";
 
 const UserProgramCard = () => {
+  const user = useSelector(selectCurrentUser);
   const [programName, setProgramName] = useState("Demo Statutory Executive");
 
   const handleSelectProgram = (name) => {
@@ -17,68 +20,87 @@ const UserProgramCard = () => {
   };
 
   return (
-    <Container className="container-lg d-flex justify-content-center align-items-center">
-      <Card className="mb-5 user-program-card">
-        <Card.Header className="text-center user-program-card-header">
-          <div className="d-flex justify-content-between align-items-center">
-            <h5 className="mb-0">{programName}</h5>
-            <Dropdown>
-              <Dropdown.Toggle
-                variant="secondary"
-                id="dropdown-basic"
-                className="user-dropdown-toggle"
-              >
-                Change Program
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item
-                  onClick={() => handleSelectProgram("Demo Personal Finance")}
-                >
-                  Demo Personal Finance
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => handleSelectProgram("Demo GST Executive")}
-                >
-                  Demo GST Executive
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => handleSelectProgram("Demo Finance Executive")}
-                >
-                  Demo Finance Executive
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() =>
-                    handleSelectProgram("Demo Statutory Executive")
-                  }
-                >
-                  Demo Statutory Executive
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-        </Card.Header>
-        <Card.Body>
-          <div className="row justify-content-center">
-            <UserProgramTile
-              icon={<FaBook size={30} />}
-              label="Learning Materials"
-            />
-            <UserProgramTile icon={<FaTools size={30} />} label="Practicals" />
-            <UserProgramTile
-              icon={<FaClipboardList size={30} />}
-              label="Assignment"
-            />
-            <UserProgramTile
-              icon={<FaCertificate size={30} />}
-              label="My Certifications"
-            />
-            <UserProgramTile
-              icon={<FaQuestionCircle size={30} />}
-              label="Help"
-            />
-          </div>
-        </Card.Body>
-      </Card>
+    <Container className="container-lg">
+      <Row>
+        <Col lg={8} md={12}>
+          <h1 className="mb-4 mt-3" style={{ color: "#00438B" }}>
+            {`Welcome back, ${user.name}!`}
+          </h1>
+        </Col>
+      </Row>
+
+      <Row className="mt-5 pt-5 mb-5">
+        <Col lg={6} md={12} className="mx-auto">
+          <Card className="mb-5 user-program-card">
+            <Card.Header className="text-center user-program-card-header">
+              <div className="d-flex justify-content-between align-items-center">
+                <h5 className="mb-0">{programName}</h5>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="secondary"
+                    id="dropdown-basic"
+                    className="user-dropdown-toggle"
+                  >
+                    Change Program
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      onClick={() =>
+                        handleSelectProgram("Demo Personal Finance")
+                      }
+                    >
+                      Demo Personal Finance
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => handleSelectProgram("Demo GST Executive")}
+                    >
+                      Demo GST Executive
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() =>
+                        handleSelectProgram("Demo Finance Executive")
+                      }
+                    >
+                      Demo Finance Executive
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() =>
+                        handleSelectProgram("Demo Statutory Executive")
+                      }
+                    >
+                      Demo Statutory Executive
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+            </Card.Header>
+            <Card.Body>
+              <div className="row justify-content-center">
+                <UserProgramTile
+                  icon={<FaBook size={30} />}
+                  label="Learning Materials"
+                />
+                <UserProgramTile
+                  icon={<FaTools size={30} />}
+                  label="Practicals"
+                />
+                <UserProgramTile
+                  icon={<FaClipboardList size={30} />}
+                  label="Assignment"
+                />
+                <UserProgramTile
+                  icon={<FaCertificate size={30} />}
+                  label="My Certifications"
+                />
+                <UserProgramTile
+                  icon={<FaQuestionCircle size={30} />}
+                  label="Help"
+                />
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 };

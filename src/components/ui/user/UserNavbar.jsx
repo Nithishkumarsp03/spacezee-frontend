@@ -1,14 +1,26 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import logo from "../../../assets/images/logo.png";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
-import { selectCurrentUser } from "../../../redux/features/auth/authSlice";
+import "./UserNavbar.css";
+import {
+  logout,
+  selectCurrentUser,
+} from "../../../redux/features/auth/authSlice";
+import { Link, useLocation } from "react-router-dom";
+import { FaUser, FaCertificate, FaSignOutAlt } from "react-icons/fa";
 
 const UserNavbar = () => {
+  const location = useLocation();
+  const dispatch = useDispatch();
   const user = useSelector(selectCurrentUser);
   const getInitials = (name) => {
     return name ? name.charAt(0).toUpperCase() : "";
   };
 
+  const handleLogout = () => {
+    dispatch(logout());
+    console.log("User logged out");
+  };
   return (
     <Navbar bg="light" expand="lg" className="border-bottom">
       <Container className="container-lg">
@@ -28,10 +40,33 @@ const UserNavbar = () => {
                 </div>
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Profile</Dropdown.Item>
-                <Dropdown.Item href="#">Certificate</Dropdown.Item>
+                <Link to="profile" className="dropdown-link">
+                  <Dropdown.Item
+                    as="div"
+                    className={
+                      location.pathname === "/home/profile" ? "active" : ""
+                    }
+                  >
+                    <FaUser className="me-2" />
+                    Profile
+                  </Dropdown.Item>
+                </Link>
+                <Link to="certificate" className="dropdown-link">
+                  <Dropdown.Item
+                    as="div"
+                    className={
+                      location.pathname === "/home/certificate" ? "active" : ""
+                    }
+                  >
+                    <FaCertificate className="me-2" />
+                    Certificate
+                  </Dropdown.Item>
+                </Link>
                 <Dropdown.Divider />
-                <Dropdown.Item href="#">Logout</Dropdown.Item>
+                <Dropdown.Item as="button" onClick={handleLogout}>
+                  <FaSignOutAlt className="me-2" />
+                  Logout
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

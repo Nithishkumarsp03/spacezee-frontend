@@ -1,0 +1,102 @@
+.admin-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.admin-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.admin-footer .text-muted {
+  color: #ccc !important;
+}
+
+.btn-primary {
+  background-color: #2575fc;
+  border-color: #2575fc;
+}
+
+.btn-primary:hover {
+  background-color: #1a5ec6;
+  border-color: #1a5ec6;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+.admin-sidebar {
+  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  padding: 15px;
+  color: #fff;
+  height: 100%;
+  width: 250px; /* Adjust width as needed */
+}
+
+.admin-sidebar .nav-link {
+  color: #fff;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.admin-sidebar .nav-link:hover {
+  background-color: #005bb5;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.admin-sidebar .nav-link.active {
+  background-color: #004a99;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.admin-sidebar hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fix menu button under navbar issue */
+.admin-menu-button {
+  position: fixed;
+}
+.admin-offcanvas {
+  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  color: #ccc;
+}
+/* Adjust sidebar hover effect */
+.admin-offcanvas .nav-link:hover {
+  background-color: #005bb5;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.admin-offcanvas .nav-link.active {
+  background-color: #004a99;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.admin-offcanvas hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-offcanvas .btn-close {
+  filter: invert(1);
+}

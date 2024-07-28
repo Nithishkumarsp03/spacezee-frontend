@@ -1,8 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
+
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://slserver-06162b308c5f.herokuapp.com/api",
+  baseUrl: "http://localhost:5000/api",
+  // "https://slserver-06162b308c5f.herokuapp.com/api"
+
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token;
@@ -29,7 +32,9 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
     console.log("Sending refresh token");
 
     const res = await fetch(
-      "https://slserver-06162b308c5f.herokuapp.com/api/auth/refresh-token",
+      // "https://slserver-06162b308c5f.herokuapp.com/api/auth/refresh-token"
+      "http://localhost:5000/api/auth/refresh-token",
+
       {
         method: "POST",
         credentials: "include",
