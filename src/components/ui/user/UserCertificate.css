@@ -1,0 +1,29 @@
+/* Custom styles for the certificate page */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.empty-msg-icon {
+  background-color: #f8f9fa;
+}
+
+.empty-msg-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.empty-msg-description {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.empty-msg-action {
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.empty-msg-action:hover {
+  background-color: #0056b3;
+  color: white;
+}

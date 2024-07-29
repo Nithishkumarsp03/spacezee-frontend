@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 const UserFooter = () => (
-  <footer className="bg-light border-top py-3">
+  <footer className="bg-light border-top py-3 mt-auto">
     <Container className="container-md">
       <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
         <ul className="nav mb-3 mb-md-0">

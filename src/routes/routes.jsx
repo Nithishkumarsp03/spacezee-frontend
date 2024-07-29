@@ -1,12 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 import AuthLayout from "../components/layout/AuthLayout";
 import LoginForm from "../components/form/auth/LoginForm";
 import GeneratePasswordForm from "../components/form/auth/GeneratePasswordForm";
 import ForgetPasswordForm from "../components/form/auth/ForgetPasswordForm";
 import ResetPasswordForm from "../components/form/auth/ResetPasswordForm";
-import UserLayout from "../components/layout/UserLayout";
-import UserProgramCard from "../components/ui/user/UserProgramCard";
+import { userRoutes } from "./userRoutes";
+import { adminRoutes } from "./adminRoutes";
 
 const router = createBrowserRouter([
   {
@@ -31,16 +30,8 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "home",
-    element: <UserLayout />,
-    children: [
-      {
-        index: true,
-        element: <UserProgramCard />,
-      },
-    ],
-  },
+  userRoutes,
+  adminRoutes,
 ]);
 
 export default router;

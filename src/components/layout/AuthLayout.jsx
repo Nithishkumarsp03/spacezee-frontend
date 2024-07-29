@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { useCurrentToken } from "../../redux/features/auth/authSlice";
 import { useEffect, useState } from "react";
 import { verifyToken } from "../../utils/verifyToken";
+import { userRole } from "../../utils/constants";
 
 function AuthLayout() {
   const token = useSelector(useCurrentToken);
@@ -16,6 +17,12 @@ function AuthLayout() {
       const user = verifyToken(token);
       if (user && user.role === "user") {
         setRedirect(<Navigate to="/home" replace />);
+      }
+      if (
+        user &&
+        (user.role === userRole.admin || user.role === userRole.superAdmin)
+      ) {
+        setRedirect(<Navigate to="/admin" replace />);
       }
     }
   }, [token]);

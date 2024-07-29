@@ -15,12 +15,12 @@ const ProtectedRoute = ({ children, role }) => {
 
   const dispatch = useDispatch();
 
-  if (role !== undefined && role !== user?.role) {
+  if (role.length > 0 && !role.includes(user?.role)) {
     dispatch(logout());
-    return <Navigate to="/login" replace={true} />;
+    return <Navigate to="/" replace={true} />;
   }
   if (!token) {
-    return <Navigate to="/login" replace={true} />;
+    return <Navigate to="/" replace={true} />;
   }
 
   return children;
@@ -30,5 +30,5 @@ export default ProtectedRoute;
 
 ProtectedRoute.propTypes = {
   children: PropTypes.node,
-  role: PropTypes.string,
+  role: PropTypes.array,
 };

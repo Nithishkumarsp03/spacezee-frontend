@@ -1,0 +1,18 @@
+.dropdown-link {
+  text-decoration: none;
+}
+
+.dropdown-link .active {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.dropdown-item {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #e2e6ea;
+  color: #0056b3;
+}
