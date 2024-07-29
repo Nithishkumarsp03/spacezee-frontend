@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button, Form, Row, Col } from "react-bootstrap";
+import { Button, Form, Row, Col, Card } from "react-bootstrap";
 import { z } from "zod";
+import { toast } from "sonner";
+import { useCreateUserMutation } from "../../../redux/features/admin/adminUserManagementApi";
 
 const userValidationSchema = z.object({
   name: z.string().nonempty({ message: "Name is required" }),
@@ -15,6 +18,7 @@ const userValidationSchema = z.object({
 });
 
 const AdminCreateUser = () => {
+  const [createdUser, setCreatedUser] = useState(null);
   const {
     register,
     handleSubmit,
@@ -23,9 +27,25 @@ const AdminCreateUser = () => {
     resolver: zodResolver(userValidationSchema),
   });
 
-  const onSubmit = (data) => {
-    // Add logic to create user
-    console.log("User Created:", data);
+  const [createUser] = useCreateUserMutation();
+
+  const onSubmit = async (data) => {
+    const toastId = toast.loading("Creating user");
+    try {
+      const userInfo = {
+        name: data.name,
+        email: data.email,
+        role: data.role,
+      };
+      const res = await createUser(userInfo).unwrap();
+      setCreatedUser(res.data);
+      toast.success("User creation successful", {
+        id: toastId,
+        duration: 2000,
+      });
+    } catch (err) {
+      toast.error(err?.data?.message, { id: toastId, duration: 2000 });
+    }
   };
 
   return (
@@ -84,6 +104,29 @@ const AdminCreateUser = () => {
           Create User
         </Button>
       </Form>
+
+      {createdUser && (
+        <Card className="mt-4">
+          <Card.Body>
+            <Card.Title>Created User Details</Card.Title>
+            <Card.Text>
+              <strong>ID:</strong> {createdUser.id}
+            </Card.Text>
+            <Card.Text>
+              <strong>Name:</strong> {createdUser.name}
+            </Card.Text>
+            <Card.Text>
+              <strong>Status:</strong> {createdUser.status}
+            </Card.Text>
+            <Card.Text>
+              <strong>Email:</strong> {createdUser.email}
+            </Card.Text>
+            <Card.Text>
+              <strong>Role:</strong> {createdUser.role}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      )}
     </div>
   );
 };

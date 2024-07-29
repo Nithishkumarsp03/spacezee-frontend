@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import { z } from "zod";
+import { toast } from "sonner";
+import { useChangeUserStatusMutation } from "../../../redux/features/admin/adminUserManagementApi";
 
 // Define the schema with email and status fields
 const userStatusSchema = z.object({
@@ -19,9 +21,21 @@ const AdminStatusChange = () => {
     resolver: zodResolver(userStatusSchema),
   });
 
-  const onSubmit = (data) => {
-    // Add logic to change user status
-    console.log("User Status Changed:", data);
+  const [changeUserStatus] = useChangeUserStatusMutation();
+
+  const onSubmit = async (data) => {
+    const toastId = toast.loading("Changing status");
+    try {
+      const userInfo = {
+        email: data.email,
+        status: data.status,
+      };
+      await changeUserStatus(userInfo).unwrap();
+
+      toast.success("User status changed", { id: toastId, duration: 2000 });
+    } catch (err) {
+      toast.error(err?.data?.message, { id: toastId, duration: 2000 });
+    }
   };
 
   return (

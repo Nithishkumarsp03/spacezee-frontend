@@ -19,7 +19,6 @@ const UserNavbar = () => {
 
   const handleLogout = () => {
     dispatch(logout());
-    console.log("User logged out");
   };
   return (
     <Navbar bg="light" expand="lg" className="border-bottom">

@@ -9,6 +9,8 @@ import {
   FaUserPlus,
 } from "react-icons/fa";
 
+import { FaUsersViewfinder } from "react-icons/fa6";
+
 const AdminSidebar = () => {
   const [show, setShow] = useState(false);
 
@@ -56,6 +58,13 @@ const AdminSidebar = () => {
               </Nav.Link>
               <hr />
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="user-info">
+                <FaUsersViewfinder className="me-2" />
+                View user info
+              </Nav.Link>
+              <hr />
+            </Nav.Item>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
@@ -85,6 +94,13 @@ const AdminSidebar = () => {
           <Nav.Link as={Link} to="create-user">
             <FaUserPlus className="me-2" />
             Create User
+          </Nav.Link>
+          <hr />
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={Link} to="user-info">
+            <FaUsersViewfinder className="me-2" />
+            View user info
           </Nav.Link>
           <hr />
         </Nav.Item>

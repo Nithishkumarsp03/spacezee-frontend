@@ -4,6 +4,8 @@ import { Button, Form, Row, Col } from "react-bootstrap";
 import Swal from "sweetalert2";
 
 import { z } from "zod";
+import { toast } from "sonner";
+import { useDelateUserMutation } from "../../../redux/features/admin/adminUserManagementApi";
 
 const userDeleteSchema = z.object({
   email: z
@@ -22,8 +24,10 @@ const AdminDelete = () => {
     resolver: zodResolver(userDeleteSchema),
   });
 
-  const onSubmit = (data) => {
-    Swal.fire({
+  const [delateUser] = useDelateUserMutation();
+
+  const onSubmit = async (data) => {
+    const result = await Swal.fire({
       title: "Are you sure?",
       text: "This action cannot be undone!",
       icon: "warning",
@@ -31,13 +35,22 @@ const AdminDelete = () => {
       confirmButtonColor: "#d33",
       cancelButtonColor: "#3085d6",
       confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        // Add logic to delete user
-        console.log("User Deleted:", data);
-        Swal.fire("Deleted!", "The user has been deleted.", "success");
-      }
     });
+
+    if (result.isConfirmed) {
+      const toastId = toast.loading("Deleting user");
+      try {
+        const userInfo = {
+          email: data.email,
+          isDeleted: data.isDeleted,
+        };
+        await delateUser(userInfo).unwrap();
+        toast.success("User Deleted", { id: toastId, duration: 2000 });
+      } catch (err) {
+        console.log(err);
+        toast.error(err?.data?.message, { id: toastId, duration: 2000 });
+      }
+    }
   };
 
   return (

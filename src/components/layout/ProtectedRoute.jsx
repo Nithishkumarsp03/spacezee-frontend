@@ -30,5 +30,5 @@ export default ProtectedRoute;
 
 ProtectedRoute.propTypes = {
   children: PropTypes.node,
-  role: PropTypes.string,
+  role: PropTypes.array,
 };

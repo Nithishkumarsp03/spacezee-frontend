@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button, Form, Row, Col, InputGroup } from "react-bootstrap";
 import { z } from "zod";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { toast } from "sonner";
+import { useChangePasswordMutation } from "../../../redux/features/auth/authApi";
+import { verifyToken } from "../../../utils/verifyToken";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../../redux/features/auth/authSlice";
 
 const passwordChangeSchema = z
   .object({
@@ -29,10 +34,11 @@ const AdminPasswordChange = () => {
   } = useForm({
     resolver: zodResolver(passwordChangeSchema),
   });
-
+  const [changePassword] = useChangePasswordMutation();
   const [showOldPassword, setShowOldPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const dispatch = useDispatch();
 
   const togglePasswordVisibility = (field) => {
     if (field === "old") {
@@ -44,9 +50,21 @@ const AdminPasswordChange = () => {
     }
   };
 
-  const onSubmit = (data) => {
-    // Add logic to change password
-    console.log("Password Changed:", data);
+  const onSubmit = async (data) => {
+    const toastId = toast.loading("Changing password");
+    try {
+      const userInfo = {
+        oldPassword: data.oldPassword,
+        newPassword: data.newPassword,
+      };
+      const res = await changePassword(userInfo).unwrap();
+
+      const user = verifyToken(res.data.accessToken);
+      dispatch(setUser({ user: user, token: res.data.accessToken }));
+      toast.success("Password changed", { id: toastId, duration: 2000 });
+    } catch (err) {
+      toast.error(err?.data?.message, { id: toastId, duration: 2000 });
+    }
   };
 
   return (

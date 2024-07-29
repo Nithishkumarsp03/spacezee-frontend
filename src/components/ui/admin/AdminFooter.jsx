@@ -1,5 +1,3 @@
-import React from "react";
-
 const AdminFooter = () => {
   return (
     <footer className="admin-footer mt-auto py-3 bg-light">

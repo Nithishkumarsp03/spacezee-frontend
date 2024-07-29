@@ -4,6 +4,7 @@ import AdminDelete from "../components/ui/admin/AdminDelete";
 import AdminPasswordChange from "../components/ui/admin/AdminPasswordChange";
 import AdminProfile from "../components/ui/admin/AdminProfile";
 import AdminStatusChange from "../components/ui/admin/AdminStatusChange";
+import AdminUserInfo from "../components/ui/admin/AdminUserInfo";
 
 export const adminRoutes = {
   path: "admin",
@@ -33,9 +34,9 @@ export const adminRoutes = {
       path: "create-user",
       element: <AdminCreateUser />,
     },
-    //   {
-    //     path: "certificate",
-    //     element: <UserCertificate />,
-    //   },
+    {
+      path: "user-info",
+      element: <AdminUserInfo />,
+    },
   ],
 };
