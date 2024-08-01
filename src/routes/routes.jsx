@@ -6,6 +6,7 @@ import ForgetPasswordForm from "../components/form/auth/ForgetPasswordForm";
 import ResetPasswordForm from "../components/form/auth/ResetPasswordForm";
 import { userRoutes } from "./userRoutes";
 import { adminRoutes } from "./adminRoutes";
+import UserEMIApp from "../components/ui/user/EMI/UserEMIApp";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
   },
   userRoutes,
   adminRoutes,
+  { path: "emi", element: <UserEMIApp /> },
 ]);
 
 export default router;

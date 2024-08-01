@@ -1,0 +1,98 @@
+.singleContentBlock {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.tasksWrapper {
+  width: 100%;
+}
+.singleContentBlock {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Wrapper for both sidebar and content to control their layout */
+.tasksWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.sidebarCol {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  flex: 0 0 25%;
+  max-width: 25%;
+  transition: all 0.3s ease;
+  padding: 0;
+  overflow: hidden;
+}
+
+.contentCol {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tasksWrapper {
+    flex-direction: column;
+  }
+
+  .sidebarCol {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contentCol {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .singleContentBlock {
+    padding: 10px;
+  }
+
+  .sidebarCol {
+    border-radius: 5px;
+  }
+
+  .contentCol {
+    padding: 0;
+  }
+}
+
+/* Styles for making the sidebar toggle on small screens */
+.toggleButton {
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .toggleButton {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Styles for hover and selected states */
+.tasksLink:hover {
+  background-color: #f0f0f0;
+}
+
+.tasksLink.current {
+  background-color: #007bff;
+  color: white;
+}

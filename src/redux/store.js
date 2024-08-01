@@ -1,5 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./features/auth/authSlice";
+import commonProgramReducer from "./features/common/commonProgramSlice";
+import userCourseReducer from "./features/user/userCourseSlice";
 import { baseApi } from "./api/baseApi";
 import {
   persistReducer,
@@ -13,20 +15,45 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-const persistConfig = {
+// Persist config for auth
+const persistConfigAuth = {
   key: "auth",
   storage,
 };
 
-const persistedAuthReducer = persistReducer(persistConfig, authReducer);
+const persistedAuthReducer = persistReducer(persistConfigAuth, authReducer);
+
+// Persist config for commonProgram
+const persistConfigCommonProgram = {
+  key: "commonPrograms",
+  storage,
+};
+
+const persistedCommonProgramReducer = persistReducer(
+  persistConfigCommonProgram,
+  commonProgramReducer
+);
+
+// Persist config for userCourse
+const persistConfigUserCourse = {
+  key: "userCourse",
+  storage,
+};
+
+const persistedUserCourseReducer = persistReducer(
+  persistConfigUserCourse,
+  userCourseReducer
+);
 
 export const store = configureStore({
   reducer: {
     [baseApi.reducerPath]: baseApi.reducer,
     auth: persistedAuthReducer,
+    commonPrograms: persistedCommonProgramReducer,
+    userCourse: persistedUserCourseReducer,
   },
-  middleware: (getDefaultMiddlewares) =>
-    getDefaultMiddlewares({
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },

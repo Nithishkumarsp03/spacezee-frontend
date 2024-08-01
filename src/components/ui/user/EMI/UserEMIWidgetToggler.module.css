@@ -1,0 +1,32 @@
+.widgetTogglerWrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.widgetToggler {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.widgetToggler:hover {
+  background-color: #0056b3;
+}
+
+.widget {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}

@@ -1,0 +1,12 @@
+.app {
+  background-color: #f7f7f7;
+  color: #212529;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.contentWrapper {
+  padding-top: 30px;
+}

@@ -1,0 +1,25 @@
+.incomeTaxCalculator {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resultDisplay {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

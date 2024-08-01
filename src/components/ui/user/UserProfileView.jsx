@@ -21,6 +21,7 @@ import {
 import { toast } from "sonner";
 import { useChangePasswordMutation } from "../../../redux/features/auth/authApi";
 import { verifyToken } from "../../../utils/verifyToken";
+import { useNavigate } from "react-router-dom";
 
 const UserProfileView = () => {
   const {
@@ -37,6 +38,7 @@ const UserProfileView = () => {
   });
   const [changePassword] = useChangePasswordMutation();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const user = useSelector(selectCurrentUser);
   const getInitials = () => {
     return user.name ? user.name.charAt(0).toUpperCase() : "";
@@ -74,7 +76,11 @@ const UserProfileView = () => {
         <Row>
           <Col xs={12} className="mb-4">
             <Breadcrumb>
-              <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+              <Breadcrumb.Item
+                onClick={() => navigate("/home", { replace: true })}
+              >
+                Home
+              </Breadcrumb.Item>
               <Breadcrumb.Item active>My Profile</Breadcrumb.Item>
             </Breadcrumb>
           </Col>

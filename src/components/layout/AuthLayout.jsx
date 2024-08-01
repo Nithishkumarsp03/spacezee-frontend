@@ -43,9 +43,9 @@ function AuthLayout() {
         >
           <div className="text-center">
             <div className="auth-logo">
-              <img src={logo} alt="SpaceZee Logo" className="mb-4" />
+              <img src={logo} alt="Nergyvidya Logo" className="mb-4" />
             </div>
-            <h1>Welcome to SpaceZee</h1>
+            <h1>Welcome to Nergyvidya</h1>
           </div>
           <div className="auth-left-footer">
             <ul className="list-unstyled d-flex gap-2">
@@ -70,7 +70,7 @@ function AuthLayout() {
             <Outlet />
             <footer className="text-center mt-4">
               <p>
-                <small>© SL & IL Tech platform SpaceZee</small>
+                <small>© SL & IL Tech platform Nergyvidya</small>
               </p>
             </footer>
           </div>

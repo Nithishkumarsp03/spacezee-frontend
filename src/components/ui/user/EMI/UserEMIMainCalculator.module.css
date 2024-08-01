@@ -1,0 +1,83 @@
+.mainCalculator {
+  background-color: #fff;
+  border: 1px solid #e8e9ed;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculatorHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.backButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
+
+.calculatorTitle {
+  margin: 0;
+}
+
+.calculatorOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.optionButton {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.borrowingButton {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.borrowingButton:hover {
+  background-color: #bbdefb;
+}
+
+.investmentButton {
+  background-color: #f0f4c3;
+  color: #9e9d24;
+}
+
+.investmentButton:hover {
+  background-color: #e6ee9c;
+}
+
+.annuityButton {
+  background-color: #ffecb3;
+  color: #ff6f00;
+}
+
+.annuityButton:hover {
+  background-color: #ffe082;
+}
+
+.incomeTaxButton {
+  background-color: #ffcdd2;
+  color: #d32f2f;
+}
+
+.incomeTaxButton:hover {
+  background-color: #ef9a9a;
+}

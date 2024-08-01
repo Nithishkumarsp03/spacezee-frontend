@@ -3,9 +3,10 @@ import { baseApi } from "../../api/baseApi";
 const commonProgramApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getAllPrograms: builder.query({
-      query: () => ({
+      query: (info) => ({
         url: "/program",
-        method: "GET",
+        method: "POST",
+        body: info ? { info } : {},
       }),
     }),
   }),

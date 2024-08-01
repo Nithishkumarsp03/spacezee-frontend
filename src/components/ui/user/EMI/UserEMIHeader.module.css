@@ -1,0 +1,26 @@
+.header {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.headWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 58px;
+  vertical-align: middle;
+}
+
+.qstnCount {
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}

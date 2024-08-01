@@ -1,0 +1,55 @@
+.singlePageHeader {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 67, 139, 1) 0%,
+    rgba(0, 123, 255, 1) 100%
+  );
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.textLight p {
+  color: rgba(248, 249, 250, 0.8);
+}
+
+.textLight strong {
+  background-color: rgba(0, 67, 139, 0.8);
+  color: rgba(248, 249, 250, 0.8);
+}
+
+.courseImage {
+  border-radius: 10px;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courseImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.customBreadcrumb {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 67, 139, 1) 0%,
+    rgba(0, 123, 255, 1) 100%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.customBreadcrumb .breadcrumb-item a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.customBreadcrumb .breadcrumb-item a:hover {
+  color: #ffd700 !important;
+}
+
+.customBreadcrumb .breadcrumb-item.active {
+  color: #ffffff !important;
+}

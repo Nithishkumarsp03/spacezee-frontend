@@ -3,8 +3,7 @@ import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://sl-backend.vercel.app/api",
-  // "https://slserver-06162b308c5f.herokuapp.com/api"
+  baseUrl: "http://localhost:5000/api",
 
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
@@ -32,9 +31,9 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
     console.log("Sending refresh token");
 
     const res = await fetch(
-      "https://sl-backend.vercel.app/api/auth/refresh-token",
+      // "https://sl-backend.vercel.app/api/auth/refresh-token",
 
-      // "http://localhost:5000/api/auth/refresh-token"
+      "http://localhost:5000/api/auth/refresh-token",
       {
         method: "POST",
         credentials: "include",

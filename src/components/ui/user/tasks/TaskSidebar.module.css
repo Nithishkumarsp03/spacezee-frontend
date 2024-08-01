@@ -1,0 +1,45 @@
+.sidebar {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.tasksListMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.taskListItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.tasksLink {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.tasksLink:hover {
+  background-color: #f0f0f0;
+}
+
+.tasksLink.current {
+  background-color: #007bff;
+  color: white;
+}
+
+.taskListLinkIcon {
+  margin-right: 10px;
+}

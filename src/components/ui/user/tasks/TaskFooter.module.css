@@ -1,0 +1,34 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.statusBlock {
+}
+
+.contentAction {
+  margin-right: 10px;
+}
+
+.actionBtn,
+.navigateBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.actionBtn:hover,
+.navigateBtn:hover {
+  background-color: #0056b3;
+}
+
+.navigateBtn i {
+  margin: 0 5px;
+}
+
+.navigateBtn:disabled {
+  background-color: #c0c0c0;
+}

@@ -1,0 +1,21 @@
+.breadcrumb {
+  text-transform: capitalize;
+  background: none;
+}
+
+.detailPageProgressBar {
+  margin-top: 1rem;
+}
+
+.progressBarBlock {
+  display: flex;
+  align-items: center;
+}
+
+.progressItem {
+  flex: 1;
+}
+
+.progressCount {
+  margin-left: 10px;
+}

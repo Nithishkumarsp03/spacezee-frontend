@@ -1,0 +1,48 @@
+.tabViewWrapper {
+  overflow-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid #e8e9ed;
+  border-radius: 10px;
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  height: 666px;
+}
+
+.card {
+  height: 100%;
+}
+
+.tabHeader {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  padding: 18px;
+  font-size: 16px;
+  color: #6b6f8c;
+  background-color: #f7faf8;
+  border-bottom: 4px solid transparent;
+}
+
+.tab.active {
+  border-bottom-color: #152d53;
+  color: #1e2028;
+  font-weight: 600;
+  background-color: #f7fafa;
+}
+
+.tabContent {
+  color: #212529;
+  padding: 16px;
+}
