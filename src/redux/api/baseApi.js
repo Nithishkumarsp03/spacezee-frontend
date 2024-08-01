@@ -2,8 +2,10 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
+const PROD = "https://sl-backend.vercel.app/api";
+const DEV = "http://localhost:5000/api";
 const baseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:5000/api",
+  baseUrl: PROD,
 
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
@@ -31,9 +33,9 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
     console.log("Sending refresh token");
 
     const res = await fetch(
-      // "https://sl-backend.vercel.app/api/auth/refresh-token",
+      "https://sl-backend.vercel.app/api/auth/refresh-token",
 
-      "http://localhost:5000/api/auth/refresh-token",
+      // "http://localhost:5000/api/auth/refresh-token",
       {
         method: "POST",
         credentials: "include",
