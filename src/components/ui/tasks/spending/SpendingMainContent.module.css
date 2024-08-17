@@ -1,0 +1,44 @@
+.content {
+  background-color: rgb(247, 247, 247);
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 12px;
+}
+
+.tableSection {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(225, 227, 238);
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.tableHeaders {
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgb(225, 227, 238);
+}
+
+.tableRows {
+  padding: 16px;
+}
+
+.tableRow {
+  margin-top: 8px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 0;
+}
+
+.table-row-actions {
+  padding: 16px;
+}

@@ -1,6 +1,11 @@
 import styles from "./TaskFooter.module.css";
 
-const TaskFooter = () => {
+const TaskFooter = ({
+  onPrevTask,
+  onNextTask,
+  isPrevDisabled,
+  isNextDisabled,
+}) => {
   return (
     <div
       className={`${styles.footer} pt-2 d-flex justify-content-between align-items-center mt-4 mb-4`}
@@ -13,13 +18,16 @@ const TaskFooter = () => {
       <div className={`${styles.navBtns} d-flex align-items-center`}>
         <button
           className={`${styles.navigateBtn} d-flex align-items-center ${styles.prevBtn}`}
-          disabled
+          onClick={onPrevTask}
+          disabled={isPrevDisabled}
         >
           <i className="bi-chevron-left"></i>
           <span>Previous</span>
         </button>
         <button
           className={`${styles.navigateBtn} d-flex align-items-center ${styles.nextBtn} ms-2`}
+          onClick={onNextTask}
+          disabled={isNextDisabled}
         >
           <span>Next</span>
           <i className="bi-chevron-right"></i>

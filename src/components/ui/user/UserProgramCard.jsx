@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react";
 import {
   Card,
@@ -34,7 +35,6 @@ const UserProgramCard = () => {
   const program = useSelector(selectCommonSelectedProgram);
   const dispatch = useDispatch();
   const { data, error, isLoading } = useGetAllProgramsQuery("info");
-  console.log(data);
 
   useEffect(() => {
     if (data && data.data) {
@@ -124,6 +124,8 @@ const UserProgramCard = () => {
                   <UserProgramTile
                     icon={<FaTools size={30} />}
                     label="Practicals"
+                    link="courses/regular"
+                    data={program.practicals}
                   />
                   <UserProgramTile
                     icon={<FaClipboardList size={30} />}

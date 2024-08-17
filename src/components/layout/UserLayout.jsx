@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "react-bootstrap";
 import ProtectedRoute from "./ProtectedRoute";
 import UserNavbar from "../ui/user/UserNavbar";

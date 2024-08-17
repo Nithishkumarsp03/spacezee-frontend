@@ -8,7 +8,16 @@ const userCourseApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
+    getCourseMaterialById: builder.query({
+      query: (id) => ({
+        url: `/task/${id}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
-export const { useGetLearningMaterialByIdQuery } = userCourseApi;
+export const {
+  useGetLearningMaterialByIdQuery,
+  useGetCourseMaterialByIdQuery,
+} = userCourseApi;

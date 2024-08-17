@@ -2,11 +2,15 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Col, Card } from "react-bootstrap";
 
-const CourseTile = ({ title, image, id }) => {
+const CourseTile = ({ title, image, id, name }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`${id}`);
+    if (name === "Learning Materials") {
+      navigate(`${id}`);
+    } else {
+      navigate(`/home/courses/course/${id}`);
+    }
   };
 
   return (

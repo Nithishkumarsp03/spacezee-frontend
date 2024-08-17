@@ -19,16 +19,18 @@
 }
 
 .user-program-tile {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: transform 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .user-program-tile:hover {
   transform: translateY(-5px);
   background-color: #f0f8ff;
-  color: #00438b;
+  color: #fff;
 }
 
 .icon-container {

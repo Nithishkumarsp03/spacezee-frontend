@@ -1,0 +1,44 @@
+.header {
+  border-bottom: 1px solid rgb(225, 227, 238);
+  height: 76px;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  display: block;
+  margin-right: 26px;
+}
+
+.logo {
+  height: 44px;
+  vertical-align: middle;
+}
+
+.budgetLabel,
+.questionSection {
+  border: 1px solid rgb(167, 172, 193);
+  border-radius: 10px;
+  color: rgb(77, 81, 104);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 14px;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+.features {
+  margin-top: 20px;
+}
+
+.features figure {
+  text-align: center;
+}
+
+.features img {
+  width: 80px;
+  height: auto;
+}
+
+.features figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

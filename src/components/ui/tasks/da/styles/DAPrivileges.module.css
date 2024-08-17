@@ -1,0 +1,54 @@
+.privileges {
+  padding: 40px 0;
+}
+
+.heading {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e2028;
+}
+
+.gridRow {
+  row-gap: 2rem; /* Adjust this value for vertical spacing */
+  column-gap: 2rem; /* Adjust this value for horizontal spacing */
+}
+
+.privilegeItem {
+  background-color: #f1f7ff;
+  border: 1px solid #e1e3ee;
+  border-radius: 16px;
+  padding: 20px 20px; /* Adjusted padding for better spacing */
+  text-align: center;
+  margin-bottom: 2rem; /* Added margin-bottom for spacing between rows */
+}
+
+.figure {
+  margin: 0;
+}
+
+.icon {
+  background-color: #fff;
+  border: 1px solid #e1e3ee;
+  border-radius: 50%;
+  height: 114px;
+  width: 114px;
+  margin: -57px auto 0; /* Center the icon */
+}
+
+.text {
+  padding: 20px; /* Added padding to text for spacing */
+}
+
+.text h3 {
+  font-size: 20px;
+  color: #1e2028;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.text p {
+  color: #282a36;
+  font-size: 14px;
+  line-height: 20px;
+}

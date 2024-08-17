@@ -1,0 +1,113 @@
+.content {
+  background-color: rgb(247, 247, 247);
+  height: 759px;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 208, 222);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cardHeader {
+  border-bottom: 1px solid rgb(204, 208, 222);
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cardTitle {
+  color: rgb(30, 32, 40);
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.cardAmount {
+  color: rgb(30, 32, 40);
+  font-size: 20px;
+  font-weight: 600;
+  width: 33.3333%;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.inputGroup {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px 18px;
+  border: 2px solid rgb(204, 208, 222);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  height: 47px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.selectField {
+  position: relative;
+  cursor: default;
+  height: 31px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  color: red;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalSection,
+.surplusSection {
+  padding: 24px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalSection {
+  background-color: rgb(247, 247, 247);
+  border-radius: 14px;
+}
+
+.surplusSection {
+  background-color: rgb(242, 247, 255);
+  border: 1px solid rgb(193, 220, 241);
+  border-radius: 14px;
+}

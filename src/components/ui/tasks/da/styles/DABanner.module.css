@@ -1,0 +1,24 @@
+.banner {
+  background-color: #e9ecef;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 547px;
+}
+
+.bannerTitle {
+  font-size: 40px;
+  color: #1e2028;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 18px;
+  max-width: 620px;
+}
+
+.bannerDescription {
+  color: #282a36;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 520px;
+}

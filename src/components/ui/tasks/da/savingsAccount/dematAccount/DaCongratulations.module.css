@@ -1,0 +1,89 @@
+.container {
+  align-items: flex-start;
+  padding: 50px 0px 0px 5px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.innerContainer {
+  max-height: 791px;
+  padding-left: 100px;
+  padding-right: 0px;
+  padding-top: 0px;
+  overflow: auto;
+  padding: 0px 0px 50px 100px;
+  scrollbar-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+.messageContainer {
+  box-sizing: border-box;
+}
+
+.message {
+  align-items: flex-start;
+  color: rgb(77, 81, 104);
+  display: flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 12px;
+  letter-spacing: 0.75px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.icon {
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.button {
+  border-radius: 12px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  height: 48px;
+  letter-spacing: 0.75px;
+  line-height: 24px;
+  padding: 12px 16px;
+  width: 100%;
+  background: rgb(22, 45, 83) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  appearance: button;
+  margin: 0px;
+  box-sizing: border-box;
+}

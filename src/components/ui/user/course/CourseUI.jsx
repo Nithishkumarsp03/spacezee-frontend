@@ -40,6 +40,7 @@ const CourseUI = () => {
                 title={item.name}
                 image={item.courseImage}
                 id={item._id}
+                name={selectedCourse.name}
               />
             </Col>
           ))}

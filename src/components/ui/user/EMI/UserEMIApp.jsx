@@ -1,7 +1,6 @@
 import { useState } from "react";
 import UserEMIHeader from "./UserEMIHeader";
 import UserEMITabView from "./UserEMITabView";
-import UserEMICalculator from "./UserEMICalculator";
 import UserEMIWidgetToggler from "./UserEMIWidgetToggler";
 import styles from "./UserEMIApp.module.css";
 import UserEMIMainCalculator from "./UserEMIMainCalculator";

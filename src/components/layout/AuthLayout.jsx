@@ -1,3 +1,4 @@
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Navigate, Outlet } from "react-router-dom";
 import logo from "../../assets/images/logo.png";

@@ -1,38 +1,45 @@
 .sidebar {
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
   border: 1px solid #ddd;
+  width: 100%; /* Ensure full width within the column */
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px; /* Add padding to avoid content touching the border */
 }
 
 .header {
   background-color: #007bff;
   color: white;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .tasksListMenu {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .taskListItem {
   border-bottom: 1px solid #ddd;
+  padding-top: 10px; /* Add padding to avoid overlapping with the hr line */
 }
 
 .tasksLink {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   text-align: left;
   background: none;
   border: none;
   outline: none;
   color: #007bff;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tasksLink:hover {
-  background-color: #f0f0f0;
+  background-color: #e9ecef;
 }
 
 .tasksLink.current {
@@ -42,4 +49,9 @@
 
 .taskListLinkIcon {
   margin-right: 10px;
+  vertical-align: middle;
+}
+
+.completed .taskListLinkIcon {
+  color: #28a745;
 }

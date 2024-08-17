@@ -1,5 +1,5 @@
 import { Spinner } from "react-bootstrap";
-
+import React from "react";
 const SpinnerComponent = () => {
   return (
     <div style={styles.spinnerContainer}>

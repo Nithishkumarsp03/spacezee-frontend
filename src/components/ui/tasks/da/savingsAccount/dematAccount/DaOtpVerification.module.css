@@ -1,0 +1,170 @@
+.container {
+  background: #ffffff;
+  min-height: 841px;
+  box-sizing: border-box;
+}
+
+.innerContainer {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  margin-top: 40px;
+  border: 1px solid #e1e3ee;
+  border-radius: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.notice {
+  color: #4d5168;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+.checkboxContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  background-color: #162d53;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: white;
+}
+
+.label {
+  color: #4d5168;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.termsContainer {
+  border: 1px solid #ccd0de;
+  border-radius: 16px;
+  height: 215px;
+  overflow: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.termsList {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.termsList li {
+  color: #6b6f8c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.otpSection {
+  margin: 30px auto 0;
+  max-width: 270px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.otpMessage {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #1e2028;
+  font-weight: 500;
+}
+
+.otpInputContainer {
+  gap: 24px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.otpInput {
+  border-radius: 12px;
+  border-width: 2px;
+  font-size: 16px;
+  height: 44px;
+  padding: 12px;
+  text-align: center;
+  width: 44px;
+  color: #6b6f8c;
+  appearance: none;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.resendLink {
+  margin-bottom: 24px;
+}
+
+.resendLink a {
+  color: #2760ad;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.buttonGroup {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.cancelButton {
+  background: #ffffff;
+  border: 2px solid #edeef3;
+  color: #162d53;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.verifyButton {
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 48px;
+  width: 100%;
+  background-color: #162d53;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-top: 24px;
+  box-sizing: border-box;
+}
+
+.logo {
+  filter: blur(4px);
+  height: 78px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
