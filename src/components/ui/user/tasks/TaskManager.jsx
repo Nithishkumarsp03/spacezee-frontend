@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TaskSidebar from "./TaskSidebar";
 import TaskContent from "./TaskContent";
@@ -7,10 +7,25 @@ import styles from "./TaskManager.module.css";
 import { useParams } from "react-router-dom";
 import SpinnerComponent from "../../../SpinnerComponent";
 import { useGetCourseMaterialByIdQuery } from "../../../../redux/features/user/userCourseApi";
+import { selectCommonSelectedProgram } from "../../../../redux/features/common/commonProgramSlice";
+import {
+  selectSelectedCourse,
+  setSelectedCourse,
+} from "../../../../redux/features/user/userCourseSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useGetAllProgramsQuery } from "../../../../redux/features/common/commonProgramApi";
 
 const TaskManager = () => {
   const { id } = useParams();
   const { data, error, isLoading, refetch } = useGetCourseMaterialByIdQuery(id);
+  const dispatch = useDispatch();
+  const program = useSelector(selectCommonSelectedProgram);
+  const courseData = useSelector(selectSelectedCourse);
+  const {
+    data: updatedProgram,
+    isLoading: updatedProgramLoading,
+    refetch: updateProgram,
+  } = useGetAllProgramsQuery("info");
 
   const course = data?.data;
   const [selectedTaskIndex, setSelectedTaskIndex] = useState(0);
@@ -20,25 +35,60 @@ const TaskManager = () => {
   useEffect(() => {
     const broadcast = new BroadcastChannel("task-updates");
 
-    // Run this code block only once on component load
     if (!hasInitialized.current && course?.courseContents?.length > 0) {
       setSelectedTaskIndex(0);
       hasInitialized.current = true;
     }
 
-    broadcast.onmessage = (event) => {
+    broadcast.onmessage = async (event) => {
       console.log("Received message on course page:", event.data);
       if (event.data.type === "TASK_COMPLETED" && event.data.courseId === id) {
         console.log("Refetching course material...");
+        const updatedProgramResponse = await updateProgram().unwrap();
+        console.log("Updated Program Response:", updatedProgramResponse);
 
-        refetch();
+        if (updatedProgramResponse) {
+          const filteredProgramData = updatedProgramResponse.data.filter(
+            (item) => item.name === program.name
+          );
+          console.log("Filtered Program Data:", filteredProgramData);
+
+          if (courseData.name === "Practicals") {
+            console.log("Dispatching Practicals");
+            dispatch(
+              setSelectedCourse({
+                name: "Practicals",
+                data: filteredProgramData[0]?.practicals || [],
+              })
+            );
+          } else {
+            console.log("Dispatching Assignment");
+            dispatch(
+              setSelectedCourse({
+                name: "Assignment",
+                data: filteredProgramData[0]?.learningMaterials || [],
+              })
+            );
+          }
+
+          refetch();
+        }
       }
     };
 
     return () => {
       broadcast.close();
     };
-  }, [course, refetch, id]);
+  }, [
+    course,
+    refetch,
+    id,
+    updatedProgramLoading,
+    program?.name,
+    dispatch,
+    courseData?.name,
+    updateProgram,
+  ]);
 
   if (isLoading) {
     return <SpinnerComponent />;

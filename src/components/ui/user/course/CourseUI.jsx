@@ -14,7 +14,7 @@ const CourseUI = () => {
   const handleBreadcrumbClick = () => {
     navigate("/home", { replace: true });
   };
-  console.log(selectedCourse);
+
   return (
     <Container className="mt-4">
       <Row>
@@ -34,7 +34,7 @@ const CourseUI = () => {
       </Row>
       <section className="section">
         <Row className="mb-5">
-          {selectedCourse.data.map((item) => (
+          {selectedCourse?.data?.map((item) => (
             <Col key={item._id}>
               <CourseTile
                 title={item.name}

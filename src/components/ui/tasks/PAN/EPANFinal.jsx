@@ -3,9 +3,14 @@ import breadCrumb from "./assets/img/breadCrumb.svg";
 import tickIcon from "./assets/img/tick_ic.svg";
 import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
 import { useCompleteTaskWithBroadcast } from "../../../../hooks/useCompleteTaskWithBroadcast";
+import { useEffect } from "react";
 
 const EPANFinal = () => {
-  useCompleteTaskWithBroadcast();
+  const completeTask = useCompleteTaskWithBroadcast();
+
+  useEffect(() => {
+    completeTask();
+  }, [completeTask]);
 
   return (
     <div className={styles["style-0"]}>

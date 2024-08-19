@@ -13,7 +13,7 @@ function UserEMIBorrowingCalculator() {
     totalRepayment: 0,
     answer: 0,
   });
-
+  console.log(interestType);
   const calculateEMI = (principal, rate, tenure) => {
     const monthlyRate = rate / 12 / 100;
     const numerator =

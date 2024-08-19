@@ -17,7 +17,7 @@ const BreadcrumbProgress = ({ name, courseImage, completedTaskPercentage }) => {
             <Breadcrumb.Item onClick={() => navigate("/home")}>
               {selectedProgram.name}
             </Breadcrumb.Item>
-            <Breadcrumb.Item href="/home/courses/regular">
+            <Breadcrumb.Item onClick={() => navigate(-1)}>
               {selectedCourse.name}
             </Breadcrumb.Item>
             <Breadcrumb.Item active>{name}</Breadcrumb.Item>
