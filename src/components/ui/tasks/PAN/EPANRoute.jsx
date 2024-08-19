@@ -4,8 +4,10 @@ import get_epan from "./assets/img/getepan.svg";
 import holds_epan from "./assets/img/holdsepan.svg";
 import all_epan from "./assets/img/allepan.svg";
 import styles from "./EPANRoute.module.css";
+import useNavigateToDirectory from "../../../../hooks/useNavigateToDirectory";
 
 const EPANRoute = () => {
+  const navigate = useNavigateToDirectory();
   return (
     <div className={`${styles["style-0"]} my-4`}>
       <div className={styles["style-1"]}>
@@ -118,7 +120,12 @@ const EPANRoute = () => {
                   </div>
                   <div className={styles["style-68"]}></div>
                   <div className={styles["style-69"]}>
-                    <a className={styles["style-70"]}>Get New e-PAN</a>
+                    <a
+                      className={styles["style-70"]}
+                      onClick={() => navigate("epan-adhar")}
+                    >
+                      Get New e-PAN
+                    </a>
                   </div>
                 </div>
               </div>

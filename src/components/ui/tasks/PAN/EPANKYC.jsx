@@ -7,12 +7,17 @@ import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
 import { FaUserCircle } from "react-icons/fa";
 import EPANAdharOTP from "./EPANAdharOTP";
 import EPANAdharOtpValid from "./EPANAdharOtpValid";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../redux/features/user/userTaskSlice";
+import { formatAadhaar } from "../utils/formatAadhar";
+import useNavigateToDirectory from "../../../../hooks/useNavigateToDirectory";
 
 const EPANKYC = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [isValidateOpen, setIsValidateOpen] = useState(false);
   const [isValid, setIsValid] = useState(false);
-
+  const { questions } = useSelector(selectTask);
+  const navigate = useNavigateToDirectory();
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -166,7 +171,9 @@ const EPANKYC = () => {
                   <li className={styles["style-72"]}>
                     <div className={styles["style-73"]}>
                       <div className={styles["style-74"]}>Aadhaar Number</div>
-                      <div className={styles["style-75"]}>**** ****512</div>
+                      <div className={styles["style-75"]}>
+                        {formatAadhaar(questions?.Aadhaar_No)}
+                      </div>
                     </div>
                   </li>
                   <li className={styles["style-76"]}>
@@ -186,13 +193,19 @@ const EPANKYC = () => {
                   <li className={styles["style-84"]}>
                     <div className={styles["style-85"]}>
                       <div className={styles["style-86"]}>Gender</div>
-                      <div className={styles["style-87"]}>Male</div>
+                      <div className={styles["style-87"]}>
+                        {questions.gender}
+                      </div>
                     </div>
                   </li>
                   <li className={styles["style-88"]}>
                     <div className={styles["style-89"]}>
                       <div className={styles["style-90"]}>Mobile Number</div>
-                      <div className={styles["style-91"]}>2329796944</div>
+                      <div className={styles["style-91"]}>
+                        {questions?.Phone_No
+                          ? questions?.Phone_No
+                          : "2329796944"}
+                      </div>
                     </div>
                   </li>
                   {!isValidateOpen && (
@@ -200,7 +213,7 @@ const EPANKYC = () => {
                       <div className={styles["style-93"]}>
                         <div className={styles["style-94"]}>Email id</div>
                         <div className={styles["style-95"]}>
-                          amarjit12345@nergymail.com
+                          {questions?.Email_ID}
                           <span
                             className={styles["style-96"]}
                             onClick={() => setIsValidateOpen(true)}
@@ -212,7 +225,10 @@ const EPANKYC = () => {
                     </li>
                   )}
                   {isValidateOpen && !isValid && (
-                    <EPANAdharOTP setIsValid={setIsValid} />
+                    <EPANAdharOTP
+                      setIsValid={setIsValid}
+                      setIsValidateOpen={setIsValidateOpen}
+                    />
                   )}
                   {isValid && <EPANAdharOtpValid />}
                   <li className={styles["style-97"]}>
@@ -261,7 +277,12 @@ const EPANKYC = () => {
             <div className={styles["style-111"]}>
               <div className={styles["style-112"]}>
                 <div className={styles["style-113"]}>
-                  <button className={styles["style-114"]}>Cancel</button>
+                  <button
+                    className={styles["style-114"]}
+                    onClick={() => navigate(-1)}
+                  >
+                    Cancel
+                  </button>
                 </div>
                 <div className={styles["style-115"]}>
                   <button
@@ -272,6 +293,7 @@ const EPANKYC = () => {
                       opacity: isChecked && isValid ? 1 : "",
                       color: isChecked && isValid ? "#ffffff" : "",
                     }}
+                    onClick={() => navigate("final")}
                   >
                     <div className={styles["style-117"]}>
                       Continue

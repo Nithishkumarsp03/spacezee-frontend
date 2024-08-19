@@ -1,18 +1,35 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 import styles from "./EPANOtp.module.css";
-
 import breadcrumb_img from "./assets/img/breadCrumb.svg";
 import line_right_arrow from "./assets/img/line_right_arrow.png";
 import line_right_arrow_active from "./assets/img/line_right_active1_arrow.png";
 import hide_password from "./assets/img/hide-password.svg";
 import show_password from "./assets/img/show-password.svg";
 import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
+import useNavigateToDirectory from "../../../../hooks/useNavigateToDirectory";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../redux/features/user/userTaskSlice";
+import { formatPhoneNumber } from "../utils/formatPhone";
 
 const EPANOtp = () => {
+  const navigate = useNavigateToDirectory();
+  const { questions } = useSelector(selectTask);
   const [otp, setOtp] = useState(new Array(6).fill(""));
+  const [generatedOtp, setGeneratedOtp] = useState("");
   const [isOtpVisible, setIsOtpVisible] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [isButtonActive, setIsButtonActive] = useState(false);
+
+  // Generate a new OTP
+  const generateOtp = () => {
+    const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    setGeneratedOtp(newOtp);
+  };
+
+  useEffect(() => {
+    generateOtp();
+  }, []);
 
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return false;
@@ -33,6 +50,28 @@ const EPANOtp = () => {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
     setIsButtonActive(otp.join("").length === 6 && !isChecked);
+  };
+
+  const handleSubmit = () => {
+    const enteredOtp = otp.join("");
+    if (enteredOtp === generatedOtp) {
+      navigate("kyc");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Invalid OTP",
+        text: "The OTP you entered is incorrect. Please try again.",
+      });
+    }
+  };
+
+  const handleResendOtp = () => {
+    generateOtp(); // Generate and send a new OTP
+    Swal.fire({
+      icon: "info",
+      title: "OTP Resent",
+      text: "A new OTP has been sent to your registered phone number and email.",
+    });
   };
 
   return (
@@ -167,17 +206,21 @@ const EPANOtp = () => {
                 <div className={styles["style-62"]}>
                   We have sent a One Time Password (OTP) in a text message (SMS)
                   to your Primary mobile number{" "}
-                  <span className={styles["style-63"]}>+91 23********44 </span>{" "}
+                  <span className={styles["style-63"]}>
+                    {questions?.Phone_No
+                      ? formatPhoneNumber(questions?.Phone_No)
+                      : "+91 23********44"}{" "}
+                  </span>{" "}
                   and primary email id{" "}
                   <span className={styles["style-64"]}>
-                    amarjit12345@nergymail.com
+                    {questions.Email_ID}
                   </span>
                 </div>
               </div>
               <div className={styles["style-65"]}>
                 <div className={styles["style-66"]}>
                   Enter the OTP <span className={styles["style-67"]}>*</span>
-                  <div className={styles["style-68"]}>[370251]</div>
+                  <div className={styles["style-68"]}>[{generatedOtp}]</div>
                 </div>
                 <div className={styles["style-69"]}>
                   {otp.map((data, index) => (
@@ -233,7 +276,13 @@ const EPANOtp = () => {
               </div>
               <div className={styles["style-85"]}>
                 <div className={styles["style-86"]}>
-                  <span className={styles["style-87"]}>Resend OTP</span>{" "}
+                  <span
+                    className={styles["style-87"]}
+                    onClick={handleResendOtp}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Resend OTP
+                  </span>{" "}
                   <span className={styles["style-88"]}>
                     (Available in 00m:02s)
                   </span>
@@ -260,11 +309,19 @@ const EPANOtp = () => {
             <div className={styles["style-94"]}>
               <div className={styles["style-95"]}>
                 <div className={styles["style-96"]}>
-                  <button className={styles["style-97"]}>Cancel</button>
+                  <button
+                    type="button"
+                    className={styles["style-97"]}
+                    onClick={() => navigate(-1)}
+                  >
+                    Cancel
+                  </button>
                 </div>
                 <div className={styles["style-98"]}>
                   <button
+                    type="button"
                     className={styles["style-99"]}
+                    onClick={handleSubmit}
                     style={{
                       backgroundColor: isButtonActive
                         ? "rgb(42, 58, 141)"

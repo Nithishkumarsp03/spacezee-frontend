@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Col, Card } from "react-bootstrap";
+import { Col, Card, ProgressBar } from "react-bootstrap";
 
-const CourseTile = ({ title, image, id, name }) => {
+const CourseTile = ({ title, image, id, name, barView, progress }) => {
   const navigate = useNavigate();
-
   const handleClick = () => {
     if (name === "Learning Materials") {
       navigate(`${id}`);
@@ -14,7 +13,7 @@ const CourseTile = ({ title, image, id, name }) => {
   };
 
   return (
-    <Col lg={3} xs={6} className="mb-4">
+    <Col lg={3} xs={6} className="mb-4" style={{ width: "300px" }}>
       <Card
         className="pt-5 pb-5 px-4 text-center course-tile-card"
         style={{ cursor: "pointer" }}
@@ -28,6 +27,14 @@ const CourseTile = ({ title, image, id, name }) => {
         />
         <Card.Body>
           <Card.Text className="mb-0 text-dark tile-title">{title}</Card.Text>
+          {barView && (
+            <ProgressBar
+              now={progress}
+              label={`${progress}%`}
+              variant="success"
+              className="mt-3"
+            />
+          )}
         </Card.Body>
       </Card>
     </Col>

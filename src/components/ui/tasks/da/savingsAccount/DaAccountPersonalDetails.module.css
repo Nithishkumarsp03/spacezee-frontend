@@ -107,7 +107,7 @@
 
 .radioGroup {
   display: flex;
-  justify-content: space-between;
+
   gap: 16px;
 }
 
@@ -127,7 +127,6 @@
   border-radius: 50%;
   border: 1px solid #dee2e6;
   background-color: #fff;
-  appearance: none;
 }
 
 button {

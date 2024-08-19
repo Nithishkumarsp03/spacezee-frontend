@@ -1612,13 +1612,9 @@
   border-color: rgb(193, 193, 193);
   background-color: rgb(193, 193, 193);
   color: rgb(126, 126, 126);
-  background-color: rgb(193, 193, 193);
-  color: rgb(126, 126, 126);
-  box-shadow: none;
-  margin: 0px;
+
   padding: 0px 24px;
-  box-sizing: border-box;
-  pointer-events: none;
+
   opacity: 0.65;
   display: inline-block;
   align-self: center;
@@ -1626,16 +1622,12 @@
   line-height: 20.96px;
   text-align: center;
   text-decoration: none solid rgb(126, 126, 126);
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
+
   font-size: 16px;
   border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: button;
-  text-transform: none;
-  font-family: Roboto-Regular;
+
   min-height: 46px;
   min-width: 98px;
 }

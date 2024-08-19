@@ -4,4 +4,26 @@
   font-size: 14pt;
   background-color: rgb(255, 255, 255);
   padding: 20px;
+  overflow-y: auto;
+  max-height: 600px; /* Set the max height as needed */
+}
+
+.details table {
+  width: 100%;
+  border: 1px solid #dee2e6; /* Bootstrap table border color */
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.details th,
+.details td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 1px solid #dee2e6; /* Bootstrap table border color */
+}
+
+.details thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6; /* Bootstrap table border color */
 }

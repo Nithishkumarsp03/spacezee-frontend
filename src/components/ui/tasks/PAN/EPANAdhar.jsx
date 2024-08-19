@@ -1,19 +1,51 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
 import styles from "./EPANAdhar.module.css";
 import breadcrumb_img from "./assets/img/breadCrumb.svg";
 import line_right_arrow from "./assets/img/line_right_arrow.png";
 import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
+import roundedErrorIcon from "./assets/img/round-error-24px.svg";
+import warningSvg from "./assets/img/Warning.svg";
+import useNavigateToDirectory from "../../../../hooks/useNavigateToDirectory";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../redux/features/user/userTaskSlice";
+import Swal from "sweetalert2";
 
 const EPANAdhar = () => {
-  const [aadhaarNumber, setAadhaarNumber] = useState("");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch,
+  } = useForm();
   const [isConfirmed, setIsConfirmed] = useState(false);
+  const navigate = useNavigateToDirectory();
+  const aadhaarNumber = watch("aadhaarNumber");
+  const task = useSelector(selectTask);
+
   const [isButtonActive, setIsButtonActive] = useState(false);
 
   useEffect(() => {
     const isValidAadhaar =
-      aadhaarNumber.length === 12 && /^\d+$/.test(aadhaarNumber);
+      aadhaarNumber &&
+      aadhaarNumber.length === 12 &&
+      /^\d+$/.test(aadhaarNumber);
     setIsButtonActive(isValidAadhaar && isConfirmed);
   }, [aadhaarNumber, isConfirmed]);
+
+  const onSubmit = (data) => {
+    const aadhar = Number(task.answers.Aadhaar_No);
+    const aadharSubmit = Number(data.aadhaarNumber);
+    if (aadhar == aadharSubmit) {
+      navigate("epan-otp-acept");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Mismatch",
+        text: "The Aadhaar numbers do not match. Please try again.",
+      });
+    }
+  };
 
   return (
     <div className={styles["style-0"]}>
@@ -142,6 +174,32 @@ const EPANAdhar = () => {
               </div>
               <div className={styles["style-62"]}>
                 <div className={styles["style-63"]}>
+                  <div
+                    style={{ display: "flex", flexDirection: "row" }}
+                    className={styles["warbox"]}
+                  >
+                    <div>
+                      <img
+                        alt="warning_icon"
+                        style={{
+                          verticalAlign: "middle",
+                          width: "16px",
+                          height: "16px",
+                          marginRight: "8px",
+                        }}
+                        src={warningSvg}
+                        aria-disabled="false"
+                      />
+                    </div>
+                    <div>
+                      <strong style={{ fontWeight: 700 }}>Warning :</strong> As
+                      per provisions of Section 139A of Income Tax Act, 1961, a
+                      person should not possess more than one PAN and as per
+                      Section 272B(1) If a person fails to comply with the
+                      provisions of section 139A i.e. if a person possesses more
+                      than one PAN, it will attract a penalty of Rs. 10,000.
+                    </div>
+                  </div>
                   <div className={styles["style-64"]}>
                     <span className={styles["style-65"]}>Remember:</span> It's
                     an Aadhaar e-KYC based process and allotment of PAN is free
@@ -149,86 +207,126 @@ const EPANAdhar = () => {
                     the applicant. Help?
                   </div>
                 </div>
-                <div className={styles["style-66"]}>
-                  <div className={styles["style-67"]}>
-                    Enter your 12 digit Aadhaar Number for PAN allotment{" "}
-                    <span className={styles["style-68"]}>*</span>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <div className={styles["style-66"]}>
+                    <div className={styles["style-67"]}>
+                      Enter your 12 digit Aadhaar Number for PAN allotment{" "}
+                      <span className={styles["style-68"]}>*</span>
+                    </div>
+                    <div className={styles["style-69"]}>
+                      <input
+                        type="text"
+                        placeholder="eg - 8969 1232 9200"
+                        className={`${styles.input} ${
+                          errors.aadhaarNumber ? styles.inputError : ""
+                        }`}
+                        maxLength="12"
+                        {...register("aadhaarNumber", {
+                          required: "Aadhaar number is required",
+                          pattern: {
+                            value: /^\d{12}$/,
+                            message: "Aadhaar number must be 12 digits",
+                          },
+                        })}
+                      />
+                      {errors.aadhaarNumber && (
+                        <div
+                          className={`${styles.customErrorMessage} mt-2`}
+                          role="alert"
+                        >
+                          <div className={styles.customErrorContent}>
+                            <div>
+                              <img
+                                alt="errorIcon"
+                                className={styles.customErrorIcon}
+                                src={roundedErrorIcon}
+                                aria-disabled="false"
+                              />
+                            </div>
+                            <div>
+                              <strong className={styles.customErrorStrong}>
+                                Error:{" "}
+                              </strong>
+                              This is a Mandatory Field.
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <div className={styles["style-69"]}>
-                    <input
-                      type="text"
-                      className={styles["style-70"]}
-                      maxLength="12"
-                      value={aadhaarNumber}
-                      onChange={(e) => setAadhaarNumber(e.target.value)}
-                    />
+                  <div className={styles["style-71"]}>
+                    <div className={styles["style-72"]}>
+                      <input
+                        className={styles["style-73"]}
+                        type="checkbox"
+                        id="defaultCheck1"
+                        checked={isConfirmed}
+                        onChange={() => setIsConfirmed(!isConfirmed)}
+                      />
+                      <label
+                        className={styles["style-74"]}
+                        htmlFor="defaultCheck1"
+                      >
+                        I confirm that
+                        <span className={styles["style-75"]}>*</span>
+                      </label>
+                    </div>
                   </div>
-                </div>
-                <div className={styles["style-71"]}>
-                  <div className={styles["style-72"]}>
-                    <input
-                      className={styles["style-73"]}
-                      type="checkbox"
-                      id="defaultCheck1"
-                      checked={isConfirmed}
-                      onChange={() => setIsConfirmed(!isConfirmed)}
-                    />
-                    <label
-                      className={styles["style-74"]}
-                      htmlFor="defaultCheck1"
-                    >
-                      I confirm that
-                      <span className={styles["style-75"]}>*</span>
-                    </label>
+                  <div className={styles["style-76"]}>
+                    <div className={styles["style-77"]}>
+                      1. I have never been allotted a Permanent Account
+                      Number(PAN)
+                    </div>
+                    <div className={styles["style-78"]}>
+                      2. My active mobile number is linked with Aadhaar
+                    </div>
+                    <div className={styles["style-79"]}>
+                      3. My complete date of birth (DD-MM-YYYY) is available on
+                      Aadhaar card
+                    </div>
+                    <div className={styles["style-80"]}>
+                      4. I am not minor as on application date of Permanent
+                      Account Number(PAN)
+                    </div>
                   </div>
-                </div>
-                <div className={styles["style-76"]}>
-                  <div className={styles["style-77"]}>
-                    1. I have never been allotted a Permanent Account
-                    Number(PAN)
-                  </div>
-                  <div className={styles["style-78"]}>
-                    2. My active mobile number is linked with Aadhaar
-                  </div>
-                  <div className={styles["style-79"]}>
-                    3. My complete date of birth (DD-MM-YYYY) is available on
-                    Aadhaar card
-                  </div>
-                  <div className={styles["style-80"]}>
-                    4. I am not minor as on application date of Permanent
-                    Account Number(PAN)
-                  </div>
-                </div>
-              </div>
-              <div className={styles["style-81"]}>
-                <div className={styles["style-82"]}>
-                  <div className={styles["style-83"]}>
-                    <button className={styles["style-84"]}>Cancel</button>
-                  </div>
-                  <div className={styles["style-85"]}>
-                    <button
-                      className={styles["style-86"]}
-                      style={{
-                        backgroundColor: isButtonActive
-                          ? "rgb(41, 57, 141)"
-                          : "rgb(193, 193, 193)",
-                        color: isButtonActive
-                          ? "rgb(255, 255, 255)"
-                          : "rgb(126, 126, 126)",
-                      }}
-                      disabled={!isButtonActive}
-                    >
-                      <div className={styles["style-87"]}>
-                        Continue
-                        <span className={styles["style-88"]}>
-                          <span className={styles["style-89"]}>
-                            <img src={nextIconPrimary} alt="next icon" />
-                          </span>
-                        </span>
+                  <div className={styles["style-81"]}>
+                    <div className={styles["style-82"]}>
+                      <div className={styles["style-83"]}>
+                        <button
+                          type="button"
+                          className={styles["style-84"]}
+                          onClick={() => navigate(-1)}
+                        >
+                          Cancel
+                        </button>
                       </div>
-                    </button>
+                      <div className={styles["style-85"]}>
+                        <button
+                          type="submit"
+                          className={styles["style-86"]}
+                          style={{
+                            backgroundColor: isButtonActive
+                              ? "rgb(41, 57, 141)"
+                              : "rgb(193, 193, 193)",
+                            color: isButtonActive
+                              ? "rgb(255, 255, 255)"
+                              : "rgb(126, 126, 126)",
+                          }}
+                          disabled={!isButtonActive}
+                        >
+                          <div className={styles["style-87"]}>
+                            Continue
+                            <span className={styles["style-88"]}>
+                              <span className={styles["style-89"]}>
+                                <img src={nextIconPrimary} alt="next icon" />
+                              </span>
+                            </span>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

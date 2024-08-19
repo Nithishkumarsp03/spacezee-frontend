@@ -1,7 +1,10 @@
-import React from "react";
 import styles from "./DaAccountHeader.module.css";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../../redux/features/user/userTaskSlice";
 
 const DaAccountHeader = () => {
+  const task = useSelector(selectTask);
+  console.log(task);
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -14,11 +17,11 @@ const DaAccountHeader = () => {
               />
             </a>
             <div className={styles.accountType}>
-              <span>Savings Account</span>
+              <span>{task?.name}</span>
             </div>
           </div>
           <div className={styles.question}>
-            Question No: <span>SBA_001AA</span>
+            Question No: <span>{task?.taskName}</span>
           </div>
         </div>
       </nav>

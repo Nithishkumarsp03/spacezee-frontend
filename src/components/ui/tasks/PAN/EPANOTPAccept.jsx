@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import styles from "./EPANOTPAccept.module.css";
-import { FaCheck } from "react-icons/fa"; // Importing the white tick icon
 import breadcrumb_img from "./assets/img/breadCrumb.svg";
 import line_right_arrow from "./assets/img/line_right_arrow.png";
 import line_right_arrow_active from "./assets/img/line_right_active1_arrow.png";
 import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
+import useNavigateToDirectory from "../../../../hooks/useNavigateToDirectory";
 
 const EPANOTPAccept = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [isButtonActive, setIsButtonActive] = useState(false);
+  const navigate = useNavigateToDirectory();
 
   useEffect(() => {
     setIsButtonActive(isConfirmed);
@@ -243,7 +244,12 @@ const EPANOTPAccept = () => {
               <div className={styles["style-80"]}>
                 <div className={styles["style-81"]}>
                   <div className={styles["style-82"]}>
-                    <button className={styles["style-83"]}>Cancel</button>
+                    <button
+                      className={styles["style-83"]}
+                      onClick={() => navigate(-1)}
+                    >
+                      Cancel
+                    </button>
                   </div>
                   <div className={styles["style-84"]}>
                     <button
@@ -257,6 +263,7 @@ const EPANOTPAccept = () => {
                           : "rgb(126, 126, 126)",
                       }}
                       disabled={!isButtonActive}
+                      onClick={() => navigate("epan-otp")}
                     >
                       <div className={styles["style-86"]}>
                         Continue

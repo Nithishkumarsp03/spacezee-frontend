@@ -2,7 +2,10 @@ import styles from "./PANHeader.module.css";
 import down_arrow from "./assets/img/down-arrow.svg";
 import dark_mode from "./assets/img/dark-mode.svg";
 import search_icon from "./assets/img/search-icon-prev.svg";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../redux/features/user/userTaskSlice";
 const PANHeader = () => {
+  const task = useSelector(selectTask);
   return (
     <>
       <div className={styles["style-3"]}>
@@ -10,7 +13,8 @@ const PANHeader = () => {
           <div className={styles["style-5"]}>
             <div className={styles["style-6"]}>
               <h1 className={styles["style-7"]}>
-                <a className={styles["style-8"]}></a>Question No: EPAN_001AA
+                <a className={styles["style-8"]}></a>Question No:{" "}
+                {task?.taskName}
               </h1>
             </div>
           </div>
@@ -19,7 +23,6 @@ const PANHeader = () => {
               <section className={styles["style-11"]}>
                 <div className={styles["style-12"]}>
                   <div className={styles["style-13"]}>
-                    <i className={styles["style-14"]}></i>
                     <span className={styles["style-15"]}> Call Us</span>
                     <span className={styles["style-16"]}>
                       <span className={styles["style-17"]}>

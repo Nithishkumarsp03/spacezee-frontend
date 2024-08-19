@@ -674,11 +674,27 @@
 }
 
 .style-70 {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
   color: rgb(13, 110, 253);
-  text-decoration: none solid rgb(13, 110, 253);
+  text-decoration: none;
+  cursor: pointer; /* Ensures the hand icon appears on hover */
+  position: relative; /* Necessary for the underline effect */
+}
+
+.style-70::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to control the distance between text and underline */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: rgb(13, 110, 253); /* Matches the text color */
+  transform: scaleX(0); /* Start with the underline hidden */
+  transform-origin: left;
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.style-70:hover::after {
+  transform: scaleX(1); /* Expand the underline on hover */
 }
 
 .style-71 {

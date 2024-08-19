@@ -15,8 +15,10 @@ import account_misuse from "./assets/img/Account Misuse.svg";
 import tds_cash from "./assets/img/TDS On Cash Withdrawal.svg";
 import update_profile from "./assets/img/update profile.png";
 import arrow_right from "./assets/img/arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 
 const PANContent = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles["style-84"]}>
       <div className={styles["style-85"]}>
@@ -310,7 +312,10 @@ const PANContent = () => {
                             />
                           </span>
                           <div className={styles["style-191"]}>
-                            <span className={styles["style-192"]}>
+                            <span
+                              className={styles["style-192"]}
+                              onClick={() => navigate("epan-route")}
+                            >
                               Instant E-PAN
                             </span>
                           </div>

@@ -4,6 +4,7 @@ import TaskFooter from "./TaskFooter";
 import styles from "./TaskContent.module.css";
 
 const TaskContent = ({
+  courseId,
   task,
   onPrevTask,
   onNextTask,
@@ -20,6 +21,8 @@ const TaskContent = ({
         onNextTask={onNextTask}
         isPrevDisabled={isPrevDisabled}
         isNextDisabled={isNextDisabled}
+        task={task}
+        courseId={courseId}
       />
     </Col>
   );

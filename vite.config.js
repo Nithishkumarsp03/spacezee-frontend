@@ -1,5 +1,8 @@
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default {
+console.log("Environment Variables:", import.meta.env);
+
+export default defineConfig({
   plugins: [react()],
-};
+});

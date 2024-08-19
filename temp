@@ -1,10 +1,32 @@
-ol]io]'/M0UUUUUUUUUUUUU
-
-
-
-
-
-
-
-,M
- 
+{
+    "name": "Savings Account",
+    "taskName": "SBA_001AA",
+    "details": "<div>Mr. Rohit Ram is a resident individual starting a textile business in Bengaluru and is eligible for a government grant. The grant money goes directly into his bank account and he wants to open a savings account to receive and safeguard the funds. Can you guide him on opening a savings account with his following personal and residential details?</div><table><tr><td><strong>Personal Details:</strong></td><td><strong>Nominee's Details:</strong></td></tr><tr><td>Name: Rohit Ram</td><td>Nominee's Name: Vidya Balan</td></tr><tr><td>Mobile No: 2352112032</td><td>Relationship with the Applicant: Wife</td></tr><tr><td>PAN: SASXD1267I</td><td>Date of Birth: June 28, 1987</td></tr><tr><td>Email ID: rohit28@nergymail.com</td><td>Nominee's Address: Indiranagar, 8th Cross Road, Rajaji Nagar</td></tr><tr><td>Aadhaar No: 9999 0000 6435</td><td>City/Village: Rajaji Nagar</td></tr><tr><td>Date of Birth: January 21, 1983</td><td>District: Bengaluru</td></tr><tr><td>Name of Spouse: Vidya Balan</td><td>State: Karnataka</td></tr><tr><td>Name of Father: Radhakrishnan</td><td>PIN Code: 560010</td></tr><tr><td>Name of Mother: Revathy Radhakrishnan</td></tr><tr><td><strong>Address Details (Home):</strong></td><td><strong>Professional Details:</strong></td></tr><tr><td>Address: Indiranagar, 8th Cross Road</td><td>Occupation: Sole Proprietorship</td></tr><tr><td>City/Village: Rajaji Nagar</td><td>Occupation Type: Manufacturing and Production</td></tr><tr><td>District: Bengaluru</td><td>Source of Income: Business</td></tr><tr><td>State: Karnataka</td><td>Gross Annual Income: ₹2,90,000</td></tr><tr><td>PIN Code: 560010</td><td>Company/Organisation Name: Ram Raj Textiles</td></tr><tr><td>Branch: Rajaji Nagar</td></tr></table><br><div>श्री रोहित राम बेंगलुरु में कपड़ा व्यवसाय शुरू करने वाले एक निवासी हैं और सरकारी अनुदान के लिए पात्र हैं। अनुदान राशि सीधे उनके बैंक खाते में जाती है और वह धनराशि प्राप्त करने और सुरक्षित रखने के लिए एक बचत खाता खोलना चाहते है। क्या आप उनके निम्नलिखित व्यक्तिगत और आवासीय विवरण के साथ बचत खाता खोलने में उनका मार्गदर्शन कर सकते हैं?</div><table><tr><td><strong>व्यक्तिगत विवरण:</strong></td><td><strong>नामांकित व्यक्ति का विवरण:</strong></td></tr><tr><td>नाम: रोहित राम</td><td>नामांकित व्यक्ति का नाम: विद्या बालन</td></tr><tr><td>मोबाइल नंबर: 2352112032</td><td>आवेदक के साथ संबंध: पत्नी</td></tr><tr><td>स्थायी खाता संख्या (पैन): SASXD1267I</td><td>जन्मतिथि: 28 जून 1987</td></tr><tr><td>ईमेल आईडी: rohit28@nergymail.com</td><td>नामांकित व्यक्ति का पता: इंदिरानगर, 8वां क्रॉस रोड, राजाजी नगर</td></tr><tr><td>आधार संख्या: 9999 0000 6435</td><td>शहर/गांव: राजाजी नगर</td></tr><tr><td>जन्मतिथि: 21 जनवरी 1983</td><td>जिला: बेंगलुरु</td></tr><tr><td>जीवनसाथी का नाम: विद्या बालन</td><td>राज्य: कर्नाटक</td></tr><tr><td>पिता का नाम: राधाकृष्णन</td><td>पिन कोड: 560010</td></tr><tr><td>माता का नाम: रेवती राधाकृष्णन</td></tr><tr><td><strong>पते का विवरण (घर):</strong></td><td><strong>व्यावसायिक विवरण:</strong></td></tr><tr><td>पता: इंदिरानगर, 8वां क्रॉस रोड</td><td>व्यवसाय: एकल स्वामित्व</td></tr><tr><td>शहर/गांव: राजाजी नगर</td><td>व्यवसाय का प्रकार: निर्माण और उत्पादन</td></tr><tr><td>जिला: बेंगलुरु</td><td>आय का स्रोत: व्यवसाय</td></tr><tr><td>राज्य: कर्नाटक</td><td>सकल वार्षिक आय: ₹2,90,000</td></tr><tr><td>पिन कोड: 560010</td><td>कंपनी/संगठन का नाम: राम राज टेक्सटाइल्स</td></tr><tr><td>शाखा: राजाजी नगर</td></tr></table>",
+    "id": "66c2e7cba0c912ec13189299",
+    "taskId": "66c2e7cba0c912ec1318929a",
+    "questions": {
+        "Name": "Rohit Ram",
+        "Mobile_No": "2352112032",
+        "PAN": "SASXD1267I",
+        "Email_ID": "rohit28@nergymail.com",
+        "Aadhaar_No": "9999 0000 6435",
+        "Date_of_Birth": "January 21, 1983",
+        "Name_of_Spouse": "Vidya Balan",
+        "Name_of_Father": "Radhakrishnan",
+        "Name_of_Mother": "Revathy Radhakrishnan",
+        "Address": "Indiranagar, 8th Cross Road",
+        "City_Village": "Rajaji Nagar",
+        "District": "Bengaluru",
+        "State": "Karnataka",
+        "PIN_Code": "560010",
+        "Nominee_Name": "Vidya Balan",
+        "Nominee_Relationship": "Wife",
+        "Nominee_Address": "Indiranagar, 8th Cross Road, Rajaji Nagar, Bengaluru, Karnataka, 560010",
+        "Occupation": "Sole Proprietorship",
+        "Occupation_Type": "Manufacturing and Production",
+        "Source_of_Income": "Business",
+        "Gross_Annual_Income": "₹2,90,000",
+        "Company_Organisation_Name": "Ram Raj Textiles",
+        "Branch": "Rajaji Nagar"
+    }
+}

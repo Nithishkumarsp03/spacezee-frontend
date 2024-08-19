@@ -2,11 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
-const PROD = "https://sl-backend.vercel.app/api";
-const DEV = "http://localhost:5000/api";
+const url = import.meta.env.VITE_URL_BACKEND;
 const baseQuery = fetchBaseQuery({
-  // url
-  baseUrl: DEV,
+  baseUrl: url,
 
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
@@ -33,15 +31,10 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
     //* Send Refresh
     console.log("Sending refresh token");
 
-    const res = await fetch(
-      // "https://sl-backend.vercel.app/api/auth/refresh-token",
-
-      "http://localhost:5000/api/auth/refresh-token",
-      {
-        method: "POST",
-        credentials: "include",
-      }
-    );
+    const res = await fetch(`${url}/auth/refresh-token`, {
+      method: "POST",
+      credentials: "include",
+    });
 
     const data = await res.json();
 

@@ -124,6 +124,9 @@
 
 .style-17 {
   margin: 0px 0px 4px;
+
+  padding-left: 0px;
+
   display: flex;
   list-style: none;
 }

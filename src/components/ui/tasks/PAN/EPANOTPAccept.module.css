@@ -1120,19 +1120,15 @@
 }
 
 .style-85 {
-  margin: 0px;
   padding: 0px 24px;
-  box-sizing: border-box;
-  pointer-events: none;
-  display: inline-block;
-  align-self: center;
+
   font-weight: 500;
   line-height: 20.96px;
   text-align: center;
   text-decoration: none solid rgb(126, 126, 126);
-  vertical-align: middle;
+
   cursor: pointer;
-  user-select: none;
+
   border: 1px solid rgb(193, 193, 193);
   font-size: 16px;
   border-radius: 4px;

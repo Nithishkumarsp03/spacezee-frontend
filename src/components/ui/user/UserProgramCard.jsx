@@ -35,7 +35,6 @@ const UserProgramCard = () => {
   const program = useSelector(selectCommonSelectedProgram);
   const dispatch = useDispatch();
   const { data, error, isLoading } = useGetAllProgramsQuery("info");
-
   useEffect(() => {
     if (data && data.data) {
       dispatch(setAllPrograms(data.data));
@@ -60,7 +59,6 @@ const UserProgramCard = () => {
   }
 
   const handleSelectProgram = (program) => {
-    console.log(program);
     dispatch(setSelectedProgram(program));
   };
 

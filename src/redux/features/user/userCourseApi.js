@@ -13,6 +13,18 @@ const userCourseApi = baseApi.injectEndpoints({
         url: `/task/${id}`,
         method: "GET",
       }),
+      providesTags: (result, error, id) => [{ type: "CourseMaterial", id }],
+    }),
+
+    inputJwt: builder.mutation({
+      query: (jwt) => ({
+        url: "/jwt",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: { token: jwt },
+      }),
     }),
   }),
 });
@@ -20,4 +32,5 @@ const userCourseApi = baseApi.injectEndpoints({
 export const {
   useGetLearningMaterialByIdQuery,
   useGetCourseMaterialByIdQuery,
+  useInputJwtMutation,
 } = userCourseApi;

@@ -14,7 +14,7 @@ const CourseUI = () => {
   const handleBreadcrumbClick = () => {
     navigate("/home", { replace: true });
   };
-
+  console.log(selectedCourse);
   return (
     <Container className="mt-4">
       <Row>
@@ -41,6 +41,10 @@ const CourseUI = () => {
                 image={item.courseImage}
                 id={item._id}
                 name={selectedCourse.name}
+                barView={
+                  selectedCourse.name === "Learning Materials" ? false : true
+                }
+                progress={item?.completedPercentage}
               />
             </Col>
           ))}

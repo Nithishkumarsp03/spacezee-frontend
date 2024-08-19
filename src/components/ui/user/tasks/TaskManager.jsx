@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TaskSidebar from "./TaskSidebar";
 import TaskContent from "./TaskContent";
@@ -10,16 +10,35 @@ import { useGetCourseMaterialByIdQuery } from "../../../../redux/features/user/u
 
 const TaskManager = () => {
   const { id } = useParams();
-  const { data, error, isLoading } = useGetCourseMaterialByIdQuery(id);
+  const { data, error, isLoading, refetch } = useGetCourseMaterialByIdQuery(id);
 
   const course = data?.data;
   const [selectedTaskIndex, setSelectedTaskIndex] = useState(0);
 
+  const hasInitialized = useRef(false);
+
   useEffect(() => {
-    if (course?.courseContents?.length > 0) {
-      setSelectedTaskIndex(0); // Select the first task by default
+    const broadcast = new BroadcastChannel("task-updates");
+
+    // Run this code block only once on component load
+    if (!hasInitialized.current && course?.courseContents?.length > 0) {
+      setSelectedTaskIndex(0);
+      hasInitialized.current = true;
     }
-  }, [course]);
+
+    broadcast.onmessage = (event) => {
+      console.log("Received message on course page:", event.data);
+      if (event.data.type === "TASK_COMPLETED" && event.data.courseId === id) {
+        console.log("Refetching course material...");
+
+        refetch();
+      }
+    };
+
+    return () => {
+      broadcast.close();
+    };
+  }, [course, refetch, id]);
 
   if (isLoading) {
     return <SpinnerComponent />;
@@ -45,6 +64,7 @@ const TaskManager = () => {
             <BreadcrumbProgress
               name={course?.name}
               courseImage={course?.courseImage}
+              completedTaskPercentage={course?.completedTaskPercentage}
             />
 
             <div className={`${styles.tasksWrapper} row`}>
@@ -58,6 +78,7 @@ const TaskManager = () => {
 
               <div className={`col-md-9`}>
                 <TaskContent
+                  courseId={course?._id}
                   task={course?.courseContents[selectedTaskIndex]}
                   onPrevTask={handlePrevTask}
                   onNextTask={handleNextTask}

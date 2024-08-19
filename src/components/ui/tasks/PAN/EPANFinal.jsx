@@ -1,10 +1,12 @@
-import React from "react";
 import styles from "./EPANFinal.module.css";
 import breadCrumb from "./assets/img/breadCrumb.svg";
 import tickIcon from "./assets/img/tick_ic.svg";
 import nextIconPrimary from "./assets/img/nextIconPrimary.svg";
+import { useCompleteTaskWithBroadcast } from "../../../../hooks/useCompleteTaskWithBroadcast";
 
 const EPANFinal = () => {
+  useCompleteTaskWithBroadcast();
+
   return (
     <div className={styles["style-0"]}>
       <div className={`${styles["style-1"]} my-3`}>

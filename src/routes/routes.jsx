@@ -42,6 +42,7 @@ import EPANOTPAccept from "../components/ui/tasks/PAN/EPANOTPAccept";
 import EPANOtp from "../components/ui/tasks/PAN/EPANOtp";
 import EPANFinal from "../components/ui/tasks/PAN/EPANFinal";
 import EPANKYC from "../components/ui/tasks/PAN/EPANKYC";
+import TaskLayout from "../components/layout/TaskLayout";
 
 const router = createBrowserRouter([
   {
@@ -68,14 +69,32 @@ const router = createBrowserRouter([
   },
   userRoutes,
   adminRoutes,
-  { path: "emi", element: <UserEMIApp /> },
-  { path: "account", element: <DAApp /> },
   {
-    path: "account/savings-account",
-    element: <DaAccountCreation />,
+    path: "task/emi",
+    element: (
+      <TaskLayout>
+        <UserEMIApp />
+      </TaskLayout>
+    ),
+  },
+  {
+    path: "task/savings",
+    element: (
+      <TaskLayout>
+        <DAApp />
+      </TaskLayout>
+    ),
+  },
+  {
+    path: "task/savings/savings-account",
+    element: (
+      <TaskLayout>
+        <DaAccountCreation />
+      </TaskLayout>
+    ),
     children: [
       {
-        path: "step1",
+        index: true,
         element: <DaAccountFormSection />,
       },
       {
@@ -181,8 +200,12 @@ const router = createBrowserRouter([
     children: [{ index: true, element: <SpendingContent /> }],
   },
   {
-    path: "pan",
-    element: <PANApp />,
+    path: "task/pan",
+    element: (
+      <TaskLayout>
+        <PANApp />
+      </TaskLayout>
+    ),
     children: [
       { index: true, element: <PANContent /> },
       { path: "epan-route", element: <EPANRoute /> },

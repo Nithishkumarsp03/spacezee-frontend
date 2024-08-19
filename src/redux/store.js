@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./features/auth/authSlice";
 import commonProgramReducer from "./features/common/commonProgramSlice";
 import userCourseReducer from "./features/user/userCourseSlice";
+import userTaskReducer from "./features/user/userTaskSlice";
 import { baseApi } from "./api/baseApi";
 import {
   persistReducer,
@@ -51,6 +52,7 @@ export const store = configureStore({
     auth: persistedAuthReducer,
     commonPrograms: persistedCommonProgramReducer,
     userCourse: persistedUserCourseReducer,
+    userTask: userTaskReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

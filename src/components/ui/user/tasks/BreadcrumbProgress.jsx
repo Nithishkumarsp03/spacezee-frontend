@@ -3,19 +3,21 @@ import styles from "./BreadcrumbProgress.module.css";
 import { selectSelectedCourse } from "../../../../redux/features/user/userCourseSlice";
 import { useSelector } from "react-redux";
 import { selectCommonSelectedProgram } from "../../../../redux/features/common/commonProgramSlice";
-
-const BreadcrumbProgress = ({ name, courseImage }) => {
+import { useNavigate } from "react-router-dom";
+const BreadcrumbProgress = ({ name, courseImage, completedTaskPercentage }) => {
   const selectedCourse = useSelector(selectSelectedCourse);
   const selectedProgram = useSelector(selectCommonSelectedProgram);
+  const navigate = useNavigate();
+
   return (
     <div className="row mb-5">
       <Col xs={12} className="mb-2">
         <nav aria-label="breadcrumb">
           <Breadcrumb className={styles.breadcrumb}>
-            <Breadcrumb.Item href="/home">
+            <Breadcrumb.Item onClick={() => navigate("/home")}>
               {selectedProgram.name}
             </Breadcrumb.Item>
-            <Breadcrumb.Item href="/home/courses/practicals">
+            <Breadcrumb.Item href="/home/courses/regular">
               {selectedCourse.name}
             </Breadcrumb.Item>
             <Breadcrumb.Item active>{name}</Breadcrumb.Item>
@@ -31,15 +33,17 @@ const BreadcrumbProgress = ({ name, courseImage }) => {
                 <div className="progress" style={{ height: "10px" }}>
                   <div
                     className="progress-bar bg-warning"
-                    style={{ width: "0%" }}
+                    style={{ width: `${completedTaskPercentage}%` }}
                     role="progressbar"
-                    aria-valuenow="0"
+                    aria-valuenow={completedTaskPercentage}
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
               </div>
-              <div className={styles.progressCount}>0%</div>
+              <div className={styles.progressCount}>
+                {completedTaskPercentage}%
+              </div>
             </div>
           </div>
         </Col>
