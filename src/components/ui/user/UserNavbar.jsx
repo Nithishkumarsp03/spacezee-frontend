@@ -25,7 +25,7 @@ const UserNavbar = () => {
     <Navbar bg="light" expand="lg" className="border-bottom">
       <Container className="container-lg">
         <Navbar.Brand href="/home">
-          <img src={logo} alt="Nergyvidya logo" height="40" />
+          <img style={{ height: "60px" }} src={logo} alt=" logo" height="40" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

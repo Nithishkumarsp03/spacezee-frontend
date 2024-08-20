@@ -30,7 +30,10 @@
 
 .auth-logo {
   background-color: #f8f9fa;
-  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: inline-block;

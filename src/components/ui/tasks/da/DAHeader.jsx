@@ -1,5 +1,5 @@
 import styles from "./styles/DAHeader.module.css";
-import logo from "./assets/nergy_vidya_logo.svg";
+import logo from "./assets/logo.png";
 import helpIcon from "./assets/help-icon.svg";
 import callSupportIcon from "./assets/call-support.svg";
 import { useSelector } from "react-redux";
@@ -141,7 +141,7 @@ const DAHeader = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="Nergy Vidya" height="40" />
+            <img src={logo} alt="logo" style={{ height: "60px" }} />
           </a>
           <button
             className="navbar-toggler"

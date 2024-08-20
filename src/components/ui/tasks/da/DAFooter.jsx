@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles/DAFooter.module.css";
-import nergyVidyaWhiteLogo from "./assets/nergy_vidya_white_logo.svg";
 import facebookIcon from "./assets/facebook-icon.svg";
 import twitterIcon from "./assets/twitter-icon.svg";
 import instagramIcon from "./assets/instagram-icon.svg";
@@ -11,11 +10,6 @@ const DAFooter = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm-4">
-            <img
-              src={nergyVidyaWhiteLogo}
-              className={styles.footerLogo}
-              alt="Nergy Vidya"
-            />
             <div className={styles.socialIcons}>
               <a href="#">
                 <img src={facebookIcon} alt="Facebook" />

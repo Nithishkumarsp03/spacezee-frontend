@@ -22,7 +22,7 @@ const UserFooter = () => (
             </a>
           </li>
         </ul>
-        <span className="text-muted">© SL & IL Tech platform Nergyvidya</span>
+        <span className="text-muted">© SL & IL Tech platform</span>
       </div>
     </Container>
   </footer>
