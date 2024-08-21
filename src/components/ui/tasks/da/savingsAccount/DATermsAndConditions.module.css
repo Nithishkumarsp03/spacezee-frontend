@@ -99,8 +99,16 @@
 }
 
 .radioOption input[type="radio"]:disabled {
-  opacity: 0.5;
+  border: 2px solid #6b6f8c;
+  background-color: #f0f0f0;
   cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.radioOption input[type="radio"]:disabled::before {
+  background-color: #6b6f8c;
+  width: 10px;
+  height: 10px;
 }
 
 .radioOption label {

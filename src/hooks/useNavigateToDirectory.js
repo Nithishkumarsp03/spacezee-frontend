@@ -3,13 +3,23 @@ import { useNavigate, useLocation } from "react-router-dom";
 function useNavigateToDirectory() {
   const navigate = useNavigate();
   const location = useLocation();
+
   const navigateToDirectory = (directory) => {
     if (directory === -1) {
       navigate(-1);
     } else {
-      const currentPath = location.pathname;
-      const basePath = currentPath.substring(0, currentPath.lastIndexOf("/"));
-      navigate(`${basePath}/${directory}`);
+      const basePath = location.pathname.substring(
+        0,
+        location.pathname.lastIndexOf("/")
+      );
+
+      // If the directory is a full path, navigate directly
+      if (directory.startsWith("/")) {
+        navigate(directory);
+      } else {
+        // Otherwise, navigate to the constructed path
+        navigate(`${basePath}/${directory}`);
+      }
     }
   };
 

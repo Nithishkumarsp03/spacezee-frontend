@@ -1,10 +1,10 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useSelector } from "react-redux";
 import { selectTask } from "../../../../../redux/features/user/userTaskSlice";
 import styles from "./DaAccountPersonalDetails.module.css";
 import image from "./assets/step-three-graphics.svg";
+import useNavigateToDirectory from "../../../../../hooks/useNavigateToDirectory";
 
 // Function to convert month number to month name
 const getMonthName = (monthNumber) => {
@@ -32,6 +32,7 @@ const DaAccountPersonalDetails = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigateToDirectory();
 
   const onSubmit = (data) => {
     // Convert month number to full month name
@@ -39,8 +40,6 @@ const DaAccountPersonalDetails = () => {
 
     // Combine day, month name, and year into a single date string
     const enteredDateOfBirth = `${monthName} ${data.Day}, ${data.Year}`;
-    console.log(data.Gender === questions.Gender);
-    console.log(data.Gender, questions.Gender);
     // Validate all inputs against the `questions` object
     const isValid =
       data.Name === questions.Name &&
@@ -52,11 +51,8 @@ const DaAccountPersonalDetails = () => {
       data.Name_of_Mother === questions.Name_of_Mother;
 
     if (isValid) {
-      Swal.fire({
-        icon: "success",
-        title: "Validation Successful",
-        text: "Your personal details have been validated!",
-      });
+      navigate("address-details");
+      console.log("running");
     } else {
       Swal.fire({
         icon: "error",

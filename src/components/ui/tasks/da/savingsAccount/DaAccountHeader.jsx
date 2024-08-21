@@ -1,6 +1,7 @@
 import styles from "./DaAccountHeader.module.css";
 import { useSelector } from "react-redux";
 import { selectTask } from "../../../../../redux/features/user/userTaskSlice";
+import logo from "./assets/logo.png";
 
 const DaAccountHeader = () => {
   const task = useSelector(selectTask);
@@ -11,10 +12,7 @@ const DaAccountHeader = () => {
         <div className={styles.navContent}>
           <div className={styles.brand}>
             <a href="#">
-              <img
-                src="/account/static/media/nergy_vidya_logo.ad0dae067621588aca5a339af18c7c3a.svg"
-                alt="nergy vidya"
-              />
+              <img src={logo} alt="logo" style={{ height: "60px" }} />
             </a>
             <div className={styles.accountType}>
               <span>{task?.name}</span>

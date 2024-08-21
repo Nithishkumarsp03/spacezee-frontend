@@ -1,14 +1,19 @@
 import { useState } from "react";
 import styles from "./DATermsAndConditions.module.css";
 import image from "./assets/step-seven-graphics.svg";
+import { useCompleteTaskWithBroadcast } from "../../../../../hooks/useCompleteTaskWithBroadcast";
 
 const DATermsAndConditions = () => {
   const [termsAccepted, setTermsAccepted] = useState(false);
+  const completeTask = useCompleteTaskWithBroadcast();
 
   const handleCheckboxChange = () => {
     setTermsAccepted(!termsAccepted);
   };
 
+  const handleComplete = async () => {
+    completeTask();
+  };
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -57,7 +62,11 @@ const DATermsAndConditions = () => {
                     </label>
                   </div>
                 </div>
-                <button type="submit" disabled={!termsAccepted}>
+                <button
+                  type="submit"
+                  disabled={!termsAccepted}
+                  onClick={handleComplete}
+                >
                   Open account now
                 </button>
               </div>
