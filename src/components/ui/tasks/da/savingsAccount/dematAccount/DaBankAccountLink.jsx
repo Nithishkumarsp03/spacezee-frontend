@@ -1,14 +1,29 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { useSelector } from "react-redux";
 import styles from "./DaBankAccountLink.module.css";
+import { selectTask } from "../../../../../../redux/features/user/userTaskSlice";
+import useNavigateToDirectory from "../../../../../../hooks/useNavigateToDirectory";
 
 const DaBankAccountLink = () => {
+  const userData = useSelector(selectTask);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const navigate = useNavigateToDirectory();
+
   const [checkboxes, setCheckboxes] = useState({
     checkbox1: true,
     checkbox2: true,
     checkbox3: true,
   });
 
-  const allChecked = Object.values(checkboxes).every(Boolean);
+  const normalizeText = (text) => {
+    return text.trim().toLowerCase();
+  };
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
@@ -16,6 +31,28 @@ const DaBankAccountLink = () => {
       ...prevState,
       [name]: checked,
     }));
+  };
+
+  const onSubmit = (data) => {
+    const isValid =
+      normalizeText(data.branch_Ifsc) ===
+        normalizeText(userData?.questions?.IFSC_Code) &&
+      normalizeText(data.branch_Micr) ===
+        normalizeText(userData?.questions?.Branch_MICR_Code) &&
+      normalizeText(data.account_Number) ===
+        normalizeText(userData?.questions?.Account_Number) &&
+      normalizeText(data.confirm_Account_Number) ===
+        normalizeText(data.account_Number);
+
+    if (isValid && Object.values(checkboxes).every(Boolean)) {
+      navigate("documents"); // Replace with the appropriate next step in your flow
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Validation Error",
+        text: "Please check your inputs and try again.",
+      });
+    }
   };
 
   return (
@@ -26,7 +63,7 @@ const DaBankAccountLink = () => {
       <div className={styles.scrollContainer}>
         <div className={styles.formWrapper}>
           <h2 className={styles.title}>Link Bank Account Using IFSC</h2>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.formGroup}>
               <label className={styles.label}>Branch's IFSC</label>
               <div className={styles.inputWrapper}>
@@ -37,8 +74,11 @@ const DaBankAccountLink = () => {
                   className={styles.input}
                   placeholder="IFSC"
                   autoComplete="off"
+                  {...register("branch_Ifsc", { required: true })}
                 />
-                <div className={styles.error}></div>
+                {errors.branch_Ifsc && (
+                  <div className={styles.error}>Branch IFSC is required</div>
+                )}
               </div>
             </div>
             <div className={styles.formGroup}>
@@ -51,8 +91,11 @@ const DaBankAccountLink = () => {
                   className={styles.input}
                   placeholder="MICR"
                   autoComplete="off"
+                  {...register("branch_Micr", { required: true })}
                 />
-                <div className={styles.error}></div>
+                {errors.branch_Micr && (
+                  <div className={styles.error}>Branch MICR is required</div>
+                )}
               </div>
             </div>
             <div className={styles.formGroup}>
@@ -65,8 +108,13 @@ const DaBankAccountLink = () => {
                   className={styles.input}
                   placeholder="e.g. 4224 5553 2223 55"
                   autoComplete="off"
+                  {...register("account_Number", { required: true })}
                 />
-                <div className={styles.error}></div>
+                {errors.account_Number && (
+                  <div className={styles.error}>
+                    Bank account number is required
+                  </div>
+                )}
               </div>
             </div>
             <div className={styles.formGroup}>
@@ -81,14 +129,19 @@ const DaBankAccountLink = () => {
                   className={styles.input}
                   placeholder="e.g. 4224 5553 2223 55"
                   autoComplete="off"
+                  {...register("confirm_Account_Number", { required: true })}
                 />
-                <div className={styles.error}></div>
+                {errors.confirm_Account_Number && (
+                  <div className={styles.error}>
+                    Confirm bank account number is required
+                  </div>
+                )}
               </div>
             </div>
             <button
               type="submit"
               className={styles.submitBtn}
-              disabled={!allChecked}
+              disabled={!Object.values(checkboxes).every(Boolean)}
             >
               Continue
             </button>
@@ -120,7 +173,7 @@ const DaBankAccountLink = () => {
                   onChange={handleCheckboxChange}
                 />
                 <label className={styles.checkboxLabel}>
-                  I authorise Nergy Limited to operate the movement of
+                  I authorize Nergy Limited to operate the movement of
                   securities from my demat account for any obligation created at
                   the exchange through my order(s)/trade(s) as per the Terms &
                   Conditions of the Online Delivery Instruction.

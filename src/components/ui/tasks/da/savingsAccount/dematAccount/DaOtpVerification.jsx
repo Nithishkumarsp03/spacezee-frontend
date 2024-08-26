@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 import styles from "./DaOtpVerification.module.css";
 import { FaCheckSquare, FaSquare } from "react-icons/fa";
+import useNavigateToDirectory from "../../../../../../hooks/useNavigateToDirectory";
 
 const DaOtpVerification = () => {
   const [otp, setOtp] = useState(new Array(4).fill(""));
   const [isChecked, setIsChecked] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
+  const navigate = useNavigateToDirectory();
+
+  const correctOtp = "1234";
 
   useEffect(() => {
     const isOtpComplete = otp.every((digit) => digit !== "");
@@ -26,6 +31,19 @@ const DaOtpVerification = () => {
     setIsChecked((prevChecked) => !prevChecked);
   };
 
+  const handleVerifyOtp = () => {
+    const enteredOtp = otp.join("");
+    if (enteredOtp === correctOtp) {
+      navigate("success"); // Replace "next-step" with your next directory or path
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Invalid OTP",
+        text: "The OTP you entered is incorrect. Please try again.",
+      });
+    }
+  };
+
   return (
     <section className={styles.container}>
       <div className={styles.innerContainer}>
@@ -36,7 +54,7 @@ const DaOtpVerification = () => {
             </p>
             <p>
               Transaction IDESIGN 230525154003799EKSSYSKI/BYJGYFXTYNNIRKHGKEVS
-              dated 2024-08-11T02:45
+              dated {new Date(Date.now()).toISOString()}
             </p>
           </div>
 
@@ -103,6 +121,7 @@ const DaOtpVerification = () => {
               type="button"
               className={styles.verifyButton}
               disabled={!isButtonEnabled}
+              onClick={handleVerifyOtp}
             >
               Verify OTP
             </button>

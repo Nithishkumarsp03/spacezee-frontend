@@ -1,19 +1,63 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { useSelector } from "react-redux";
 import styles from "./DaNomineeDetails.module.css";
+import { selectTask } from "../../../../../../redux/features/user/userTaskSlice";
+import { useNavigate } from "react-router-dom";
+import useNavigateToDirectory from "../../../../../../hooks/useNavigateToDirectory";
 
 const DaNomineeDetails = () => {
-  const [nomineeName, setNomineeName] = useState("");
-  const [relationship, setRelationship] = useState("");
-  const [dob, setDob] = useState({ day: "", month: "", year: "" });
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [district, setDistrict] = useState("");
-  const [state, setState] = useState("");
-  const [pincode, setPincode] = useState("");
+  const userData = useSelector(selectTask);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const navigate = useNavigateToDirectory();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
+  const normalizeText = (text) => {
+    return text.trim().toLowerCase().replace(/\s+/g, "");
+  };
+
+  const formatDob = (day, month, year) => {
+    return `${day}-${month}-${year}`;
+  };
+
+  const normalizeAddress = (address) => {
+    return address.replace(/\s+/g, "").toLowerCase();
+  };
+
+  const onSubmit = (data) => {
+    const formAddress = `${data.address},${data.city},${data.district},${data.state},${data.pincode}`;
+    const normalizedFormAddress = normalizeAddress(formAddress);
+    const normalizedDbAddress = normalizeAddress(
+      userData?.questions?.Nominee_Address
+    );
+    const isValid =
+      normalizeText(data.nominee_Name) ===
+        normalizeText(userData?.questions?.Nominee_Name) &&
+      normalizeText(data.relationship) ===
+        normalizeText(userData?.questions?.Nominee_Relationship) &&
+      normalizeText(formatDob(data.day, data.month, data.year)) ===
+        normalizeText(
+          formatDob(
+            new Date(userData?.questions?.Nominee_Date_of_Birth).getDate(),
+            new Date(userData?.questions?.Nominee_Date_of_Birth).getMonth() + 1,
+            new Date(userData?.questions?.Nominee_Date_of_Birth).getFullYear()
+          )
+        ) &&
+      normalizedFormAddress === normalizedDbAddress;
+
+    if (isValid) {
+      navigate("last-step");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Validation Error",
+        text: "Please check your inputs and try again.",
+      });
+    }
   };
 
   return (
@@ -23,7 +67,7 @@ const DaNomineeDetails = () => {
         <div className={styles.scrollContainer}>
           <div className={styles.formWrapper}>
             <h2 className={styles.title}>Add Nominee Details</h2>
-            <form className={styles.form} onSubmit={handleSubmit}>
+            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
               <div className={styles.formGroup}>
                 <label className={styles.label}>
                   Nominee Name<em className={styles.required}>*</em>
@@ -35,11 +79,12 @@ const DaNomineeDetails = () => {
                     maxLength="30"
                     placeholder="Enter Name"
                     autoComplete="off"
-                    value={nomineeName}
-                    onChange={(e) => setNomineeName(e.target.value)}
+                    {...register("nominee_Name", { required: true })}
                     className={styles.input}
                   />
-                  <div className={styles.error}></div>
+                  {errors.nominee_Name && (
+                    <div className={styles.error}>Nominee name is required</div>
+                  )}
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -50,8 +95,7 @@ const DaNomineeDetails = () => {
                 <div className={styles.inputWrapper}>
                   <select
                     aria-label="Select"
-                    value={relationship}
-                    onChange={(e) => setRelationship(e.target.value)}
+                    {...register("relationship", { required: true })}
                     className={styles.select}
                   >
                     <option value="">Select</option>
@@ -65,7 +109,9 @@ const DaNomineeDetails = () => {
                     <option value="Sister">Sister</option>
                     <option value="Other">Other</option>
                   </select>
-                  <div className={styles.error}></div>
+                  {errors.relationship && (
+                    <div className={styles.error}>Relationship is required</div>
+                  )}
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -75,16 +121,17 @@ const DaNomineeDetails = () => {
                 <div className={styles.dobGroup}>
                   <div className={styles.dobWrapper}>
                     <input
-                      name="date"
+                      name="day"
                       type="number"
                       maxLength="2"
                       placeholder="DD"
                       autoComplete="off"
-                      value={dob.day}
-                      onChange={(e) => setDob({ ...dob, day: e.target.value })}
+                      {...register("day", { required: true })}
                       className={styles.dobInput}
                     />
-                    <div className={styles.error}></div>
+                    {errors.day && (
+                      <div className={styles.error}>Day is required</div>
+                    )}
                   </div>
                   <div className={styles.dobWrapper}>
                     <input
@@ -93,13 +140,12 @@ const DaNomineeDetails = () => {
                       maxLength="2"
                       placeholder="MM"
                       autoComplete="off"
-                      value={dob.month}
-                      onChange={(e) =>
-                        setDob({ ...dob, month: e.target.value })
-                      }
+                      {...register("month", { required: true })}
                       className={styles.dobInput}
                     />
-                    <div className={styles.error}></div>
+                    {errors.month && (
+                      <div className={styles.error}>Month is required</div>
+                    )}
                   </div>
                   <div className={styles.dobWrapper}>
                     <input
@@ -108,11 +154,12 @@ const DaNomineeDetails = () => {
                       maxLength="4"
                       placeholder="YYYY"
                       autoComplete="off"
-                      value={dob.year}
-                      onChange={(e) => setDob({ ...dob, year: e.target.value })}
+                      {...register("year", { required: true })}
                       className={styles.dobInput}
                     />
-                    <div className={styles.error}></div>
+                    {errors.year && (
+                      <div className={styles.error}>Year is required</div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -124,11 +171,12 @@ const DaNomineeDetails = () => {
                   name="address"
                   placeholder="Enter Address"
                   rows="3"
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
+                  {...register("address", { required: true })}
                   className={styles.textarea}
                 ></textarea>
-                <div className={styles.error}></div>
+                {errors.address && (
+                  <div className={styles.error}>Address is required</div>
+                )}
               </div>
               <div className={styles.formGroup}>
                 <label className={styles.label}>
@@ -136,16 +184,17 @@ const DaNomineeDetails = () => {
                 </label>
                 <div className={styles.inputWrapper}>
                   <input
-                    name="nominee_City_Village"
+                    name="city"
                     type="text"
                     maxLength="35"
                     placeholder="Enter City/Village Name"
                     autoComplete="off"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
+                    {...register("city", { required: true })}
                     className={styles.input}
                   />
-                  <div className={styles.error}></div>
+                  {errors.city && (
+                    <div className={styles.error}>City/Village is required</div>
+                  )}
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -154,16 +203,17 @@ const DaNomineeDetails = () => {
                 </label>
                 <div className={styles.inputWrapper}>
                   <input
-                    name="nominee_District"
+                    name="district"
                     type="text"
                     maxLength="35"
                     placeholder="Enter District Name"
                     autoComplete="off"
-                    value={district}
-                    onChange={(e) => setDistrict(e.target.value)}
+                    {...register("district", { required: true })}
                     className={styles.input}
                   />
-                  <div className={styles.error}></div>
+                  {errors.district && (
+                    <div className={styles.error}>District is required</div>
+                  )}
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -172,16 +222,17 @@ const DaNomineeDetails = () => {
                 </label>
                 <div className={styles.inputWrapper}>
                   <input
-                    name="nominee_State"
+                    name="state"
                     type="text"
                     maxLength="35"
                     placeholder="Enter State Name"
                     autoComplete="off"
-                    value={state}
-                    onChange={(e) => setState(e.target.value)}
+                    {...register("state", { required: true })}
                     className={styles.input}
                   />
-                  <div className={styles.error}></div>
+                  {errors.state && (
+                    <div className={styles.error}>State is required</div>
+                  )}
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -190,16 +241,17 @@ const DaNomineeDetails = () => {
                 </label>
                 <div className={styles.inputWrapper}>
                   <input
-                    name="nominee_Pincode"
+                    name="pincode"
                     type="text"
                     maxLength="6"
                     placeholder="Enter PIN Code"
                     autoComplete="off"
-                    value={pincode}
-                    onChange={(e) => setPincode(e.target.value)}
+                    {...register("pincode", { required: true })}
                     className={styles.input}
                   />
-                  <div className={styles.error}></div>
+                  {errors.pincode && (
+                    <div className={styles.error}>PIN Code is required</div>
+                  )}
                 </div>
               </div>
               <button type="submit" className={styles.submitBtn}>

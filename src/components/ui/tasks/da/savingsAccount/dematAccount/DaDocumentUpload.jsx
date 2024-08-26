@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import styles from "./DaDocumentUpload.module.css";
+import useNavigateToDirectory from "../../../../../../hooks/useNavigateToDirectory";
 
 const DaDocumentUpload = () => {
   const [incomeProofFile, setIncomeProofFile] = useState(null);
   const [incomeProofType, setIncomeProofType] = useState("");
   const [signatureFile, setSignatureFile] = useState(null);
   const [panFile, setPanFile] = useState(null);
-
+  const navigate = useNavigateToDirectory();
   const handleFileChange = (event, setFile) => {
     setFile(event.target.files[0]);
   };
 
   const handleSelectChange = (event) => {
     setIncomeProofType(event.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate("add-nominees");
   };
 
   return (
@@ -128,7 +135,11 @@ const DaDocumentUpload = () => {
               <button type="button" className={styles.backBtn}>
                 Back
               </button>
-              <button type="submit" className={styles.submitBtn}>
+              <button
+                type="button"
+                className={styles.submitBtn}
+                onClick={handleSubmit}
+              >
                 Continue
               </button>
             </div>

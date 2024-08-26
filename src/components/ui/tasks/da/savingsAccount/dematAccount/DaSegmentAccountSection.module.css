@@ -103,7 +103,6 @@
   cursor: pointer;
   height: 24px;
   width: 24px;
-  appearance: none;
   background-color: #fff;
   border: 1px solid #ccd0de;
   transition: all 0.15s ease-in-out;

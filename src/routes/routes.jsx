@@ -25,7 +25,7 @@ import DaSegmentAccountSection from "../components/ui/tasks/da/savingsAccount/de
 import DigiLockerSection from "../components/ui/tasks/da/savingsAccount/dematAccount/DaDigiLockerSection";
 import DaProfileSection from "../components/ui/tasks/da/savingsAccount/dematAccount/DaProfileSection";
 import DaProfileDetails from "../components/ui/tasks/da/savingsAccount/dematAccount/DaProfileDetails";
-import DaBankAccountLink from "../components/ui/tasks/da/savingsAccount/dematAccount/DaProfileDetails";
+import DaBankAccountLink from "../components/ui/tasks/da/savingsAccount/dematAccount/DaBankAccountLink";
 import DaDocumentUpload from "../components/ui/tasks/da/savingsAccount/dematAccount/DaDocumentUpload";
 import DaNomineeDetails from "../components/ui/tasks/da/savingsAccount/dematAccount/DaNomineeDetails";
 import DaFinalStep from "../components/ui/tasks/da/savingsAccount/dematAccount/DaFinalStep";
@@ -125,8 +125,13 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "account/demat-account",
-    element: <DaAccountCreation />,
+    path: "/task/demat-account",
+    element: (
+      <TaskLayout>
+        <DaAccountCreation />
+      </TaskLayout>
+    ),
+
     children: [
       {
         index: true,

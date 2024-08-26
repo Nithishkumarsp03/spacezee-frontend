@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { FaPencilAlt, FaTrash, FaUserCircle } from "react-icons/fa";
 import styles from "./DaFinalStep.module.css";
+import { selectTask } from "../../../../../../redux/features/user/userTaskSlice";
+import { useSelector } from "react-redux";
+import useNavigateToDirectory from "../../../../../../hooks/useNavigateToDirectory";
 
 const DaFinalStep = () => {
   const [isCheckbox1Checked, setIsCheckbox1Checked] = useState(false);
   const [isCheckbox2Checked, setIsCheckbox2Checked] = useState(false);
   const [isCheckbox3Checked, setIsCheckbox3Checked] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const userData = useSelector(selectTask);
+  const navigate = useNavigateToDirectory();
 
   const allChecked =
     isCheckbox1Checked && isCheckbox2Checked && isCheckbox3Checked;
@@ -17,6 +22,9 @@ const DaFinalStep = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+  const handleNext = () => {
+    navigate("otp");
   };
 
   return (
@@ -37,11 +45,15 @@ const DaFinalStep = () => {
             </div>
             <form className={styles.form}>
               <div className={styles.formSection}>
-                <h3 className={styles.sectionTitle}>Equity, Debt</h3>
+                <h3 className={styles.sectionTitle}>
+                  {userData?.questions?.Type_of_Account}
+                </h3>
                 <div className={styles.userWrapper}>
                   <div className={styles.userInfo}>
                     <FaUserCircle className={styles.userIcon} />
-                    <span className={styles.userName}>Nitin Radhakrishnan</span>
+                    <span className={styles.userName}>
+                      {userData?.questions?.Name}
+                    </span>
                   </div>
                   <button type="button" className={styles.iconButton}>
                     <FaPencilAlt />
@@ -112,7 +124,7 @@ const DaFinalStep = () => {
                   <label className="form-check-label" htmlFor="checkbox1">
                     I confirm that{" "}
                     <a href="#" className={styles.link}>
-                      nitin88@nergymail.com
+                      {userData?.questions?.Email_ID}
                     </a>{" "}
                     belongs to me and verified it with Nergy.
                   </label>
@@ -155,6 +167,7 @@ const DaFinalStep = () => {
                   type="button"
                   className="btn btn-primary"
                   disabled={!allChecked}
+                  onClick={handleNext}
                 >
                   Sign Now
                 </button>

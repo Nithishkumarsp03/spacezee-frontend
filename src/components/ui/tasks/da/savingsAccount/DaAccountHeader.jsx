@@ -5,7 +5,7 @@ import logo from "./assets/logo.png";
 
 const DaAccountHeader = () => {
   const task = useSelector(selectTask);
-  console.log(task);
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

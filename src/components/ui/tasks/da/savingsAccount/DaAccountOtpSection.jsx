@@ -3,8 +3,11 @@ import Swal from "sweetalert2";
 import styles from "./DaAccountOtpSection.module.css";
 import image from "./assets/step-two-graphics.svg";
 import useNavigateToDirectory from "../../../../../hooks/useNavigateToDirectory";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../../redux/features/user/userTaskSlice";
 
 const DaAccountOtpSection = () => {
+  const userData = useSelector(selectTask);
   const navigate = useNavigateToDirectory();
   const inputRefs = useRef([]);
 
@@ -22,9 +25,12 @@ const DaAccountOtpSection = () => {
   const handleContinue = () => {
     const otp = inputRefs.current.map((input) => input.value).join("");
     const correctOtp = "1234";
-
     if (otp === correctOtp) {
-      navigate("personal-details");
+      if (userData?.name === "Demat Account") {
+        navigate("email");
+      } else {
+        navigate("personal-details");
+      }
     } else {
       Swal.fire({
         icon: "error",

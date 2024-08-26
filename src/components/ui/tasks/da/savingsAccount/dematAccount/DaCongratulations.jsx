@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import styles from "./DaCongratulations.module.css";
 import { FaCheckCircle } from "react-icons/fa";
+import { useCompleteTaskWithBroadcast } from "../../../../../../hooks/useCompleteTaskWithBroadcast";
 
 const DaCongratulations = () => {
+  const completeTask = useCompleteTaskWithBroadcast();
+  useEffect(() => {
+    completeTask();
+  }, [completeTask]);
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>

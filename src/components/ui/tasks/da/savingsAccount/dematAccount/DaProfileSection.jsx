@@ -9,8 +9,11 @@ import {
 } from "react-icons/fa";
 
 import styles from "./DaProfileSection.module.css";
+import { useSelector } from "react-redux";
+import { selectTask } from "../../../../../../redux/features/user/userTaskSlice";
 
 const ProfileSection = () => {
+  const userData = useSelector(selectTask);
   return (
     <div className="container">
       <div className="row vh-100">
@@ -24,21 +27,23 @@ const ProfileSection = () => {
               <li className={styles.profileItem}>
                 <div className={styles.profileInfo}>
                   <FaUser className={styles.icon} />
-                  <span className={styles.userName}>Nitin Radhakrishnan</span>
+                  <span className={styles.userName}>
+                    {userData?.questions?.Name}
+                  </span>
                 </div>
                 <hr className={styles.hrLine} />
               </li>
               <li className={styles.profileItem}>
                 <div className={styles.profileInfo}>
                   <FaCalendarAlt className={styles.icon} />
-                  <span>11-04-1987</span>
+                  <span>{userData?.questions?.Date_of_Birth}</span>
                 </div>
                 <hr className={styles.hrLine} />
               </li>
               <li className={styles.profileItem}>
                 <div className={styles.profileInfo}>
                   <FaEnvelope className={styles.icon} />
-                  <span>nitin88@nergymail.com</span>
+                  <span>{userData?.questions?.Email_ID}</span>
                 </div>
                 <hr className={styles.hrLine} />
               </li>
@@ -46,7 +51,7 @@ const ProfileSection = () => {
                 <div className={styles.profileInfo}>
                   <FaMapMarkerAlt className={styles.icon} />
                   <span className={styles.address}>
-                    Bhagwan Das Road, Mahatma Jyoti Rao Phule Marg Area
+                    {userData?.questions?.Address}
                   </span>
                 </div>
                 <hr className={styles.hrLine} />
@@ -56,7 +61,9 @@ const ProfileSection = () => {
                   <FaIdCard className={styles.icon} />
                   <div>
                     <span className={styles.panLabel}>Your PAN</span>
-                    <div className={styles.panNumber}>SDSXD1290I</div>
+                    <div className={styles.panNumber}>
+                      {userData?.questions?.PAN}
+                    </div>
                     <small className={styles.note}>
                       *This PAN should belong to you, the applicant. If it does
                       not,{" "}
