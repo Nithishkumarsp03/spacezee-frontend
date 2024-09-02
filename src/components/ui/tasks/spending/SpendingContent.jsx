@@ -95,8 +95,9 @@ const SpendingContent = () => {
       return (
         row.voucherNo === correspondingData.voucherNo &&
         row.date === correspondingData.date &&
-        row.mode === correspondingData.mode &&
-        row.category === correspondingData.category &&
+        row.mode.toLowerCase() === correspondingData.mode.toLowerCase() &&
+        row.category.toLowerCase() ===
+          correspondingData.category.toLowerCase() &&
         parseFloat(row.amount) === parseFloat(correspondingData.amount)
       );
     });
