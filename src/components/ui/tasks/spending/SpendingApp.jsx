@@ -7,7 +7,6 @@ function SpendingApp() {
     <div>
       <PBDTHeader />
       <Outlet />
-      <PBDTFooter />
     </div>
   );
 }

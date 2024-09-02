@@ -198,10 +198,21 @@ const router = createBrowserRouter([
       },
     ],
   },
-  { path: "budgeting", element: <PBDTApp /> },
   {
-    path: "spending",
-    element: <SpendingApp />,
+    path: "task/budgeting",
+    element: (
+      <TaskLayout>
+        <PBDTApp />
+      </TaskLayout>
+    ),
+  },
+  {
+    path: "task/spending",
+    element: (
+      <TaskLayout>
+        <SpendingApp />
+      </TaskLayout>
+    ),
     children: [{ index: true, element: <SpendingContent /> }],
   },
   {

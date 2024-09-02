@@ -1,0 +1,306 @@
+[
+  {
+    "voucherNo": "501",
+    "date": "2023-05-02",
+    "particulars": "Received payment for repairing vehicles",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 30000
+  },
+  {
+    "voucherNo": "502",
+    "date": "2023-05-02",
+    "particulars": "Received cash for balance of spare parts sold",
+    "mode": "Cash",
+    "category": "Sale of Goods",
+    "amount": 2000
+  },
+  {
+    "voucherNo": "503",
+    "date": "2023-05-02",
+    "particulars": "Purchased tools and equipment",
+    "mode": "Bank",
+    "category": "Purchase of Asset",
+    "amount": 12300
+  },
+  {
+    "voucherNo": "504",
+    "date": "2023-05-02",
+    "particulars": "Paid for advertising and sales promotion",
+    "mode": "Bank",
+    "category": "Advertisements",
+    "amount": 5200
+  },
+  {
+    "voucherNo": "505",
+    "date": "2023-05-03",
+    "particulars": "Sold parts and accessories on credit",
+    "mode": "Credit",
+    "category": "Sale of Goods",
+    "amount": 8500
+  },
+  {
+    "voucherNo": "506",
+    "date": "2023-05-03",
+    "particulars": "Received online payment for vehicle repair",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 23500
+  },
+  {
+    "voucherNo": "507",
+    "date": "2023-05-03",
+    "particulars": "Received payment for vehicle services",
+    "mode": "Cash",
+    "category": "Revenue from Services",
+    "amount": 8000
+  },
+  {
+    "voucherNo": "508",
+    "date": "2023-05-04",
+    "particulars": "Loan repayment",
+    "mode": "Bank",
+    "category": "Loan Repayment",
+    "amount": 2000
+  },
+  {
+    "voucherNo": "509",
+    "date": "2023-05-04",
+    "particulars": "Paid insurance amount",
+    "mode": "Bank",
+    "category": "Insurance and Medical Expense",
+    "amount": 2500
+  },
+  {
+    "voucherNo": "510",
+    "date": "2023-05-05",
+    "particulars": "Paid monthly wages to workers",
+    "mode": "Bank",
+    "category": "Salaries and Wages",
+    "amount": 50000
+  },
+  {
+    "voucherNo": "511",
+    "date": "2023-05-05",
+    "particulars": "Received rental income",
+    "mode": "Bank",
+    "category": "Rent",
+    "amount": 3000
+  },
+  {
+    "voucherNo": "512",
+    "date": "2023-05-05",
+    "particulars": "Paid repairs and maintenance costs",
+    "mode": "Cash",
+    "category": "Repairs and Maintenance",
+    "amount": 7500
+  },
+  {
+    "voucherNo": "513",
+    "date": "2023-05-06",
+    "particulars": "Received payment for vehicle services",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 15800
+  },
+  {
+    "voucherNo": "514",
+    "date": "2023-05-06",
+    "particulars": "Food expenses",
+    "mode": "Cash",
+    "category": "Food, Water and Recreation Expense",
+    "amount": 570
+  },
+  {
+    "voucherNo": "515",
+    "date": "2023-05-06",
+    "particulars": "Paid telephone and internet expenses",
+    "mode": "Bank",
+    "category": "Electricity, Telephone and Other Utilities",
+    "amount": 900
+  },
+  {
+    "voucherNo": "516",
+    "date": "2023-05-08",
+    "particulars": "Received payment for vehicle repair",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 27000
+  },
+  {
+    "voucherNo": "517",
+    "date": "2023-05-09",
+    "particulars": "Short-term investment in friend's business",
+    "mode": "Bank",
+    "category": "Short Term Investments Made",
+    "amount": 12000
+  },
+  {
+    "voucherNo": "518",
+    "date": "2023-05-09",
+    "particulars": "Received payment for vehicle services",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 7300
+  },
+  {
+    "voucherNo": "519",
+    "date": "2023-05-09",
+    "particulars": "Dividend received",
+    "mode": "Bank",
+    "category": "Other Income",
+    "amount": 3000
+  },
+  {
+    "voucherNo": "520",
+    "date": "2023-05-10",
+    "particulars": "Sold used car, amount received",
+    "mode": "Bank",
+    "category": "Sale of Goods",
+    "amount": 60000
+  },
+  {
+    "voucherNo": "521",
+    "date": "2023-05-10",
+    "particulars": "Received payment for vehicle services",
+    "mode": "Cash",
+    "category": "Revenue from Services",
+    "amount": 35000
+  },
+  {
+    "voucherNo": "522",
+    "date": "2023-05-10",
+    "particulars": "Sale of used car, amount received",
+    "mode": "Bank",
+    "category": "Sale of Goods",
+    "amount": 40000
+  },
+  {
+    "voucherNo": "523",
+    "date": "2023-05-10",
+    "particulars": "Paid online electricity bill",
+    "mode": "Bank",
+    "category": "Electricity, Telephone and Other Utilities",
+    "amount": 8260
+  },
+  {
+    "voucherNo": "524",
+    "date": "2023-05-11",
+    "particulars": "Medical expenses incurred by Armaan",
+    "mode": "Bank",
+    "category": "Insurance and Medical Expense",
+    "amount": 4100
+  },
+  {
+    "voucherNo": "525",
+    "date": "2023-05-11",
+    "particulars": "Credit purchase of equipment",
+    "mode": "Credit",
+    "category": "Purchase of Asset",
+    "amount": 4500
+  },
+  {
+    "voucherNo": "526",
+    "date": "2023-05-12",
+    "particulars": "Received online payment for used car",
+    "mode": "Bank",
+    "category": "Sale of Goods",
+    "amount": 32500
+  },
+  {
+    "voucherNo": "527",
+    "date": "2023-05-12",
+    "particulars": "Dividend received",
+    "mode": "Bank",
+    "category": "Other Income",
+    "amount": 7000
+  },
+  {
+    "voucherNo": "528",
+    "date": "2023-05-13",
+    "particulars": "Received payment for vehicle services",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 2500
+  },
+  {
+    "voucherNo": "529",
+    "date": "2023-05-13",
+    "particulars": "Received payment for vehicle repair",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 2500
+  },
+  {
+    "voucherNo": "530",
+    "date": "2023-05-13",
+    "particulars": "Wages paid to workers",
+    "mode": "Cash",
+    "category": "Salaries and Wages",
+    "amount": 4200
+  },
+  {
+    "voucherNo": "531",
+    "date": "2023-05-14",
+    "particulars": "Received online payment for services",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 15000
+  },
+  {
+    "voucherNo": "532",
+    "date": "2023-05-14",
+    "particulars": "Payment received from debtor",
+    "mode": "Cash",
+    "category": "Receipt from Debtors",
+    "amount": 3200
+  },
+  {
+    "voucherNo": "533",
+    "date": "2023-05-14",
+    "particulars": "Income tax paid online",
+    "mode": "Bank",
+    "category": "Tax Expense",
+    "amount": 9100
+  },
+  {
+    "voucherNo": "534",
+    "date": "2023-05-15",
+    "particulars": "Received online payment for vehicle services",
+    "mode": "Bank",
+    "category": "Revenue from Services",
+    "amount": 8800
+  },
+  {
+    "voucherNo": "535",
+    "date": "2023-05-15",
+    "particulars": "Received payment for sale of equipment",
+    "mode": "Cash",
+    "category": "Sale of Goods",
+    "amount": 6000
+  },
+  {
+    "voucherNo": "536",
+    "date": "2023-05-15",
+    "particulars": "Business loan interest paid",
+    "mode": "Bank",
+    "category": "Loan Repayment",
+    "amount": 6000
+  },
+  {
+    "voucherNo": "537",
+    "date": "2023-05-15",
+    "particulars": "Fuel expenses of vehicles",
+    "mode": "Cash",
+    "category": "Other Expense",
+    "amount": 1500
+  },
+  {
+    "voucherNo": "538",
+    "date": "2023-05-15",
+    "particulars": "Insurance amount paid",
+    "mode": "Bank",
+    "category": "Insurance and Medical Expense",
+    "amount": 3500
+  }
+]

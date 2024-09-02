@@ -1,0 +1,1566 @@
+{
+  "name": "Spending",
+  "courseImage": "https://res.cloudinary.com/dqjcohww3/image/upload/v1725267526/gettyimages-1125388526_crop_xxwbcf.jpg",
+  "isDeleted": false,
+  "courseContents": [
+    {
+      "title": "Spending_001",
+      "description": "<div>Mr. Santhosh Kumar, a proprietor running a retail grocery shop, plans his purchases on a weekly basis, yet he lacks a systematic method for recording his expenses or income. He manually records all transactions in a notebook.<br/><br/>He has an opening cash balance of ₹17,000 in hand and ₹12,000 in the bank.<br/>His opening creditors amount to ₹25,500 and his debtors to ₹5,100.<br/>As a financial expert, you are required to help Mr. Santhosh categorise his receipts and payments and find out the total amount received and spent during that particular period.</div><br/><br/><table border='1'><tr><th>Voucher No.</th><th>Date</th><th>Transactions</th></tr><tr><td>1</td><td>02-05-2024</td><td>Purchase of grocery raw materials for ₹11,000 on credit.</td></tr><tr><td>2</td><td>02-05-2024</td><td>₹1,000 was paid in cash to the weekly deposit scheme at the post office. (Short term)</td></tr><tr><td>3</td><td>02-05-2024</td><td>The rent for the shop building, amounting to ₹8,500, was paid via bank transfer.</td></tr><tr><td>4</td><td>02-05-2024</td><td>Transportation charges were paid in cash for ₹1,500.</td></tr><tr><td>5</td><td>02-05-2024</td><td>Food expenses amounted to ₹850 and were paid in cash.</td></tr><tr><td>6</td><td>02-05-2024</td><td>He recorded sales for the day of ₹7,500 in cash.</td></tr><tr><td>7</td><td>02-06-2024</td><td>Electricity charges of ₹2,300 were paid from the bank.</td></tr><tr><td>8</td><td>02-06-2024</td><td>Medical expenses for his mother's hospital visit were paid in cash, totaling ₹1,850.</td></tr><tr><td>9</td><td>02-06-2024</td><td>₹700 was spent on repairs and maintenance expenses in cash.</td></tr><tr><td>10</td><td>02-06-2024</td><td>He recorded sales for the day of ₹6,600 in cash.</td></tr><tr><td>11</td><td>02-07-2024</td><td>Water charges amounting to ₹200 were paid in cash.</td></tr><tr><td>12</td><td>02-07-2024</td><td>Tea and snacks charges amounting to ₹350 were paid in cash.</td></tr><tr><td>13</td><td>02-07-2024</td><td>He received from Debtors of ₹5,100 through bank.</td></tr><tr><td>14</td><td>02-08-2024</td><td>Purchase of vegetables for ₹1,750 in cash.</td></tr><tr><td>15</td><td>02-08-2024</td><td>He received ₹2,800 in cash from sales for the day.</td></tr><tr><td>16</td><td>02-09-2024</td><td>The food expenses incurred were ₹250 in cash.</td></tr><tr><td>17</td><td>02-09-2024</td><td>Sales have been recorded for the day as ₹3,400 in cash.</td></tr><tr><td>18</td><td>02-10-2024</td><td>Paid ₹3,450 as loan repayment to the bank.</td></tr><tr><td>19</td><td>02-10-2024</td><td>He received ₹5,050 in cash from sales for the day.</td></tr><tr><td>20</td><td>02-12-2024</td><td>Payment to credit suppliers of ₹25,000 in cash.</td></tr><tr><td>21</td><td>02-12-2024</td><td>Sales have been recorded as ₹8,900 in the bank.</td></tr><tr><td>22</td><td>02-12-2024</td><td>Purchase of grocery raw materials for credit of ₹12,000.</td></tr><tr><td>23</td><td>02-12-2024</td><td>Transportation charges of ₹1,200 were paid in cash.</td></tr><tr><td>24</td><td>02-12-2024</td><td>₹1,000 was paid in cash to the weekly deposit scheme at the post office. (Short term)</td></tr><tr><td>25</td><td>13-02-2024</td><td>Recorded sales for the day of ₹8,000 in the bank.</td></tr><tr><td>26</td><td>14-02-2024</td><td>Purchase of vegetables for ₹2,200 and paid in cash.</td></tr><tr><td>27</td><td>14-02-2024</td><td>Sales for the day amounted to ₹3,400 in the bank.</td></tr><tr><td>28</td><td>15-02-2024</td><td>Sales for the day amounted to ₹3,150 in the bank.</td></tr><tr><td>29</td><td>16-02-2024</td><td>Sales for the day amounted to ₹2,100 in cash.</td></tr><tr><td>30</td><td>17-02-2024</td><td>Water charges paid in cash were ₹250.</td></tr><tr><td>31</td><td>17-02-2024</td><td>₹1,200 was spent on repairs and maintenance in cash.</td></tr><tr><td>32</td><td>17-02-2024</td><td>Sales for the day were recorded as ₹2,600 in the bank.</td></tr><tr><td>33</td><td>19-02-2024</td><td>Purchase of grocery raw materials in credit ₹11,000.</td></tr><tr><td>34</td><td>19-02-2024</td><td>₹1,000 was paid in cash to the weekly deposit scheme at the post office. (Short term)</td></tr><tr><td>35</td><td>19-02-2024</td><td>Sales for the day were recorded at ₹3,000 in the bank.</td></tr><tr><td>36</td><td>20-02-2024</td><td>Interest received from RD in the bank: ₹330.</td></tr><tr><td>37</td><td>20-02-2024</td><td>Sales for the day were recorded as ₹3,100 in cash.</td></tr><tr><td>38</td><td>21-02-2024</td><td>Food expenses of ₹850 were incurred and paid in cash.</td></tr><tr><td>39</td><td>21-02-2024</td><td>Sales for the day were recorded as ₹1,800 in the bank.</td></tr><tr><td>40</td><td>22-02-2024</td><td>Sales for the day were recorded as ₹1,950 in cash.</td></tr><tr><td>41</td><td>23-02-2024</td><td>A payment of ₹20,000 to credit suppliers was made via bank.</td></tr><tr><td>42</td><td>23-02-2024</td><td>Received ₹2,200 in cash from sales for the day.</td></tr><tr><td>43</td><td>24-02-2024</td><td>Received ₹2,140 in cash from sales for the day.</td></tr><tr><td>44</td><td>26-02-2024</td><td>Purchase of grocery raw materials in cash with ₹8,500.</td></tr><tr><td>45</td><td>26-02-2024</td><td>₹1,000 was paid in cash to the weekly deposit scheme at the post office. (Short term)</td></tr><tr><td>46</td><td>26-02-2024</td><td>Received ₹3,600 from sales for the day in the bank.</td></tr><tr><td>47</td><td>26-02-2024</td><td>Purchase of vegetables for ₹1,800 in cash.</td></tr><tr><td>48</td><td>27-02-2024</td><td>Received ₹2,600 from sales for the day in the bank.</td></tr><tr><td>49</td><td>28-02-2024</td><td>Water charges paid in cash: ₹250.</td></tr><tr><td>50</td><td>28-02-2024</td><td>Sales for the day were ₹2,800 in the bank.</td></tr><tr><td>51</td><td>29-02-2024</td><td>Sales for the day were ₹3,100 in cash.</td></tr><tr><td>52</td><td>29-02-2024</td><td>Advertisement expenses of ₹3,380 were paid through the bank.</td></tr></table>",
+      "endPoint": "spending",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "voucherNo": "1",
+              "date": "2024-05-02",
+              "particulars": "Purchase of grocery raw materials",
+              "mode": "Credit",
+              "category": "Purchase",
+              "amount": 11000
+            },
+            {
+              "voucherNo": "2",
+              "date": "2024-05-02",
+              "particulars": "Weekly deposit scheme at post office",
+              "mode": "Cash",
+              "category": "Short Term Investments Made",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "3",
+              "date": "2024-05-02",
+              "particulars": "Rent for shop building",
+              "mode": "Bank",
+              "category": "Rent",
+              "amount": 8500
+            },
+            {
+              "voucherNo": "4",
+              "date": "2024-05-02",
+              "particulars": "Transportation charges",
+              "mode": "Cash",
+              "category": "Transportation Charges",
+              "amount": 1500
+            },
+            {
+              "voucherNo": "5",
+              "date": "2024-05-02",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 850
+            },
+            {
+              "voucherNo": "6",
+              "date": "2024-05-02",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 7500
+            },
+            {
+              "voucherNo": "7",
+              "date": "2024-06-02",
+              "particulars": "Electricity charges",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 2300
+            },
+            {
+              "voucherNo": "8",
+              "date": "2024-06-02",
+              "particulars": "Medical expenses for mother's hospital visit",
+              "mode": "Cash",
+              "category": "Insurance and Medical Expense",
+              "amount": 1850
+            },
+            {
+              "voucherNo": "9",
+              "date": "2024-06-02",
+              "particulars": "Repairs and maintenance",
+              "mode": "Cash",
+              "category": "Repairs and Maintenance",
+              "amount": 700
+            },
+            {
+              "voucherNo": "10",
+              "date": "2024-06-02",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 6600
+            },
+            {
+              "voucherNo": "11",
+              "date": "2024-07-02",
+              "particulars": "Water charges",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 200
+            },
+            {
+              "voucherNo": "12",
+              "date": "2024-07-02",
+              "particulars": "Tea and snacks",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 350
+            },
+            {
+              "voucherNo": "13",
+              "date": "2024-07-02",
+              "particulars": "Received from Debtors",
+              "mode": "Bank",
+              "category": "Receipt from Debtors",
+              "amount": 5100
+            },
+            {
+              "voucherNo": "14",
+              "date": "2024-08-02",
+              "particulars": "Purchase of vegetables",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 1750
+            },
+            {
+              "voucherNo": "15",
+              "date": "2024-08-02",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 2800
+            },
+            {
+              "voucherNo": "16",
+              "date": "2024-09-02",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 250
+            },
+            {
+              "voucherNo": "17",
+              "date": "2024-09-02",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 3400
+            },
+            {
+              "voucherNo": "18",
+              "date": "2024-10-02",
+              "particulars": "Loan repayment",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 3450
+            },
+            {
+              "voucherNo": "19",
+              "date": "2024-10-02",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 5050
+            },
+            {
+              "voucherNo": "20",
+              "date": "2024-12-02",
+              "particulars": "Payment to credit suppliers",
+              "mode": "Cash",
+              "category": "Payment to creditors",
+              "amount": 25000
+            },
+            {
+              "voucherNo": "21",
+              "date": "2024-12-02",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 8900
+            },
+            {
+              "voucherNo": "22",
+              "date": "2024-12-02",
+              "particulars": "Purchase of grocery raw materials",
+              "mode": "Credit",
+              "category": "Purchase",
+              "amount": 12000
+            },
+            {
+              "voucherNo": "23",
+              "date": "2024-12-02",
+              "particulars": "Transportation charges",
+              "mode": "Cash",
+              "category": "Transportation Charges",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "24",
+              "date": "2024-12-02",
+              "particulars": "Weekly deposit scheme at post office",
+              "mode": "Cash",
+              "category": "Short Term Investments Made",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "25",
+              "date": "2024-02-13",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 8000
+            },
+            {
+              "voucherNo": "26",
+              "date": "2024-02-14",
+              "particulars": "Purchase of vegetables",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 2200
+            },
+            {
+              "voucherNo": "27",
+              "date": "2024-02-14",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 3400
+            },
+            {
+              "voucherNo": "28",
+              "date": "2024-02-15",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 3150
+            },
+            {
+              "voucherNo": "29",
+              "date": "2024-02-16",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 2100
+            },
+            {
+              "voucherNo": "30",
+              "date": "2024-02-17",
+              "particulars": "Water charges",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 250
+            },
+            {
+              "voucherNo": "31",
+              "date": "2024-02-17",
+              "particulars": "Repairs and maintenance",
+              "mode": "Cash",
+              "category": "Repairs and Maintenance",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "32",
+              "date": "2024-02-17",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2600
+            },
+            {
+              "voucherNo": "33",
+              "date": "2024-02-19",
+              "particulars": "Purchase of grocery raw materials",
+              "mode": "Credit",
+              "category": "Purchase",
+              "amount": 11000
+            },
+            {
+              "voucherNo": "34",
+              "date": "2024-02-19",
+              "particulars": "Weekly deposit scheme at post office",
+              "mode": "Cash",
+              "category": "Short Term Investments Made",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "35",
+              "date": "2024-02-19",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 3000
+            },
+            {
+              "voucherNo": "36",
+              "date": "2024-02-20",
+              "particulars": "Interest received from RD",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 330
+            },
+            {
+              "voucherNo": "37",
+              "date": "2024-02-20",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 3100
+            },
+            {
+              "voucherNo": "38",
+              "date": "2024-02-21",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 850
+            },
+            {
+              "voucherNo": "39",
+              "date": "2024-02-21",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 1800
+            },
+            {
+              "voucherNo": "40",
+              "date": "2024-02-22",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 1950
+            },
+            {
+              "voucherNo": "41",
+              "date": "2024-02-23",
+              "particulars": "Payment to credit suppliers",
+              "mode": "Bank",
+              "category": "Payment to creditors",
+              "amount": 20000
+            },
+            {
+              "voucherNo": "42",
+              "date": "2024-02-23",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 2200
+            },
+            {
+              "voucherNo": "43",
+              "date": "2024-02-24",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 2140
+            },
+            {
+              "voucherNo": "44",
+              "date": "2024-02-26",
+              "particulars": "Purchase of grocery raw materials",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 8500
+            },
+            {
+              "voucherNo": "45",
+              "date": "2024-02-26",
+              "particulars": "Weekly deposit scheme at post office",
+              "mode": "Cash",
+              "category": "Short Term Investments Made",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "46",
+              "date": "2024-02-26",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 3600
+            },
+            {
+              "voucherNo": "47",
+              "date": "2024-02-26",
+              "particulars": "Purchase of vegetables",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 1800
+            },
+            {
+              "voucherNo": "48",
+              "date": "2024-02-27",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2600
+            },
+            {
+              "voucherNo": "49",
+              "date": "2024-02-28",
+              "particulars": "Water charges",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 250
+            },
+            {
+              "voucherNo": "50",
+              "date": "2024-02-28",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2800
+            },
+            {
+              "voucherNo": "51",
+              "date": "2024-02-29",
+              "particulars": "Sales recorded",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 3100
+            },
+            {
+              "voucherNo": "52",
+              "date": "2024-02-29",
+              "particulars": "Advertisement expenses",
+              "mode": "Bank",
+              "category": "Advertisements",
+              "amount": 3380
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spending_002",
+      "description": "<div>Gurpreet is a plumber from Himachal who had ₹35,200 in hand and ₹35,000 in bank at the end of the first week of 2024 January. He made several transactions until the end of the third week of the same month. His two-week transactions are provided below: Opening debtors are amounted to ₹5,000 and opening creditors are ₹3,000. You are required to help Mr. Gurpreet categorise the transactions into various heads and also help him find out the total receipts and payments during the two weeks of January 2024.</div><br/><br/><table border='1'><tr><th>Date</th><th>Voucher No.</th><th>Transactions</th><th>Amount</th></tr><tr><td>08-01-2024</td><td>1001</td><td>Received payment in cash for the work done.</td><td>₹1,200</td></tr><tr><td>09-01-2024</td><td>1002</td><td>Paid monthly EMI of the car through Paytm.</td><td>₹8,000</td></tr><tr><td>10-01-2024</td><td>1003</td><td>Paid food expenses in cash.</td><td>₹1,000</td></tr><tr><td>10-01-2024</td><td>1004</td><td>The electricity bill was paid online.</td><td>₹730</td></tr><tr><td>11-01-2024</td><td>1005</td><td>Interest income from the post office deposit was credited to his bank account.</td><td>₹600</td></tr><tr><td>11-01-2024</td><td>1006</td><td>Received payment for work in cash.</td><td>₹1,000</td></tr><tr><td>12-01-2024</td><td>1007</td><td>Received cash online from a debtor.</td><td>₹2,500</td></tr><tr><td>12-01-2024</td><td>1008</td><td>Purchase of new equipment and tools for cash.</td><td>₹10,750</td></tr><tr><td>13-01-2024</td><td>1009</td><td>Transportation charges were incurred and paid in cash.</td><td>₹120</td></tr><tr><td>13-01-2024</td><td>1010</td><td>Repairs and maintenance of the car were incurred and paid for through the bank.</td><td>₹8,200</td></tr><tr><td>13-01-2024</td><td>1011</td><td>Received payment through Paytm for the work done.</td><td>₹1,000</td></tr><tr><td>14-01-2024</td><td>1012</td><td>Mobile phone recharges were done online.</td><td>₹720</td></tr><tr><td>14-01-2024</td><td>1013</td><td>His old scooter was sold through OLX and he received money through the bank.</td><td>₹20,000</td></tr><tr><td>14-01-2024</td><td>1014</td><td>Received an online payment for the work done.</td><td>₹1,200</td></tr><tr><td>15-01-2024</td><td>1015</td><td>Received a commission through the bank.</td><td>₹2,000</td></tr><tr><td>15-01-2024</td><td>1016</td><td>Payment of fuel expenses was done online.</td><td>₹1,000</td></tr><tr><td>15-01-2024</td><td>1017</td><td>Received an online payment for the work done.</td><td>₹2,300</td></tr><tr><td>16-01-2024</td><td>1018</td><td>Bank charges were debited by the bank from his account.</td><td>₹250</td></tr><tr><td>17-01-2024</td><td>1019</td><td>Medical expenses were settled using cash.</td><td>₹1,730</td></tr><tr><td>18-01-2024</td><td>1020</td><td>Food expenses were paid in cash.</td><td>₹300</td></tr><tr><td>19-01-2024</td><td>1021</td><td>Received a commission through the bank.</td><td>₹500</td></tr><tr><td>20-01-2024</td><td>1022</td><td>Received payment for work in cash.</td><td>₹1,000</td></tr><tr><td>20-01-2024</td><td>1023</td><td>Paid the insurance amount in cash.</td><td>₹750</td></tr><tr><td>21-02-2024</td><td>1024</td><td>Received payment for work in cash.</td><td>₹900</td></tr><tr><td>22-02-2024</td><td>1025</td><td>Received cash online from a debtor.</td><td>₹500</td></tr><tr><td>Total</td><td></td><td></td><td>₹68,250</td></tr></table>",
+      "endPoint": "spending",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "voucherNo": "1001",
+              "date": "2024-01-08",
+              "particulars": "Received payment in cash for work done",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "1002",
+              "date": "2024-01-09",
+              "particulars": "Paid monthly EMI of the car",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 8000
+            },
+            {
+              "voucherNo": "1003",
+              "date": "2024-01-10",
+              "particulars": "Paid food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "1004",
+              "date": "2024-01-10",
+              "particulars": "Paid electricity bill online",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 730
+            },
+            {
+              "voucherNo": "1005",
+              "date": "2024-01-11",
+              "particulars": "Interest income from post office deposit credited to bank account",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 600
+            },
+            {
+              "voucherNo": "1006",
+              "date": "2024-01-11",
+              "particulars": "Received payment for work in cash",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "1007",
+              "date": "2024-01-12",
+              "particulars": "Received cash online from debtor",
+              "mode": "Bank",
+              "category": "Receipt from Debtors",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "1008",
+              "date": "2024-01-12",
+              "particulars": "Purchase of new equipment and tools for cash",
+              "mode": "Cash",
+              "category": "Purchase of Asset",
+              "amount": 10750
+            },
+            {
+              "voucherNo": "1009",
+              "date": "2024-01-13",
+              "particulars": "Transportation charges paid in cash",
+              "mode": "Cash",
+              "category": "Transportation Charges",
+              "amount": 120
+            },
+            {
+              "voucherNo": "1010",
+              "date": "2024-01-13",
+              "particulars": "Repairs and maintenance of car paid through bank",
+              "mode": "Bank",
+              "category": "Repairs and Maintenance",
+              "amount": 8200
+            },
+            {
+              "voucherNo": "1011",
+              "date": "2024-01-13",
+              "particulars": "Received payment through Paytm for work done",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "1012",
+              "date": "2024-01-14",
+              "particulars": "Mobile phone recharges done online",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 720
+            },
+            {
+              "voucherNo": "1013",
+              "date": "2024-01-14",
+              "particulars": "Old scooter sold through OLX, money received in bank",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 20000
+            },
+            {
+              "voucherNo": "1014",
+              "date": "2024-01-14",
+              "particulars": "Received an online payment for work done",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "1015",
+              "date": "2024-01-15",
+              "particulars": "Received commission through bank",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "1016",
+              "date": "2024-01-15",
+              "particulars": "Payment of fuel expenses online",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "1017",
+              "date": "2024-01-15",
+              "particulars": "Received an online payment for work done",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 2300
+            },
+            {
+              "voucherNo": "1018",
+              "date": "2024-01-16",
+              "particulars": "Bank charges debited by bank from account",
+              "mode": "Bank",
+              "category": "Other Expense",
+              "amount": 250
+            },
+            {
+              "voucherNo": "1019",
+              "date": "2024-01-17",
+              "particulars": "Medical expenses settled using cash",
+              "mode": "Cash",
+              "category": "Insurance and Medical Expense",
+              "amount": 1730
+            },
+            {
+              "voucherNo": "1020",
+              "date": "2024-01-18",
+              "particulars": "Food expenses paid in cash",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 300
+            },
+            {
+              "voucherNo": "1021",
+              "date": "2024-01-19",
+              "particulars": "Received commission through bank",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 500
+            },
+            {
+              "voucherNo": "1022",
+              "date": "2024-01-20",
+              "particulars": "Received payment for work in cash",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "1023",
+              "date": "2024-01-20",
+              "particulars": "Paid insurance amount in cash",
+              "mode": "Cash",
+              "category": "Insurance and Medical Expense",
+              "amount": 750
+            },
+            {
+              "voucherNo": "1024",
+              "date": "2024-02-21",
+              "particulars": "Received payment for work in cash",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 900
+            },
+            {
+              "voucherNo": "1025",
+              "date": "2024-02-22",
+              "particulars": "Received cash online from debtor",
+              "mode": "Bank",
+              "category": "Receipt from Debtors",
+              "amount": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spending_003",
+      "description": "<div>Ram Gupta, a farmer from Gujarat, made various transactions during the months of May-October 2023. You are required to list out the income and expenditures under their respective heads and find out the actual amount received and paid by him during that period. He had a cash balance of ₹30,000 and in the bank of ₹45,000 at the beginning. (The opening balance of debtors was ₹8,250 and the opening balance of creditors was ₹4,000.) As a financial expert, you are required to help Mr. Ram categorise the transactions and find out the total of all the receipts and payments during that period.</div><br/><br/><table border='1'><tr><th>Particulars</th><th>Month</th><th>Date</th><th>Voucher No.</th><th>Transactions</th></tr><tr><td>May</td><td>05-05-2023</td><td>51</td><td>Purchase of seeds worth ₹12,300 in cash.</td></tr><tr><td></td><td>05-05-2023</td><td>52</td><td>Payment made to Creditors of ₹4,000 in cash.</td></tr><tr><td></td><td>06-05-2023</td><td>53</td><td>A loan of ₹25,000 was taken from bank.</td></tr><tr><td></td><td>23-05-2023</td><td>54</td><td>Paid electricity and utility expenses of ₹200 in cash.</td></tr><tr><td></td><td>25-05-2023</td><td>55</td><td>Bought a tractor for a lease of ₹30,000 and paid through the bank.</td></tr><tr><td></td><td>26-05-2023</td><td>56</td><td>Transportation costs incurred during the month of ₹1,750 were paid in cash.</td></tr><tr><td></td><td>30-05-2023</td><td>57</td><td>Received ₹8,250 via bank transaction from the sale of excess seeds acquired from a previous purchase.</td></tr><tr><td></td><td>31-05-2023</td><td>58</td><td>He incurred medical expenses of ₹850 which were paid through Paytm.</td></tr><tr><td>June</td><td>20-06-2023</td><td>59</td><td>The subsidy received from the Goverment of ₹12,000 was credited to the bank account.</td></tr><tr><td></td><td>22-06-2023</td><td>60</td><td>He bought fertilisers and paid ₹8,000 by bank.</td></tr><tr><td></td><td>23-06-2023</td><td>61</td><td>EMI of ₹2,000 was paid through bank towards the loan taken on May 6 2023.</td></tr><tr><td></td><td>30-06-2023</td><td>62</td><td>Received ₹3,500 in cash from a debtor.</td></tr><tr><td>July</td><td>07-07-2023</td><td>63</td><td>Received ₹3,600 as interest from a post office deposit in bank.</td></tr><tr><td></td><td>13-07-2023</td><td>64</td><td>Paid electricity and utility expenses of ₹410 in cash.</td></tr><tr><td></td><td>18-07-2023</td><td>65</td><td>EMI of ₹2,000 was paid through bank towards the loan taken on May 6 2023.</td></tr><tr><td></td><td>20-07-2023</td><td>66</td><td>Purchased tools used in farming for ₹1,200 online.</td></tr><tr><td></td><td>20-07-2023</td><td>67</td><td>Received monthly rent of ₹4,000 in cash from tenants.</td></tr><tr><td>August</td><td>20-08-2023</td><td>68</td><td>Received monthly rent of ₹4,000 in cash from tenants.</td></tr><tr><td></td><td>23-08-2023</td><td>69</td><td>EMI of ₹2,000 was paid through bank towards the loan taken on May 6 2023.</td></tr><tr><td></td><td>26-08-2023</td><td>70</td><td>Sold crops and received ₹7,750 in cash.</td></tr><tr><td></td><td>29-08-2023</td><td>71</td><td>Transportation costs of ₹620 were paid online.</td></tr><tr><td>September</td><td>20-09-2023</td><td>72</td><td>Received monthly rent of ₹4,000 in cash from tenants.</td></tr><tr><td></td><td>23-09-2023</td><td>73</td><td>Paid electricity and utility expenses of ₹520 in cash.</td></tr><tr><td></td><td>23-09-2023</td><td>74</td><td>Crops were sold to wholesalers for ₹15,000 and received through the bank.</td></tr><tr><td></td><td>28-09-2023</td><td>75</td><td>EMI of ₹2,000 was paid through bank towards the loan taken on May 6 2023.</td></tr><tr><td>October</td><td>20-10-2023</td><td>76</td><td>Received monthly rent of ₹4,000 in cash from tenants.</td></tr><tr><td></td><td>22-10-2023</td><td>77</td><td>EMI of ₹2,000 was paid through bank towards the loan taken on May 6 2023.</td></tr><tr><td></td><td>23-10-2023</td><td>78</td><td>Property tax paid online is ₹1,100.</td></tr><tr><td></td><td>25-10-2023</td><td>79</td><td>Medical expenses amounted to ₹1,500 paid through cash.</td></tr><tr><td></td><td>26-10-2023</td><td>80</td><td>Sold crops and received ₹12,000 in cash.</td></tr><tr><td></td><td>28-10-2023</td><td>81</td><td>The insurance amount of ₹800 was paid online.</td></tr><tr><td></td><td>30-10-2023</td><td>82</td><td>Received ₹2,400 in cash from a debtor.</td></tr><tr><td></td><td>31-10-2023</td><td>83</td><td>Food expenses incurred during the month were ₹1,600 were paid in cash.</td></tr></table>",
+      "endPoint": "spending",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "voucherNo": "51",
+              "date": "2023-05-05",
+              "particulars": "Purchase of seeds",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 12300
+            },
+            {
+              "voucherNo": "52",
+              "date": "2023-05-05",
+              "particulars": "Payment made to Creditors",
+              "mode": "Cash",
+              "category": "Payment to creditors",
+              "amount": 4000
+            },
+            {
+              "voucherNo": "53",
+              "date": "2023-05-06",
+              "particulars": "Loan taken from bank",
+              "mode": "Bank",
+              "category": "Raising of Loan",
+              "amount": 25000
+            },
+            {
+              "voucherNo": "54",
+              "date": "2023-05-23",
+              "particulars": "Paid electricity and utility expenses",
+              "mode": "Cash",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 200
+            },
+            {
+              "voucherNo": "55",
+              "date": "2023-05-25",
+              "particulars": "Bought a tractor for lease",
+              "mode": "Bank",
+              "category": "Purchase of Asset",
+              "amount": 30000
+            },
+            {
+              "voucherNo": "56",
+              "date": "2023-05-26",
+              "particulars": "Transportation costs incurred",
+              "mode": "Cash",
+              "category": "Transportation Charges",
+              "amount": 1750
+            },
+            {
+              "voucherNo": "57",
+              "date": "2023-05-30",
+              "particulars": "Sale of excess seeds",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 8250
+            },
+            {
+              "voucherNo": "58",
+              "date": "2023-05-31",
+              "particulars": "Medical expenses",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 850
+            },
+            {
+              "voucherNo": "59",
+              "date": "2023-06-20",
+              "particulars": "Subsidy received from Government",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 12000
+            },
+            {
+              "voucherNo": "60",
+              "date": "2023-06-22",
+              "particulars": "Bought fertilisers",
+              "mode": "Bank",
+              "category": "Purchase",
+              "amount": 8000
+            },
+            {
+              "voucherNo": "61",
+              "date": "2023-06-23",
+              "particulars": "EMI payment towards loan",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "62",
+              "date": "2023-06-30",
+              "particulars": "Received from debtor",
+              "mode": "Cash",
+              "category": "Receipt from Debtors",
+              "amount": 3500
+            },
+            {
+              "voucherNo": "63",
+              "date": "2023-07-07",
+              "particulars": "Interest from post office deposit",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 3600
+            },
+            {
+              "voucherNo": "64",
+              "date": "2023-07-13",
+              "particulars": "Paid electricity and utility expenses",
+              "mode": "Cash",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 410
+            },
+            {
+              "voucherNo": "65",
+              "date": "2023-07-18",
+              "particulars": "EMI payment towards loan",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "66",
+              "date": "2023-07-20",
+              "particulars": "Purchased farming tools",
+              "mode": "Bank",
+              "category": "Purchase of Asset",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "67",
+              "date": "2023-07-20",
+              "particulars": "Received monthly rent",
+              "mode": "Cash",
+              "category": "Other Income",
+              "amount": 4000
+            },
+            {
+              "voucherNo": "68",
+              "date": "2023-08-20",
+              "particulars": "Received monthly rent",
+              "mode": "Cash",
+              "category": "Other Income",
+              "amount": 4000
+            },
+            {
+              "voucherNo": "69",
+              "date": "2023-08-23",
+              "particulars": "EMI payment towards loan",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "70",
+              "date": "2023-08-26",
+              "particulars": "Sold crops",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 7750
+            },
+            {
+              "voucherNo": "71",
+              "date": "2023-08-29",
+              "particulars": "Transportation costs",
+              "mode": "Bank",
+              "category": "Transportation Charges",
+              "amount": 620
+            },
+            {
+              "voucherNo": "72",
+              "date": "2023-09-20",
+              "particulars": "Received monthly rent",
+              "mode": "Cash",
+              "category": "Other Income",
+              "amount": 4000
+            },
+            {
+              "voucherNo": "73",
+              "date": "2023-09-23",
+              "particulars": "Paid electricity and utility expenses",
+              "mode": "Cash",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 520
+            },
+            {
+              "voucherNo": "74",
+              "date": "2023-09-23",
+              "particulars": "Crops sold to wholesalers",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 15000
+            },
+            {
+              "voucherNo": "75",
+              "date": "2023-09-28",
+              "particulars": "EMI payment towards loan",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "76",
+              "date": "2023-10-20",
+              "particulars": "Received monthly rent",
+              "mode": "Cash",
+              "category": "Other Income",
+              "amount": 4000
+            },
+            {
+              "voucherNo": "77",
+              "date": "2023-10-22",
+              "particulars": "EMI payment towards loan",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "78",
+              "date": "2023-10-23",
+              "particulars": "Property tax paid",
+              "mode": "Bank",
+              "category": "Tax Expense",
+              "amount": 1100
+            },
+            {
+              "voucherNo": "79",
+              "date": "2023-10-25",
+              "particulars": "Medical expenses",
+              "mode": "Cash",
+              "category": "Insurance and Medical Expense",
+              "amount": 1500
+            },
+            {
+              "voucherNo": "80",
+              "date": "2023-10-26",
+              "particulars": "Sold crops",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 12000
+            },
+            {
+              "voucherNo": "81",
+              "date": "2023-10-28",
+              "particulars": "Insurance amount paid",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 800
+            },
+            {
+              "voucherNo": "82",
+              "date": "2023-10-30",
+              "particulars": "Received from debtor",
+              "mode": "Cash",
+              "category": "Receipt from Debtors",
+              "amount": 2400
+            },
+            {
+              "voucherNo": "83",
+              "date": "2023-10-31",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 1600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spending_004",
+      "description": "<div>Sunitha Furnitures is a retail furniture shop in Kerala. The proprietor has planned to record all the transactions during the month of July 2023. He had ₹13,000 in cash on hand and ₹25,000 at the bank during the period. You are required to help him record the monthly transactions in a systematic manner and find out the amount of income and expenditure for the period of July 2023. His transactions are given below. Provided that his opening debtors were ₹9,750 and his opening creditors were ₹6,000.</div><br/><br/><table border='1'><tr><th>Voucher No.</th><th>Date</th><th>Transactions</th></tr><tr><td>101</td><td>07-02-2023</td><td>Purchased furniture from wholesalers for ₹2,500 in cash.</td></tr><tr><td>102</td><td>07-02-2023</td><td>Paid monthly building rent of ₹8,000 by bank.</td></tr><tr><td>103</td><td>07-02-2023</td><td>Receipt of ₹6,250 from debtors via bank.</td></tr><tr><td>104</td><td>07-03-2023</td><td>Received ₹9,500 in cash from customers for the sale of furniture.</td></tr><tr><td>105</td><td>03-07-2023</td><td>The electricity bill of ₹1,030 was paid by UPI.</td></tr><tr><td>106</td><td>03-07-2023</td><td>Sold furniture and received online payment of ₹15,350.</td></tr><tr><td>107</td><td>03-07-2023</td><td>Purchased another piece of furniture on credit for ₹2,000.</td></tr><tr><td>108</td><td>04-07-2023</td><td>Paid insurance expenses of ₹2,300 by the bank.</td></tr><tr><td>109</td><td>04-07-2023</td><td>Sold furniture and received payment of ₹2,750 through the bank.</td></tr><tr><td>110</td><td>04-07-2023</td><td>Sold furniture on credit for ₹3,000.</td></tr><tr><td>111</td><td>05-07-2023</td><td>Paid salary to employee by UPI for ₹15,000.</td></tr><tr><td>112</td><td>05-07-2023</td><td>Sales income for the day of ₹2,500 was received through the bank.</td></tr><tr><td>113</td><td>05-07-2023</td><td>Repairs and maintenance costs of ₹1,200 were incurred and paid in cash.</td></tr><tr><td>114</td><td>05-07-2023</td><td>Paid credit card processing fee of ₹800 online.</td></tr><tr><td>115</td><td>05-07-2023</td><td>Sales amounting to ₹2,350 have been recorded in the bank.</td></tr><tr><td>116</td><td>06-07-2023</td><td>Paid advertising and marketing expenses of ₹5,000 in cash.</td></tr><tr><td>117</td><td>06-07-2023</td><td>Purchase of furniture in cash: ₹300.</td></tr><tr><td>118</td><td>06-07-2023</td><td>Recharged mobile phone via UPI for ₹720.</td></tr><tr><td>119</td><td>06-07-2023</td><td>Rent of ₹600 received from leasing furniture was credited to the bank account.</td></tr><tr><td>120</td><td>06-07-2023</td><td>Sold furniture and received a payment of ₹5,200 in cash.</td></tr><tr><td>121</td><td>07-07-2023</td><td>Received ₹1,500 from one of the debtors in cash.</td></tr><tr><td>122</td><td>07-07-2023</td><td>Payment of ₹2,800 was made to creditors through the bank.</td></tr><tr><td>123</td><td>07-07-2023</td><td>Food expenses incurred on the day were ₹400 in cash.</td></tr><tr><td>124</td><td>08-07-2023</td><td>Recorded a sale of furniture to a customer worth ₹1,800 by bank.</td></tr><tr><td>125</td><td>08-07-2023</td><td>Sold another piece of furniture for ₹2,500 to one of the regular customers on credit.</td></tr><tr><td>126</td><td>08-07-2023</td><td>The proprietor incurred transportation charges of ₹850 which were paid through the bank.</td></tr><tr><td>127</td><td>09-03-2023</td><td>Sold furniture and received payment of ₹2,600 by bank.</td></tr><tr><td>128</td><td>09-03-2023</td><td>Incurred carriage expenses of ₹2,500 in cash.</td></tr><tr><td>129</td><td>09-03-2023</td><td>Sold furniture and received an online payment of ₹1,000.</td></tr><tr><td>130</td><td>10-07-2023</td><td>GST expenses were paid online for ₹2,250.</td></tr><tr><td>131</td><td>12-07-2023</td><td>Sales of the day amounting to ₹800 have been recorded in cash.</td></tr><tr><td>132</td><td>15-07-2023</td><td>The sales of the day amounted to ₹2,200 received in the bank account.</td></tr><tr><td>133</td><td>15-07-2023</td><td>Food expenses totaling ₹250 were incurred and paid in cash.</td></tr><tr><td>134</td><td>21-07-2023</td><td>Loan repayment of ₹3,000 was made through the bank.</td></tr><tr><td>135</td><td>23-07-2023</td><td>A cash donation worth ₹500 was made to a political party.</td></tr><tr><td>136</td><td>27-07-2023</td><td>Sold furniture worth ₹3,200 and received payment in cash.</td></tr><tr><td>137</td><td>28-07-2023</td><td>Received an online payment of ₹2,500 from the debtor.</td></tr><tr><td>138</td><td>30-07-2023</td><td>Online payment to the Income Tax Department: ₹16,200.</td></tr><tr><td>139</td><td>31-07-2023</td><td>Commission paid for sales in cash: ₹900.</td></tr><tr><td>140</td><td>31-07-2023</td><td>Sold furniture and received ₹1,100 in cash.</td></tr></table>",
+      "endPoint": "spending",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "voucherNo": "101",
+              "date": "2023-07-02",
+              "particulars": "Purchased furniture from wholesalers",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "102",
+              "date": "2023-07-02",
+              "particulars": "Paid monthly building rent",
+              "mode": "Bank",
+              "category": "Rent",
+              "amount": 8000
+            },
+            {
+              "voucherNo": "103",
+              "date": "2023-07-02",
+              "particulars": "Receipt from debtors",
+              "mode": "Bank",
+              "category": "Receipt from Debtors",
+              "amount": 6250
+            },
+            {
+              "voucherNo": "104",
+              "date": "2023-07-03",
+              "particulars": "Received from customers for sale of furniture",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 9500
+            },
+            {
+              "voucherNo": "105",
+              "date": "2023-07-03",
+              "particulars": "Paid electricity bill",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 1030
+            },
+            {
+              "voucherNo": "106",
+              "date": "2023-07-03",
+              "particulars": "Sold furniture",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 15350
+            },
+            {
+              "voucherNo": "107",
+              "date": "2023-07-03",
+              "particulars": "Purchased furniture on credit",
+              "mode": "Credit",
+              "category": "Purchase",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "108",
+              "date": "2023-07-04",
+              "particulars": "Paid insurance expenses",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 2300
+            },
+            {
+              "voucherNo": "109",
+              "date": "2023-07-04",
+              "particulars": "Sold furniture",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2750
+            },
+            {
+              "voucherNo": "110",
+              "date": "2023-07-04",
+              "particulars": "Sold furniture on credit",
+              "mode": "Credit",
+              "category": "Sale of Goods",
+              "amount": 3000
+            },
+            {
+              "voucherNo": "111",
+              "date": "2023-07-05",
+              "particulars": "Paid salary to employee",
+              "mode": "Bank",
+              "category": "Salaries and Wages",
+              "amount": 15000
+            },
+            {
+              "voucherNo": "112",
+              "date": "2023-07-05",
+              "particulars": "Sales income for the day",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "113",
+              "date": "2023-07-05",
+              "particulars": "Repairs and maintenance costs",
+              "mode": "Cash",
+              "category": "Repairs and Maintenance",
+              "amount": 1200
+            },
+            {
+              "voucherNo": "114",
+              "date": "2023-07-05",
+              "particulars": "Paid credit card processing fee",
+              "mode": "Bank",
+              "category": "Other Expense",
+              "amount": 800
+            },
+            {
+              "voucherNo": "115",
+              "date": "2023-07-05",
+              "particulars": "Sales recorded",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2350
+            },
+            {
+              "voucherNo": "116",
+              "date": "2023-07-06",
+              "particulars": "Paid advertising and marketing expenses",
+              "mode": "Cash",
+              "category": "Advertisements",
+              "amount": 5000
+            },
+            {
+              "voucherNo": "117",
+              "date": "2023-07-06",
+              "particulars": "Purchase of furniture",
+              "mode": "Cash",
+              "category": "Purchase",
+              "amount": 300
+            },
+            {
+              "voucherNo": "118",
+              "date": "2023-07-06",
+              "particulars": "Recharged mobile phone",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 720
+            },
+            {
+              "voucherNo": "119",
+              "date": "2023-07-06",
+              "particulars": "Rent received from leasing furniture",
+              "mode": "Bank",
+              "category": "Rent",
+              "amount": 600
+            },
+            {
+              "voucherNo": "120",
+              "date": "2023-07-06",
+              "particulars": "Sold furniture",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 5200
+            },
+            {
+              "voucherNo": "121",
+              "date": "2023-07-07",
+              "particulars": "Received from debtor",
+              "mode": "Cash",
+              "category": "Receipt from Debtors",
+              "amount": 1500
+            },
+            {
+              "voucherNo": "122",
+              "date": "2023-07-07",
+              "particulars": "Payment to creditors",
+              "mode": "Bank",
+              "category": "Payment to creditors",
+              "amount": 2800
+            },
+            {
+              "voucherNo": "123",
+              "date": "2023-07-07",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 400
+            },
+            {
+              "voucherNo": "124",
+              "date": "2023-07-08",
+              "particulars": "Sale of furniture",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 1800
+            },
+            {
+              "voucherNo": "125",
+              "date": "2023-07-08",
+              "particulars": "Sold another piece of furniture on credit",
+              "mode": "Credit",
+              "category": "Sale of Goods",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "126",
+              "date": "2023-07-08",
+              "particulars": "Transportation charges incurred",
+              "mode": "Bank",
+              "category": "Transportation Charges",
+              "amount": 850
+            },
+            {
+              "voucherNo": "127",
+              "date": "2023-09-03",
+              "particulars": "Sold furniture",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2600
+            },
+            {
+              "voucherNo": "128",
+              "date": "2023-09-03",
+              "particulars": "Incurred carriage expenses",
+              "mode": "Cash",
+              "category": "Transportation Charges",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "129",
+              "date": "2023-09-03",
+              "particulars": "Sold furniture and received an online payment",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 1000
+            },
+            {
+              "voucherNo": "130",
+              "date": "2023-07-10",
+              "particulars": "GST expenses",
+              "mode": "Bank",
+              "category": "Tax Expense",
+              "amount": 2250
+            },
+            {
+              "voucherNo": "131",
+              "date": "2023-07-12",
+              "particulars": "Sales of the day",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 800
+            },
+            {
+              "voucherNo": "132",
+              "date": "2023-07-15",
+              "particulars": "Sales of the day",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 2200
+            },
+            {
+              "voucherNo": "133",
+              "date": "2023-07-15",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 250
+            },
+            {
+              "voucherNo": "134",
+              "date": "2023-07-21",
+              "particulars": "Loan repayment",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 3000
+            },
+            {
+              "voucherNo": "135",
+              "date": "2023-07-23",
+              "particulars": "Cash donation to political party",
+              "mode": "Cash",
+              "category": "Donation and Charity",
+              "amount": 500
+            },
+            {
+              "voucherNo": "136",
+              "date": "2023-07-27",
+              "particulars": "Sold furniture",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 3200
+            },
+            {
+              "voucherNo": "137",
+              "date": "2023-07-28",
+              "particulars": "Received from debtor",
+              "mode": "Bank",
+              "category": "Receipt from Debtors",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "138",
+              "date": "2023-07-30",
+              "particulars": "Online payment to Income Tax Department",
+              "mode": "Bank",
+              "category": "Tax Expense",
+              "amount": 16200
+            },
+            {
+              "voucherNo": "139",
+              "date": "2023-07-31",
+              "particulars": "Commission paid for sales",
+              "mode": "Cash",
+              "category": "Salaries and Wages",
+              "amount": 900
+            },
+            {
+              "voucherNo": "140",
+              "date": "2023-07-31",
+              "particulars": "Sold furniture",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 1100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spending_005",
+      "description": "<div>Armaan Singh, the owner of a mechanical shop and also a dealer of used vehicles in Punjab, had several cash and credit-related transactions during the first two weeks of May 2023. You are required to help Armaan record all the receipts and payments based on their categories. His transactions are given below. He had an opening balance of ₹12,500 in hand and ₹60,000 in the bank at the beginning of May. Opening debtors and creditors at the beginning were ₹4,000 and ₹7,250 respectively. As a financial expert, you are required to help Mr. Armaan find out the total amount of receipts and payments after categorising all the transactions under their respective heads.</div><br/><br/><table border='1'><tr><th>Date</th><th>Voucher No.</th><th>Transactions</th><th>Amount</th></tr><tr><td>02-05-2023</td><td>501</td><td>Received payment for repairing vehicles via bank transaction.</td><td>₹30,000</td></tr><tr><td>02-05-2023</td><td>502</td><td>Spare parts worth ₹5,000 were sold last month and ₹3,000 was received immediately. However, the balance was received in cash on May 2nd.</td><td>₹2,000</td></tr><tr><td>02-05-2023</td><td>503</td><td>Purchased tools and equipment, payment was made via bank transfer.</td><td>₹12,300</td></tr><tr><td>02-05-2023</td><td>504</td><td>Paid for advertising and sales promotion online.</td><td>₹5,200</td></tr><tr><td>03-05-2023</td><td>505</td><td>Sold parts and accessories on credit.</td><td>₹8,500</td></tr><tr><td>03-05-2023</td><td>506</td><td>Received online payment for vehicle repair.</td><td>₹23,500</td></tr><tr><td>03-05-2023</td><td>507</td><td>Received payment for vehicle services in cash.</td><td>₹8,000</td></tr><tr><td>04-05-2023</td><td>508</td><td>Loan repayment made through bank transfer.</td><td>₹2,000</td></tr><tr><td>04-05-2023</td><td>509</td><td>Paid insurance amount online.</td><td>₹2,500</td></tr><tr><td>05-05-2023</td><td>510</td><td>Monthly wages were paid to the workers online.</td><td>₹50,000</td></tr><tr><td>05-05-2023</td><td>511</td><td>Rental income received via bank transfer for renting out a space owned by Armaan.</td><td>₹3,000</td></tr><tr><td>05-05-2023</td><td>512</td><td>Paid for the repairs and maintenance costs of equipment in cash.</td><td>₹7,500</td></tr><tr><td>06-05-2023</td><td>513</td><td>Received payment for the vehicle services via bank transfer.</td><td>₹15,800</td></tr><tr><td>06-05-2023</td><td>514</td><td>Food expenses were incurred and paid in cash.</td><td>₹570</td></tr><tr><td>06-05-2023</td><td>515</td><td>Telephone and internet expenses were paid online.</td><td>₹900</td></tr><tr><td>08-05-2023</td><td>516</td><td>Received payment for vehicle repair via bank transfer.</td><td>₹27,000</td></tr><tr><td>09-05-2023</td><td>517</td><td>Armaan has made a short-term investment in his friend's business (Through Bank).</td><td>₹12,000</td></tr><tr><td>09-05-2023</td><td>518</td><td>Received payment for the vehicle services via bank transfer.</td><td>₹7,300</td></tr><tr><td>09-05-2023</td><td>519</td><td>Dividend received through the bank.</td><td>₹3,000</td></tr><tr><td>10-05-2023</td><td>520</td><td>One of the used cars was sold and the amount was received via bank transfer.</td><td>₹60,000</td></tr><tr><td>10-05-2023</td><td>521</td><td>Received payment for vehicle services in cash.</td><td>₹35,000</td></tr><tr><td>10-05-2023</td><td>522</td><td>A sale of used car was made and the amount was received through the bank.</td><td>₹40,000</td></tr><tr><td>10-05-2023</td><td>523</td><td>Online payments for electricity bills were made.</td><td>₹8,260</td></tr><tr><td>11-05-2023</td><td>524</td><td>Medical expenses incurred by Armaan and paid online.</td><td>₹4,100</td></tr><tr><td>11-05-2023</td><td>525</td><td>The credit purchase of equipment was made by the owner.</td><td>₹4,500</td></tr><tr><td>12-05-2023</td><td>526</td><td>Received online payment for the sale of a used car.</td><td>₹32,500</td></tr><tr><td>12-05-2023</td><td>527</td><td>Dividend received through the bank.</td><td>₹7,000</td></tr><tr><td>13-05-2023</td><td>528</td><td>Received payment for vehicle services via bank transfer.</td><td>₹2,500</td></tr><tr><td>13-05-2023</td><td>529</td><td>Received payment for vehicle repair via bank transfer.</td><td>₹2,500</td></tr><tr><td>13-05-2023</td><td>530</td><td>Wages were paid to the workers in cash.</td><td>₹4,200</td></tr><tr><td>14-05-2023</td><td>531</td><td>Received online payment for services.</td><td>₹15,000</td></tr><tr><td>14-05-2023</td><td>532</td><td>The payment was received from a debtor in cash.</td><td>₹3,200</td></tr><tr><td>14-05-2023</td><td>533</td><td>Income tax paid online.</td><td>₹9,100</td></tr><tr><td>15-05-2023</td><td>534</td><td>Received online payment for vehicle services.</td><td>₹8,800</td></tr><tr><td>15-05-2023</td><td>535</td><td>Received payment for the sale of equipment in cash.</td><td>₹6,000</td></tr><tr><td>15-05-2023</td><td>536</td><td>The business loan interest was paid online.</td><td>₹6,000</td></tr><tr><td>15-05-2023</td><td>537</td><td>The fuel expenses of the vehicles were paid in cash.</td><td>₹1,500</td></tr><tr><td>15-05-2023</td><td>538</td><td>The insurance amount was paid online.</td><td>₹3,500</td></tr><tr><td>Total</td><td></td><td></td><td>₹5,78,960</td></tr></table>",
+      "endPoint": "spending",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "voucherNo": "501",
+              "date": "2023-05-02",
+              "particulars": "Received payment for repairing vehicles",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 30000
+            },
+            {
+              "voucherNo": "502",
+              "date": "2023-05-02",
+              "particulars": "Received cash for balance of spare parts sold",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "503",
+              "date": "2023-05-02",
+              "particulars": "Purchased tools and equipment",
+              "mode": "Bank",
+              "category": "Purchase of Asset",
+              "amount": 12300
+            },
+            {
+              "voucherNo": "504",
+              "date": "2023-05-02",
+              "particulars": "Paid for advertising and sales promotion",
+              "mode": "Bank",
+              "category": "Advertisements",
+              "amount": 5200
+            },
+            {
+              "voucherNo": "505",
+              "date": "2023-05-03",
+              "particulars": "Sold parts and accessories on credit",
+              "mode": "Credit",
+              "category": "Sale of Goods",
+              "amount": 8500
+            },
+            {
+              "voucherNo": "506",
+              "date": "2023-05-03",
+              "particulars": "Received online payment for vehicle repair",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 23500
+            },
+            {
+              "voucherNo": "507",
+              "date": "2023-05-03",
+              "particulars": "Received payment for vehicle services",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 8000
+            },
+            {
+              "voucherNo": "508",
+              "date": "2023-05-04",
+              "particulars": "Loan repayment",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 2000
+            },
+            {
+              "voucherNo": "509",
+              "date": "2023-05-04",
+              "particulars": "Paid insurance amount",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "510",
+              "date": "2023-05-05",
+              "particulars": "Paid monthly wages to workers",
+              "mode": "Bank",
+              "category": "Salaries and Wages",
+              "amount": 50000
+            },
+            {
+              "voucherNo": "511",
+              "date": "2023-05-05",
+              "particulars": "Received rental income",
+              "mode": "Bank",
+              "category": "Rent",
+              "amount": 3000
+            },
+            {
+              "voucherNo": "512",
+              "date": "2023-05-05",
+              "particulars": "Paid repairs and maintenance costs",
+              "mode": "Cash",
+              "category": "Repairs and Maintenance",
+              "amount": 7500
+            },
+            {
+              "voucherNo": "513",
+              "date": "2023-05-06",
+              "particulars": "Received payment for vehicle services",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 15800
+            },
+            {
+              "voucherNo": "514",
+              "date": "2023-05-06",
+              "particulars": "Food expenses",
+              "mode": "Cash",
+              "category": "Food, Water and Recreation Expense",
+              "amount": 570
+            },
+            {
+              "voucherNo": "515",
+              "date": "2023-05-06",
+              "particulars": "Paid telephone and internet expenses",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 900
+            },
+            {
+              "voucherNo": "516",
+              "date": "2023-05-08",
+              "particulars": "Received payment for vehicle repair",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 27000
+            },
+            {
+              "voucherNo": "517",
+              "date": "2023-05-09",
+              "particulars": "Short-term investment in friend's business",
+              "mode": "Bank",
+              "category": "Short Term Investments Made",
+              "amount": 12000
+            },
+            {
+              "voucherNo": "518",
+              "date": "2023-05-09",
+              "particulars": "Received payment for vehicle services",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 7300
+            },
+            {
+              "voucherNo": "519",
+              "date": "2023-05-09",
+              "particulars": "Dividend received",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 3000
+            },
+            {
+              "voucherNo": "520",
+              "date": "2023-05-10",
+              "particulars": "Sold used car, amount received",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 60000
+            },
+            {
+              "voucherNo": "521",
+              "date": "2023-05-10",
+              "particulars": "Received payment for vehicle services",
+              "mode": "Cash",
+              "category": "Revenue from Services",
+              "amount": 35000
+            },
+            {
+              "voucherNo": "522",
+              "date": "2023-05-10",
+              "particulars": "Sale of used car, amount received",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 40000
+            },
+            {
+              "voucherNo": "523",
+              "date": "2023-05-10",
+              "particulars": "Paid online electricity bill",
+              "mode": "Bank",
+              "category": "Electricity, Telephone and Other Utilities",
+              "amount": 8260
+            },
+            {
+              "voucherNo": "524",
+              "date": "2023-05-11",
+              "particulars": "Medical expenses incurred by Armaan",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 4100
+            },
+            {
+              "voucherNo": "525",
+              "date": "2023-05-11",
+              "particulars": "Credit purchase of equipment",
+              "mode": "Credit",
+              "category": "Purchase of Asset",
+              "amount": 4500
+            },
+            {
+              "voucherNo": "526",
+              "date": "2023-05-12",
+              "particulars": "Received online payment for used car",
+              "mode": "Bank",
+              "category": "Sale of Goods",
+              "amount": 32500
+            },
+            {
+              "voucherNo": "527",
+              "date": "2023-05-12",
+              "particulars": "Dividend received",
+              "mode": "Bank",
+              "category": "Other Income",
+              "amount": 7000
+            },
+            {
+              "voucherNo": "528",
+              "date": "2023-05-13",
+              "particulars": "Received payment for vehicle services",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "529",
+              "date": "2023-05-13",
+              "particulars": "Received payment for vehicle repair",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 2500
+            },
+            {
+              "voucherNo": "530",
+              "date": "2023-05-13",
+              "particulars": "Wages paid to workers",
+              "mode": "Cash",
+              "category": "Salaries and Wages",
+              "amount": 4200
+            },
+            {
+              "voucherNo": "531",
+              "date": "2023-05-14",
+              "particulars": "Received online payment for services",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 15000
+            },
+            {
+              "voucherNo": "532",
+              "date": "2023-05-14",
+              "particulars": "Payment received from debtor",
+              "mode": "Cash",
+              "category": "Receipt from Debtors",
+              "amount": 3200
+            },
+            {
+              "voucherNo": "533",
+              "date": "2023-05-14",
+              "particulars": "Income tax paid online",
+              "mode": "Bank",
+              "category": "Tax Expense",
+              "amount": 9100
+            },
+            {
+              "voucherNo": "534",
+              "date": "2023-05-15",
+              "particulars": "Received online payment for vehicle services",
+              "mode": "Bank",
+              "category": "Revenue from Services",
+              "amount": 8800
+            },
+            {
+              "voucherNo": "535",
+              "date": "2023-05-15",
+              "particulars": "Received payment for sale of equipment",
+              "mode": "Cash",
+              "category": "Sale of Goods",
+              "amount": 6000
+            },
+            {
+              "voucherNo": "536",
+              "date": "2023-05-15",
+              "particulars": "Business loan interest paid",
+              "mode": "Bank",
+              "category": "Loan Repayment",
+              "amount": 6000
+            },
+            {
+              "voucherNo": "537",
+              "date": "2023-05-15",
+              "particulars": "Fuel expenses of vehicles",
+              "mode": "Cash",
+              "category": "Other Expense",
+              "amount": 1500
+            },
+            {
+              "voucherNo": "538",
+              "date": "2023-05-15",
+              "particulars": "Insurance amount paid",
+              "mode": "Bank",
+              "category": "Insurance and Medical Expense",
+              "amount": 3500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

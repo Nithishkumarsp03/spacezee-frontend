@@ -1,0 +1,117 @@
+[
+    {
+      "title": "LSM_001AA",
+      "description": "<div>Berlin Joseph, a sole proprietor, intends to invest an amount of ₹20,00,000 in a lump sum investment plan. You are required to calculate the following:</div><ul><li>(a) What will be the total value of the lump sum after five years with an interest rate of 18%?</li><li>(b) What is the profit generated from the investment?</li><li>(c) What is the required initial investment amount to reach the final value of ₹50,00,000?</li><li>(d) If the initial investment is ₹15,00,000 and the rate of return is 18%, how many months are needed to reach the final value of ₹50,00,000?</li></ul><br><div>एकमात्र मालिक बर्लिन जोसेफ एकमुश्त निवेश योजना में ₹20,00,000 की राशि निवेश करने का इरादा रखता है। आपको निम्नलिखित की गणना करनी होगी:</div><ul><li>(a) 18% की ब्याज दर के साथ पांच साल बाद एकमुश्त राशि का कुल मूल्य क्या होगा?</li><li>(b) निवेश से उत्पन्न लाभ क्या है?</li><li>(c) ₹50,00,000 के अंतिम मूल्य तक पहुंचने के लिए आवश्यक प्रारंभिक निवेश राशि क्या है?</li><li>(d) यदि प्रारंभिक निवेश ₹15,00,000 है और रिटर्न की दर 18% है तो ₹50,00,000 के अंतिम मूल्य तक पहुंचने में कितने महीने लगेंगे?</li></ul>",
+      "endPoint": "emi",
+      "contentDetails": [
+        {
+          "questions": {
+            "a": "What will be the total value of the lump sum after five years with an interest rate of 18%?",
+            "b": "What is the profit generated from the investment?",
+            "c": "What is the required initial investment amount to reach the final value of ₹50,00,000?",
+            "d": "If the initial investment is ₹15,00,000 and the rate of return is 18%, how many months are needed to reach the final value of ₹50,00,000?"
+          },
+          "answers": {
+            "a": 4575079.89, 
+            "b": 2575079.89,
+            "c": 2721924.29,
+            "d": 66
+          },
+          "isDeleted": false
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "title": "LSM_002AB",
+      "description": "<div>Mr. Ernesto, the proprietor of a rental car service, is looking to grow his business and seeks a business investment of ₹50,00,000 after a five-year period. He has discovered a five-year lump sum investment opportunity with an anticipated return rate of 20%. You are required to calculate the following:</div><ul><li>(a) What is the present investment amount required for Mr. Ernesto to reach ₹50,00,000 after 5 years?</li><li>(b) What is the profit generated from this investment?</li><li>(c) If the average rate of return over 5 years increases to 25%, then what will be the final value of the investment?</li><li>(d) What is the extra profit generated as a result of this increase in the return rate?</li></ul><br><div>किराये की कार सेवा के मालिक श्री अर्नेस्टो अपने व्यवसाय को बढ़ाना चाहते हैं और पांच साल की अवधि के बाद ₹50,00,000 का व्यावसायिक निवेश चाहते हैं। उन्होंने 20% की प्रत्याशित रिटर्न दर के साथ पांच साल के एकमुश्त निवेश अवसर की खोज की है। आपको निम्नलिखित की गणना करनी होगी:</div><ul><li>(a) 5 वर्षों के बाद श्री अर्नेस्टो को ₹50,00,000 तक पहुंचने के लिए आवश्यक वर्तमान निवेश राशि कितनी है?</li><li>(b) इस निवेश से कितना लाभ हुआ?</li><li>(c) यदि 5 वर्षों में रिटर्न की औसत दर 25% तक बढ़ जाती है तो निवेश का अंतिम मूल्य क्या होगा?</li><li>(d) रिटर्न दर में इस वृद्धि के परिणामस्वरूप उत्पन्न अतिरिक्त लाभ क्या है?</li></ul>",
+      "endPoint": "emi",
+      "contentDetails": [
+        {
+          "questions": {
+            "a": "What is the present investment amount required for Mr. Ernesto to reach ₹50,00,000 after 5 years?",
+            "b": "What is the profit generated from this investment?",
+            "c": "If the average rate of return over 5 years increases to 25%, then what will be the final value of the investment?",
+            "d": "What is the extra profit generated as a result of this increase in the return rate?"
+          },
+          "answers": {
+            "a": 2016592.69,
+            "b": 2983407.31,
+            "c": 4882812.5,
+            "d": 46875
+          },
+          "isDeleted": false
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "title": "LSM_003AC",
+      "description": "<div>Mrs. Teresa, proprietor of a beauty parlour, intends to generate extra income by investing a lump-sum of ₹10,00,000. You are required to calculate the following:</div><ul><li>(a) If her goal is to increase her investment value to ₹15,00,000 within 5 years, what is the minimum rate of return required for her to achieve this?</li><li>(b) What is the profit generated from this investment?</li><li>(c) What is the final value if she withdraws her investment after four years?</li><li>(d) What is the amount of profit lost due to this premature withdrawal?</li></ul><br><div>ब्यूटी पार्लर की मालिक श्रीमती टेरेसा ₹10,00,000 की एकमुश्त राशि का निवेश करके अतिरिक्त आय उत्पन्न करने का इरादा रखती हैं। आपको निम्नलिखित की गणना करनी होगी:</div><ul><li>(a) यदि उनका लक्ष्य 5 वर्षों के भीतर अपने निवेश मूल्य को ₹15,00,000 तक बढ़ाना है तो इसे प्राप्त करने के लिए आवश्यक न्यूनतम रिटर्न दर क्या है?</li><li>(b) इस निवेश से कितना लाभ हुआ?</li><li>(c) यदि वह चार साल बाद अपना निवेश वापस ले लेती है तो अंतिम मूल्य क्या है?</li><li>(d) इस समयपूर्व निकासी के कारण कितने लाभ की हानि हुई?</li></ul>",
+      "endPoint": "emi",
+      "contentDetails": [
+        {
+          "questions": {
+            "a": "If her goal is to increase her investment value to ₹15,00,000 within 5 years, what is the minimum rate of return required for her to achieve this?",
+            "b": "What is the profit generated from this investment?",
+            "c": "What is the final value if she withdraws her investment after four years?",
+            "d": "What is the amount of profit lost due to this premature withdrawal?"
+          },
+          "answers": {
+            "a": 8.45,
+            "b": 500000,
+            "c": 1469324.23,
+            "d": 30675.77
+          },
+          "isDeleted": false
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "title": "LSM_004AD",
+      "description": "<div>Mr. Vinish, a vegetable dealer, is contemplating an investment in a lump-sum investment plan with ₹12,00,000 and he expects a 17% rate of return from this. You are required to calculate the following:</div><ul><li>(a) Calculate the minimum duration required to reach the final value of ₹25,00,000.</li><li>(b) What is the profit generated from this investment?</li><li>(c) What is the final value if he withdraws his investment after 48 months?</li><li>(d) What is the amount of profit lost due to this premature withdrawal?</li></ul><br><div>श्री विनीश एक सब्जी व्यापारी ₹12,00,000 के साथ एकमुश्त निवेश योजना में निवेश पर विचार कर रहे हैं और उन्हें इससे 17% रिटर्न की उम्मीद है। आपको निम्नलिखित की गणना करनी होगी:</div><ul><li>(a) ₹25,00,000 के अंतिम मूल्य तक पहुंचने के लिए आवश्यक न्यूनतम अवधि की गणना करें।</li><li>(b) इस निवेश से कितना लाभ हुआ?</li><li>(c) यदि वह 48 महीनों के बाद अपना निवेश वापस ले लेता है तो अंतिम मूल्य क्या है?</li><li>(d) इस समयपूर्व निकासी के कारण कितने लाभ की हानि हुई?</li></ul>",
+      "endPoint": "emi",
+      "contentDetails": [
+        {
+          "questions": {
+            "a": "Calculate the minimum duration required to reach the final value of ₹25,00,000.",
+            "b": "What is the profit generated from this investment?",
+            "c": "What is the final value if he withdraws his investment after 48 months?",
+            "d": "What is the amount of profit lost due to this premature withdrawal?"
+          },
+          "answers": {
+            "a": 9.16,
+            "b": 1300000,
+            "c": 2176425.66,
+            "d": 823574.34
+          },
+          "isDeleted": false
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "title": "LSM_005AE",
+      "description": "<div>Mr. Ervin, a wholesale fruit dealer, intends to invest ₹13,00,000 generated from his business profits in a lump-sum investment plan. You are required to calculate the following:</div><ul><li>(a) If the expected rate of return on this investment is 16%, what would be the total value after a period of seven years?</li><li>(b) What is the profit generated from this investment?</li><li>(c) How many additional months are needed to reach the final value of ₹40,00,000?</li><li>(d) What is the additional profit generated from extending the duration?</li></ul><br><div>श्री एर्विन एक थोक फल विक्रेता एकमुश्त निवेश योजना में अपने व्यवसाय के मुनाफे से उत्पन्न ₹13,00,000 का निवेश करने का इरादा रखते हैं। आपको निम्नलिखित की गणना करनी होगी:</div><ul><li>(a) यदि इस निवेश पर रिटर्न की अपेक्षित दर 16% है तो सात साल की अवधि के बाद कुल मूल्य क्या होगा?</li><li>(b) इस निवेश से कितना लाभ हुआ?</li><li>(c) ₹40,00,000 के अंतिम मूल्य तक पहुंचने के लिए कितने अतिरिक्त महीनों की आवश्यकता है?</li><li>(d) अवधि बढ़ाने से उत्पन्न अतिरिक्त लाभ क्या है?</li></ul>",
+      "endPoint": "emi",
+      "contentDetails": [
+        {
+          "questions": {
+            "a": "If the expected rate of return on this investment is 16%, what would be the total value after a period of seven years?",
+            "b": "What is the profit generated from this investment?",
+            "c": "How many additional months are needed to reach the final value of ₹40,00,000?",
+            "d": "What is the additional profit generated from extending the duration?"
+          },
+          "answers": {
+            "a": 3474807.29,
+            "b": 2174807.29,
+            "c": 35,
+            "d": 2347192.71
+          },
+          "isDeleted": false
+        }
+      ],
+      "isDeleted": false
+    }
+  ]
