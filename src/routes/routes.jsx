@@ -43,6 +43,7 @@ import EPANOtp from "../components/ui/tasks/PAN/EPANOtp";
 import EPANFinal from "../components/ui/tasks/PAN/EPANFinal";
 import EPANKYC from "../components/ui/tasks/PAN/EPANKYC";
 import TaskLayout from "../components/layout/TaskLayout";
+import Bank_Reconciliation from "../components/ui/tasks/Bank_Reconciliation_Statement/Bank_Reconciliation";
 
 const router = createBrowserRouter([
   {
@@ -231,6 +232,14 @@ const router = createBrowserRouter([
       { path: "kyc", element: <EPANKYC /> },
       { path: "final", element: <EPANFinal /> },
     ],
+  },
+  {
+    path: "task/bank_reconciliation",
+    element: (
+      <TaskLayout>
+        <Bank_Reconciliation />
+      </TaskLayout>
+    ),
   },
 ]);
 

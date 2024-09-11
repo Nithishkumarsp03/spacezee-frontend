@@ -1,306 +1,330 @@
-[
-  {
-    "voucherNo": "501",
-    "date": "2023-05-02",
-    "particulars": "Received payment for repairing vehicles",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 30000
-  },
-  {
-    "voucherNo": "502",
-    "date": "2023-05-02",
-    "particulars": "Received cash for balance of spare parts sold",
-    "mode": "Cash",
-    "category": "Sale of Goods",
-    "amount": 2000
-  },
-  {
-    "voucherNo": "503",
-    "date": "2023-05-02",
-    "particulars": "Purchased tools and equipment",
-    "mode": "Bank",
-    "category": "Purchase of Asset",
-    "amount": 12300
-  },
-  {
-    "voucherNo": "504",
-    "date": "2023-05-02",
-    "particulars": "Paid for advertising and sales promotion",
-    "mode": "Bank",
-    "category": "Advertisements",
-    "amount": 5200
-  },
-  {
-    "voucherNo": "505",
-    "date": "2023-05-03",
-    "particulars": "Sold parts and accessories on credit",
-    "mode": "Credit",
-    "category": "Sale of Goods",
-    "amount": 8500
-  },
-  {
-    "voucherNo": "506",
-    "date": "2023-05-03",
-    "particulars": "Received online payment for vehicle repair",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 23500
-  },
-  {
-    "voucherNo": "507",
-    "date": "2023-05-03",
-    "particulars": "Received payment for vehicle services",
-    "mode": "Cash",
-    "category": "Revenue from Services",
-    "amount": 8000
-  },
-  {
-    "voucherNo": "508",
-    "date": "2023-05-04",
-    "particulars": "Loan repayment",
-    "mode": "Bank",
-    "category": "Loan Repayment",
-    "amount": 2000
-  },
-  {
-    "voucherNo": "509",
-    "date": "2023-05-04",
-    "particulars": "Paid insurance amount",
-    "mode": "Bank",
-    "category": "Insurance and Medical Expense",
-    "amount": 2500
-  },
-  {
-    "voucherNo": "510",
-    "date": "2023-05-05",
-    "particulars": "Paid monthly wages to workers",
-    "mode": "Bank",
-    "category": "Salaries and Wages",
-    "amount": 50000
-  },
-  {
-    "voucherNo": "511",
-    "date": "2023-05-05",
-    "particulars": "Received rental income",
-    "mode": "Bank",
-    "category": "Rent",
-    "amount": 3000
-  },
-  {
-    "voucherNo": "512",
-    "date": "2023-05-05",
-    "particulars": "Paid repairs and maintenance costs",
-    "mode": "Cash",
-    "category": "Repairs and Maintenance",
-    "amount": 7500
-  },
-  {
-    "voucherNo": "513",
-    "date": "2023-05-06",
-    "particulars": "Received payment for vehicle services",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 15800
-  },
-  {
-    "voucherNo": "514",
-    "date": "2023-05-06",
-    "particulars": "Food expenses",
-    "mode": "Cash",
-    "category": "Food, Water and Recreation Expense",
-    "amount": 570
-  },
-  {
-    "voucherNo": "515",
-    "date": "2023-05-06",
-    "particulars": "Paid telephone and internet expenses",
-    "mode": "Bank",
-    "category": "Electricity, Telephone and Other Utilities",
-    "amount": 900
-  },
-  {
-    "voucherNo": "516",
-    "date": "2023-05-08",
-    "particulars": "Received payment for vehicle repair",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 27000
-  },
-  {
-    "voucherNo": "517",
-    "date": "2023-05-09",
-    "particulars": "Short-term investment in friend's business",
-    "mode": "Bank",
-    "category": "Short Term Investments Made",
-    "amount": 12000
-  },
-  {
-    "voucherNo": "518",
-    "date": "2023-05-09",
-    "particulars": "Received payment for vehicle services",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 7300
-  },
-  {
-    "voucherNo": "519",
-    "date": "2023-05-09",
-    "particulars": "Dividend received",
-    "mode": "Bank",
-    "category": "Other Income",
-    "amount": 3000
-  },
-  {
-    "voucherNo": "520",
-    "date": "2023-05-10",
-    "particulars": "Sold used car, amount received",
-    "mode": "Bank",
-    "category": "Sale of Goods",
-    "amount": 60000
-  },
-  {
-    "voucherNo": "521",
-    "date": "2023-05-10",
-    "particulars": "Received payment for vehicle services",
-    "mode": "Cash",
-    "category": "Revenue from Services",
-    "amount": 35000
-  },
-  {
-    "voucherNo": "522",
-    "date": "2023-05-10",
-    "particulars": "Sale of used car, amount received",
-    "mode": "Bank",
-    "category": "Sale of Goods",
-    "amount": 40000
-  },
-  {
-    "voucherNo": "523",
-    "date": "2023-05-10",
-    "particulars": "Paid online electricity bill",
-    "mode": "Bank",
-    "category": "Electricity, Telephone and Other Utilities",
-    "amount": 8260
-  },
-  {
-    "voucherNo": "524",
-    "date": "2023-05-11",
-    "particulars": "Medical expenses incurred by Armaan",
-    "mode": "Bank",
-    "category": "Insurance and Medical Expense",
-    "amount": 4100
-  },
-  {
-    "voucherNo": "525",
-    "date": "2023-05-11",
-    "particulars": "Credit purchase of equipment",
-    "mode": "Credit",
-    "category": "Purchase of Asset",
-    "amount": 4500
-  },
-  {
-    "voucherNo": "526",
-    "date": "2023-05-12",
-    "particulars": "Received online payment for used car",
-    "mode": "Bank",
-    "category": "Sale of Goods",
-    "amount": 32500
-  },
-  {
-    "voucherNo": "527",
-    "date": "2023-05-12",
-    "particulars": "Dividend received",
-    "mode": "Bank",
-    "category": "Other Income",
-    "amount": 7000
-  },
-  {
-    "voucherNo": "528",
-    "date": "2023-05-13",
-    "particulars": "Received payment for vehicle services",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 2500
-  },
-  {
-    "voucherNo": "529",
-    "date": "2023-05-13",
-    "particulars": "Received payment for vehicle repair",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 2500
-  },
-  {
-    "voucherNo": "530",
-    "date": "2023-05-13",
-    "particulars": "Wages paid to workers",
-    "mode": "Cash",
-    "category": "Salaries and Wages",
-    "amount": 4200
-  },
-  {
-    "voucherNo": "531",
-    "date": "2023-05-14",
-    "particulars": "Received online payment for services",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 15000
-  },
-  {
-    "voucherNo": "532",
-    "date": "2023-05-14",
-    "particulars": "Payment received from debtor",
-    "mode": "Cash",
-    "category": "Receipt from Debtors",
-    "amount": 3200
-  },
-  {
-    "voucherNo": "533",
-    "date": "2023-05-14",
-    "particulars": "Income tax paid online",
-    "mode": "Bank",
-    "category": "Tax Expense",
-    "amount": 9100
-  },
-  {
-    "voucherNo": "534",
-    "date": "2023-05-15",
-    "particulars": "Received online payment for vehicle services",
-    "mode": "Bank",
-    "category": "Revenue from Services",
-    "amount": 8800
-  },
-  {
-    "voucherNo": "535",
-    "date": "2023-05-15",
-    "particulars": "Received payment for sale of equipment",
-    "mode": "Cash",
-    "category": "Sale of Goods",
-    "amount": 6000
-  },
-  {
-    "voucherNo": "536",
-    "date": "2023-05-15",
-    "particulars": "Business loan interest paid",
-    "mode": "Bank",
-    "category": "Loan Repayment",
-    "amount": 6000
-  },
-  {
-    "voucherNo": "537",
-    "date": "2023-05-15",
-    "particulars": "Fuel expenses of vehicles",
-    "mode": "Cash",
-    "category": "Other Expense",
-    "amount": 1500
-  },
-  {
-    "voucherNo": "538",
-    "date": "2023-05-15",
-    "particulars": "Insurance amount paid",
-    "mode": "Bank",
-    "category": "Insurance and Medical Expense",
-    "amount": 3500
-  }
-]
+{
+  "name": "Bank Reconciliation",
+  "courseImage": "https://res.cloudinary.com/dqjcohww3/image/upload/v1725267526/gettyimages-1125388526_crop_xxwbcf.jpg",
+  "isDeleted": false,
+  "courseContents": [
+    {
+      "title": "BRS_001AA",
+      "description": "<div>Ramkumar & Co. is engaged in the textile business and they have recently appointed a part-qualified accountant. The cashbook of Ramkumar & Co. showed a bank overdraft balance of ₹122000/- on December 31st 2022. Upon comparing it with the passbook the following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>An insurance premium of ₹16600 has been paid by the bank as per standing instructions but has not yet been recorded in the cash book.</td></tr><tr><td>2</td><td>On December 28th cheques totalling ₹60000 were issued of which only ₹4000 was encashed by December 31st.</td></tr><tr><td>3</td><td>Cheques amounting to ₹6500 have been paid to the bank for collection. Out of these only ₹2000 have been credited to the passbook.</td></tr><tr><td>4</td><td>The bank charged ₹2500 as interest on the overdraft but intimation of this charge has not been received yet.</td></tr><tr><td>5</td><td>The bank collected ₹2800 directly with respect to interest on investments.</td></tr><tr><td>6</td><td>A cheque for ₹10200 has been debited in the bank column of the cashbook but it was not sent to the bank at all.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹202,000 was recorded in the cash book but not in the bank statement. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹202,000"
+            },
+            {
+              "question": "Cheque issued for ₹15,000 but not yet presented for payment. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹15,000"
+            },
+            {
+              "question": "Bank charges of ₹500 recorded only in the passbook. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹500"
+            },
+            {
+              "question": "Direct deposit by customers of ₹50,000 recorded in the passbook but not in the cash book. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹50,000"
+            },
+            {
+              "question": "Dividend of ₹3,500 received by the bank but not recorded in the cash book. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹3,500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_022AVT",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of December 2022. The cash book showed a debit balance of ₹250,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>The passbook showed bank charges of ₹12,500 debited by the bank.</td></tr><tr><td>2</td><td>One of the debtors deposited ₹475,000 in the firm's bank account on December 20th, but it was not recorded in the cash book.</td></tr><tr><td>3</td><td>Sarita Sharma, a customer, directly deposited ₹45,200 into the bank.</td></tr><tr><td>4</td><td>Electricity charges of ₹5,500 were paid through the bank.</td></tr><tr><td>5</td><td>Processing fee of ₹12,000 for the term loan was charged by the bank.</td></tr><tr><td>6</td><td>A cheque for ₹64,300 was issued but not yet presented for payment.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Bank charges of ₹12,500 debited by the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹12,500"
+            },
+            {
+              "question": "Debtor deposit of ₹475,000 not recorded in cash book. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹475,000"
+            },
+            {
+              "question": "Sarita Sharma deposit of ₹45,200 directly into the bank. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹45,200"
+            },
+            {
+              "question": "Electricity charges of ₹5,500 paid through the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹5,500"
+            },
+            {
+              "question": "Processing fee of ₹12,000 for the term loan charged by the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹12,000"
+            },
+            {
+              "question": "Cheque for ₹64,300 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹64,300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_021AUT",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of July 2022. The cash book showed a debit balance of ₹135,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>The passbook showed bank charges of ₹2,500 debited by the bank.</td></tr><tr><td>2</td><td>A dividend of ₹3,000 was collected by the bank but not recorded in the cashbook.</td></tr><tr><td>3</td><td>Vimal Tiwari, a customer, directly deposited ₹25,000 into the bank.</td></tr><tr><td>4</td><td>Processing fee of ₹8,000 for the term loan charged by the bank.</td></tr><tr><td>5</td><td>Electricity charges of ₹10,300 were paid through the bank.</td></tr><tr><td>6</td><td>A cheque for ₹18,500 was issued but not yet presented for payment.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Bank charges of ₹2,500 debited by the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹2,500"
+            },
+            {
+              "question": "Dividend of ₹3,000 collected by the bank but not recorded in the cashbook. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹3,000"
+            },
+            {
+              "question": "Vimal Tiwari deposit of ₹25,000 directly into the bank. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹25,000"
+            },
+            {
+              "question": "Processing fee of ₹8,000 for the term loan charged by the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹8,000"
+            },
+            {
+              "question": "Electricity charges of ₹10,300 paid through the bank. (Add or Less?)",
+              "answer": "Less",
+              "amount": "₹10,300"
+            },
+            {
+              "question": "Cheque for ₹18,500 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add",
+              "amount": "₹18,500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_002AB",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of April 2023. The cash book showed a credit balance of ₹84,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>The passbook showed bank interest of ₹1,800 credited by the bank.</td></tr><tr><td>2</td><td>A cheque deposit of ₹10,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>3</td><td>Processing fee of ₹2,500 charged by the bank.</td></tr><tr><td>4</td><td>A dividend of ₹4,000 collected by the bank but not recorded in the cash book.</td></tr><tr><td>5</td><td>A cheque for ₹7,500 issued but not yet presented for payment.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Bank interest of ₹1,800 credited by the bank. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹10,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Processing fee of ₹2,500 charged by the bank. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Dividend of ₹4,000 collected by the bank but not recorded in the cash book. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque for ₹7,500 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_003AC",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of March 2023. The cash book showed a debit balance of ₹120,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>A cheque for ₹40,000 was issued but not yet presented for payment.</td></tr><tr><td>2</td><td>Interest of ₹1,500 was credited to the passbook but not recorded in the cash book.</td></tr><tr><td>3</td><td>A cheque deposit of ₹30,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>4</td><td>Processing fee of ₹2,000 was charged by the bank.</td></tr><tr><td>5</td><td>Bank charges of ₹750 were debited from the passbook but not yet recorded in the cash book.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹40,000 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Interest of ₹1,500 credited to the passbook. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹30,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Processing fee of ₹2,000 charged by the bank. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Bank charges of ₹750 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_004AD",
+      "description": "<div>XYZ Ltd. requires you to prepare a bank reconciliation statement for the month of February 2023. The cash book showed a debit balance of ₹60,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>Bank charges of ₹1,200 were debited from the passbook but not recorded in the cash book.</td></tr><tr><td>2</td><td>A cheque deposit of ₹15,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>3</td><td>A dividend of ₹2,500 was collected by the bank but not recorded in the cash book.</td></tr><tr><td>4</td><td>A cheque for ₹5,500 was issued but not yet presented for payment.</td></tr><tr><td>5</td><td>Processing fee of ₹750 was charged by the bank.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Bank charges of ₹1,200 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Cheque deposit of ₹15,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Dividend of ₹2,500 collected by the bank. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque for ₹5,500 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Processing fee of ₹750 charged by the bank. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_005AE",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of January 2023. The cash book showed a credit balance of ₹44,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>A cheque for ₹10,000 was issued but not yet presented for payment.</td></tr><tr><td>2</td><td>Interest of ₹900 was credited to the passbook but not recorded in the cash book.</td></tr><tr><td>3</td><td>A cheque deposit of ₹8,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>4</td><td>Processing fee of ₹1,200 was charged by the bank.</td></tr><tr><td>5</td><td>Bank charges of ₹650 were debited from the passbook but not yet recorded in the cash book.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹10,000 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Interest of ₹900 credited to the passbook. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹8,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Processing fee of ₹1,200 charged by the bank. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Bank charges of ₹650 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_006AF",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of March 2023. The cash book showed a debit balance of ₹130,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>Cheque for ₹25,000 was issued but not yet presented for payment.</td></tr><tr><td>2</td><td>Interest of ₹1,200 was credited to the passbook but not recorded in the cash book.</td></tr><tr><td>3</td><td>Cheque deposit of ₹30,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>4</td><td>Bank charges of ₹1,750 were debited from the passbook but not yet recorded in the cash book.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹25,000 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Interest of ₹1,200 credited to the passbook. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹30,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Bank charges of ₹1,750 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_007AG",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of February 2023. The cash book showed a credit balance of ₹75,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>A cheque for ₹18,000 was issued but not yet presented for payment.</td></tr><tr><td>2</td><td>Interest of ₹1,300 was credited to the passbook but not recorded in the cash book.</td></tr><tr><td>3</td><td>Cheque deposit of ₹12,500 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>4</td><td>Bank charges of ₹900 were debited from the passbook but not yet recorded in the cash book.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹18,000 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Interest of ₹1,300 credited to the passbook. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹12,500 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Bank charges of ₹900 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BRS_008AH",
+      "description": "<div>You are required to prepare a bank reconciliation statement for the month of January 2023. The cash book showed a debit balance of ₹95,000. The following differences were noted:</div><br/><br/><table border='1'><tr><th>Sl. No.</th><th>Transactions</th></tr><tr><td>1</td><td>A cheque for ₹20,000 was issued but not yet presented for payment.</td></tr><tr><td>2</td><td>Interest of ₹1,100 was credited to the passbook but not recorded in the cash book.</td></tr><tr><td>3</td><td>Cheque deposit of ₹25,000 was recorded in the cash book but not yet reflected in the passbook.</td></tr><tr><td>4</td><td>Bank charges of ₹1,600 were debited from the passbook but not yet recorded in the cash book.</td></tr></table>",
+      "endPoint": "bank_reconciliation",
+      "contentDetails": [
+        {
+          "questions": [
+            {
+              "question": "Cheque for ₹20,000 issued but not yet presented for payment. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Interest of ₹1,100 credited to the passbook. (Add or Less?)",
+              "answer": "Add"
+            },
+            {
+              "question": "Cheque deposit of ₹25,000 not yet reflected in the passbook. (Add or Less?)",
+              "answer": "Less"
+            },
+            {
+              "question": "Bank charges of ₹1,600 debited from the passbook. (Add or Less?)",
+              "answer": "Less"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
