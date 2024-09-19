@@ -1,4 +1,4 @@
-name: Frontend CI/CD
+name: Backend CI/CD
 
 on:
   push:
@@ -8,12 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
-    name: Deploy Frontend
+    name: Deploy Backend
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy Frontend
+      - name: Deploy Backend
         run: |
           docker-compose down
-          docker-compose up -d --build frontend
+          docker-compose up -d --build backend
