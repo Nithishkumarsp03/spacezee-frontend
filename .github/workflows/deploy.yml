@@ -9,11 +9,23 @@ jobs:
   deploy:
     runs-on: self-hosted
     name: Deploy Frontend
+
     steps:
-      - name: Checkout code
+      - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Deploy Frontend
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Copy frontend code to the runner
         run: |
-          docker-compose down
+          cp -r /home/ubuntu/actions-runner-react/_work/SL-IL-platform-frontend/SL-IL-platform-frontend/* /home/ubuntu/actions-runner-react/
+
+      - name: Build and deploy the frontend
+        env:
+          VITE_URL: ${{ secrets.URL_FRONT }}
+          VITE_URL_BACKEND: ${{ secrets.DB_URL }}
+          VITE_JWT_SECRET_KEY: ${{ secrets.JWT_ACCESS_SECRET }}
+        run: |
+          cd /home/ubuntu/actions-runner-react
           docker-compose up -d --build frontend
