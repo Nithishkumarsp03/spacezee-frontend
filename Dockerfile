@@ -1,27 +1,24 @@
-# Use Node.js LTS version for build
+# Stage 1: Build the Vite app
 FROM node:18 as build
 
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
-
 # Install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy everything including the .env file
+# Copy the app files
 COPY . .
 
-# Build the React app
+# Build the Vite app
 RUN npm run build
 
-# Use Nginx to serve the build
+# Stage 2: Serve the app using Nginx
 FROM nginx:alpine
 
 COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
-# Expose port 80
+# Expose the port that Nginx runs on
 EXPOSE 80
 
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
