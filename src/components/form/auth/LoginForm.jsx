@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
-const url = import.meta.env;
+import { config } from "../../../utils/config";
 
 function LoginForm() {
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ function LoginForm() {
   };
 
   const onSubmit = async (data) => {
-    console.log("url log", url);
+    console.log("url log", config.VITE_URL_BACKEND);
     const toastId = toast.loading("Logging in");
 
     try {
