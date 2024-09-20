@@ -23,9 +23,9 @@ jobs:
 
       - name: Build and deploy the frontend
         env:
-          VITE_URL: ${{ secrets.URL_FRONT }}
-          VITE_URL_BACKEND: ${{ secrets.DB_URL }}
-          VITE_JWT_SECRET_KEY: ${{ secrets.JWT_ACCESS_SECRET }}
+          VITE_URL: ${{ secrets.VITE_URL }}
+          VITE_URL_BACKEND: ${{ secrets.VITE_URL_BACKEND }}
+          VITE_JWT_SECRET_KEY: ${{ secrets.VITE_JWT_SECRET_KEY }}
         run: |
           cd /home/ubuntu/actions-runner-react
           docker-compose up -d --build frontend
