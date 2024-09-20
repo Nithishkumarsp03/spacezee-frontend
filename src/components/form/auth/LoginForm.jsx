@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
-const url = import.meta.env.VITE_URL_BACKEND;
+const url = import.meta.env;
 
 function LoginForm() {
   const dispatch = useDispatch();
