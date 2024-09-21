@@ -20,6 +20,8 @@ const TaskFooter = ({
     console.error("VITE_SITE_URL is undefined.");
   }
   const handleOpenTask = async () => {
+    console.log("course id", courseId);
+    console.log("course email", user.email);
     const token = await taskJwt(courseId, user.email);
     const newWindow = window.open(
       `${url}/task/${endPoint}?task=${_id}&token=${token}`,
