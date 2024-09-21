@@ -3,6 +3,7 @@ import { taskJwt } from "../../../../utils/taskJwt";
 import styles from "./TaskFooter.module.css";
 import { selectCurrentUser } from "../../../../redux/features/auth/authSlice";
 import axios from "axios";
+import { useGetTaskJwtMutation } from "../../../../redux/features/user/userTaskApi";
 
 const TaskFooter = ({
   onPrevTask,
@@ -13,6 +14,7 @@ const TaskFooter = ({
   courseId,
 }) => {
   const user = useSelector(selectCurrentUser);
+  const jwtAPI = useGetTaskJwtMutation();
 
   const { _id, completed, endPoint } = task;
   const url = import.meta.env.VITE_URL;
@@ -27,18 +29,10 @@ const TaskFooter = ({
     const secret = import.meta.env.VITE_JWT_SECRET_KEY;
 
     const payload = { courseId, email, secret };
-    let token;
-
-    try {
-      const response = await axios.post(`${url}/jwt/task`, payload);
-      token = response?.data?.data;
-      console.log("Response:", response.data);
-    } catch (error) {
-      console.error("Error posting data:", error);
-    }
-
+    const token = await jwtAPI(payload).unwrap();
+    console.log(token);
     const newWindow = window.open(
-      `${url}/task/${endPoint}?task=${_id}&token=${token}`,
+      `${url}/task/${endPoint}?task=${_id}&token=${token.data}`,
       "_blank",
       "noopener,noreferrer"
     );

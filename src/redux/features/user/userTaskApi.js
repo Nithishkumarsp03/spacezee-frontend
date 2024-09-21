@@ -20,8 +20,18 @@ const userCourseApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: [{ type: "CourseMaterial" }],
     }),
+    getTaskJwt: builder.mutation({
+      query: (payload) => ({
+        url: `/jwt/task`,
+        method: "POST",
+        body: payload,
+      }),
+    }),
   }),
 });
 
-export const { useGetTaskContentQuery, useCompleteTaskMutation } =
-  userCourseApi;
+export const {
+  useGetTaskContentQuery,
+  useCompleteTaskMutation,
+  useGetTaskJwtMutation,
+} = userCourseApi;
