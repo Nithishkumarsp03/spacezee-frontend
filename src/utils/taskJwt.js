@@ -1,4 +1,4 @@
-import jwt from "jwt-simple";
+import { createSigner } from "fast-jwt";
 
 export const taskJwt = (courseId, email) => {
   const secret = import.meta.env.VITE_JWT_SECRET_KEY;
@@ -8,12 +8,13 @@ export const taskJwt = (courseId, email) => {
     email,
     exp: Math.floor(Date.now() / 1000) + 24 * 60 * 60, // Expires in 1 day
   };
-  let token;
+
   try {
-    token = jwt.encode(payload, secret, "HS256");
+    const sign = createSigner({ key: secret, algorithm: "HS256" });
+    const token = sign(payload);
     return token;
   } catch (error) {
-    console.log("error token gen", error);
+    console.log("Error generating token:", error);
+    return null;
   }
-  return token;
 };
