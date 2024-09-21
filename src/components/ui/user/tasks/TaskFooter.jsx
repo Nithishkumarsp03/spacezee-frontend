@@ -14,7 +14,7 @@ const TaskFooter = ({
   courseId,
 }) => {
   const user = useSelector(selectCurrentUser);
-  const jwtAPI = useGetTaskJwtMutation();
+  const [jwtAPI] = useGetTaskJwtMutation();
 
   const { _id, completed, endPoint } = task;
   const url = import.meta.env.VITE_URL;
