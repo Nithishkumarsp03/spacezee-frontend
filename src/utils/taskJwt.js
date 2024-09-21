@@ -1,16 +1,15 @@
-import { SignJWT } from "jose";
+import jwt from "jsonwebtoken";
 
-export const taskJwt = async (courseId, email) => {
-  const secret = new TextEncoder().encode(import.meta.env.VITE_JWT_SECRET_KEY);
+export const taskJwt = (courseId, email) => {
+  const secret = import.meta.env.VITE_JWT_SECRET_KEY;
 
   const payload = { courseId, email };
 
   try {
-    const token = await new SignJWT(payload)
-      .setProtectedHeader({ alg: "HS256" })
-      .setExpirationTime("1d")
-      .sign(secret);
-
+    const token = jwt.sign(payload, secret, {
+      algorithm: "HS256",
+      expiresIn: "1d",
+    });
     return token;
   } catch (error) {
     console.log("Error generating token:", error);
