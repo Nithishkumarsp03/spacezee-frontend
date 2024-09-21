@@ -17,6 +17,17 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
+      - name: Clean up old Docker containers and images (excluding MongoDB)
+        run: |
+          # Remove dangling images (images not used by any container)
+          docker image prune -f
+
+          # Remove all unused images (images not associated with any running containers)
+          docker image prune -a -f
+
+          # Remove unused volumes (except MongoDB-related volumes)
+          docker volume prune -f
+
       - name: Copy frontend code to the runner
         run: |
           cp -r /home/ubuntu/actions-runner-react/_work/SL-IL-platform-frontend/SL-IL-platform-frontend/* /home/ubuntu/actions-runner-react/
@@ -28,4 +39,12 @@ jobs:
           VITE_JWT_SECRET_KEY: ${{ secrets.VITE_JWT_SECRET_KEY }}
         run: |
           cd /home/ubuntu/actions-runner-react
-          docker-compose up -d --build frontend
+          docker-compose up -d --build frontend  # Only rebuild and restart the frontend service
+
+      - name: Clean up unused Docker resources after the build (frontend-specific)
+        run: |
+          # Remove any dangling images created during the build process
+          docker image prune -f
+
+          # Remove stopped frontend containers (excluding MongoDB)
+          docker ps -a --filter "name=frontend-service" --filter "status=exited" --format "{{.ID}}" | xargs -r docker rm
