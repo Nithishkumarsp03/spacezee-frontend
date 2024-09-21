@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { taskJwt } from "../../../../utils/taskJwt";
 import styles from "./TaskFooter.module.css";
 import { selectCurrentUser } from "../../../../redux/features/auth/authSlice";
+import axios from "axios";
 
 const TaskFooter = ({
   onPrevTask,
@@ -22,7 +23,20 @@ const TaskFooter = ({
   const handleOpenTask = async () => {
     console.log("course id", courseId);
     console.log("course email", user.email);
-    const token = await taskJwt(courseId, user.email);
+    const email = user.email;
+    const secret = import.meta.env.VITE_JWT_SECRET_KEY;
+
+    const payload = { courseId, email, secret };
+    let token;
+
+    try {
+      const response = await axios.post(`${url}/jwt/task`, payload);
+      token = response?.data?.data;
+      console.log("Response:", response.data);
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
+
     const newWindow = window.open(
       `${url}/task/${endPoint}?task=${_id}&token=${token}`,
       "_blank",
