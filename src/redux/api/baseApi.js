@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
-const url = "http://34.235.0.131:5000/api/";
+const url = "http://localhost:5000/api/";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: url,

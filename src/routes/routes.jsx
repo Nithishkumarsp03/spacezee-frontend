@@ -44,6 +44,7 @@ import EPANFinal from "../components/ui/tasks/PAN/EPANFinal";
 import EPANKYC from "../components/ui/tasks/PAN/EPANKYC";
 import TaskLayout from "../components/layout/TaskLayout";
 import Bank_Reconciliation from "../components/ui/tasks/Bank_Reconciliation_Statement/Bank_Reconciliation";
+import { ananyaRoutes } from "./ananyaRoutes";
 
 const router = createBrowserRouter([
   {
@@ -241,6 +242,7 @@ const router = createBrowserRouter([
       </TaskLayout>
     ),
   },
+  ananyaRoutes,
 ]);
 
 export default router;
