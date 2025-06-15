@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Navigate, Outlet } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/fx.jpg";
 import "../../styles/Auth.css";
 import { useSelector } from "react-redux";
 import { useCurrentToken } from "../../redux/features/auth/authSlice";
@@ -44,9 +45,9 @@ function AuthLayout() {
         >
           <div className="text-center">
             <div className="auth-logo">
-              <img src={logo} alt="Nergyvidya Logo" className="m-4" />
+              <img src={logo} alt="Fx Learning" className="m-4" />
             </div>
-            <h1>Welcome to ... </h1>
+            <h1>Welcome to FX Learning! </h1>
           </div>
           <div className="auth-left-footer">
             <ul className="list-unstyled d-flex gap-2">
