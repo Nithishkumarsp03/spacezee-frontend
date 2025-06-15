@@ -23,21 +23,21 @@ const TaskFooter = ({
     console.error("VITE_SITE_URL is undefined.");
   }
   const handleOpenTask = async () => {
-    console.log("course id", courseId);
-    console.log("course email", user.email);
+    // console.log("course id", courseId);
+    // console.log("course email", user.email);
     const email = user.email;
     const secret = import.meta.env.VITE_JWT_SECRET_KEY;
 
     const payload = { courseId, email, secret };
     const token = await jwtAPI(payload).unwrap();
-    console.log(token);
+    // console.log(token);
     const newWindow = window.open(
       `${url}/task/${endPoint}?task=${_id}&token=${token.data}`,
       "_blank",
       "noopener,noreferrer"
     );
 
-    console.log(token);
+    // console.log(token);
     if (newWindow) newWindow.opener = null;
   };
   return (

@@ -44,7 +44,7 @@ const EPANAdharOTP = ({ setIsValid, setIsValidateOpen }) => {
   const handleSubmit = () => {
     const enteredOtp = otp.join("");
     if (enteredOtp === generatedOtp) {
-      console.log("OTP verified:", enteredOtp);
+      // console.log("OTP verified:", enteredOtp);
       setIsValid(true);
     } else {
       Swal.fire({

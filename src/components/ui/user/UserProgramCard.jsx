@@ -33,7 +33,7 @@ const UserProgramCard = () => {
   const user = useSelector(selectCurrentUser);
 
   const program = useSelector(selectCommonSelectedProgram);
-  console.log("program", program);
+  // console.log("program", program);
   const dispatch = useDispatch();
   const { data, error, isLoading } = useGetAllProgramsQuery("info");
   useEffect(() => {

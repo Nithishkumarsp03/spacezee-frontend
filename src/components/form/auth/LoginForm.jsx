@@ -28,7 +28,7 @@ function LoginForm() {
   };
 
   const onSubmit = async (data) => {
-    console.log("url log", url);
+    // console.log("url log", url);
     const toastId = toast.loading("Logging in");
 
     try {

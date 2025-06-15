@@ -45,7 +45,7 @@ function UserEMITabView() {
       setTaskCompleted(true);
 
       completeTask();
-      console.log("submit");
+      // console.log("submit");
     } else {
       Swal.fire({
         icon: "error",

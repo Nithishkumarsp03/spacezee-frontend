@@ -39,7 +39,7 @@ const SpendingContent = () => {
   const completeTask = useCompleteTaskWithBroadcast();
   const data = task?.questions || [];
 
-  console.log(data);
+  // console.log(data);
   const [rows, setRows] = useState([
     {
       voucherNo: "",
@@ -80,7 +80,7 @@ const SpendingContent = () => {
   };
 
   const validateData = () => {
-    console.log(rows);
+    // console.log(rows);
     if (rows.length !== data.length) {
       Swal.fire(
         "Invalid Input",

@@ -19,7 +19,7 @@ const CourseDetails = () => {
   const { data, error, isLoading } = useGetLearningMaterialByIdQuery(id, {
     skip: !id,
   });
-  console.log(selectedCourse);
+  // console.log(selectedCourse);
   const handleClose = () => setShow(false);
   const handleShow = (url) => {
     setVideoUrl(url);
@@ -40,7 +40,7 @@ const CourseDetails = () => {
         .sort((a, b) => a.sortOrder - b.sortOrder),
     }));
 
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <section className={`${styles.singlePageHeader} pt-4 pb-5 mt-4 rounded`}>

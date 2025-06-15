@@ -35,7 +35,7 @@ function ResetPasswordForm() {
         newPassword: data.password,
         token: token,
       };
-      console.log(userInfo);
+      // console.log(userInfo);
       const res = await resetPassword(userInfo).unwrap();
 
       toast.success(res.message, { id: toastId, duration: 2000 });

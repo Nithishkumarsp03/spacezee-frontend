@@ -41,20 +41,20 @@ const TaskManager = () => {
     }
 
     broadcast.onmessage = async (event) => {
-      console.log("Received message on course page:", event.data);
+      // console.log("Received message on course page:", event.data);
       if (event.data.type === "TASK_COMPLETED" && event.data.courseId === id) {
-        console.log("Refetching course material...");
+        // console.log("Refetching course material...");
         const updatedProgramResponse = await updateProgram().unwrap();
-        console.log("Updated Program Response:", updatedProgramResponse);
+        // console.log("Updated Program Response:", updatedProgramResponse);
 
         if (updatedProgramResponse) {
           const filteredProgramData = updatedProgramResponse.data.filter(
             (item) => item.name === program.name
           );
-          console.log("Filtered Program Data:", filteredProgramData);
+          // console.log("Filtered Program Data:", filteredProgramData);
 
           if (courseData.name === "Practicals") {
-            console.log("Dispatching Practicals");
+            // console.log("Dispatching Practicals");
             dispatch(
               setSelectedCourse({
                 name: "Practicals",
@@ -62,7 +62,7 @@ const TaskManager = () => {
               })
             );
           } else {
-            console.log("Dispatching Assignment");
+            // console.log("Dispatching Assignment");
             dispatch(
               setSelectedCourse({
                 name: "Assignment",

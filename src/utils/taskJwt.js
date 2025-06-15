@@ -13,7 +13,7 @@ export const taskJwt = async (courseId, email) => {
 
     return token;
   } catch (error) {
-    console.log("Error generating token:", error);
+    // console.log("Error generating token:", error);
     return null;
   }
 };

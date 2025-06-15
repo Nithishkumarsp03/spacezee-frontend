@@ -3,7 +3,7 @@ import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
 const url = import.meta.env.VITE_URL_BACKEND;
-console.log(url);
+// console.log(url);
 
 const baseQuery = fetchBaseQuery({
   baseUrl: `${url}/api`,
@@ -31,7 +31,7 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
   }
   if (result?.error?.status === 401) {
     //* Send Refresh
-    console.log("Sending refresh token");
+    // console.log("Sending refresh token");
 
     const res = await fetch(`${url}/auth/refresh-token`, {
       method: "POST",

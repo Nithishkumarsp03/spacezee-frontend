@@ -52,7 +52,7 @@ const DaAccountPersonalDetails = () => {
 
     if (isValid) {
       navigate("address-details");
-      console.log("running");
+      // console.log("running");
     } else {
       Swal.fire({
         icon: "error",
