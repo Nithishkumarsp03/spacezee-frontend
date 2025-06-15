@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
-const url = "http://localhost:5000/api/";
+const url = import.meta.env.VITE_URL_BACKEND
 
 const baseQuery = fetchBaseQuery({
   baseUrl: url,
