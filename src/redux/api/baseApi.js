@@ -3,9 +3,10 @@ import { toast } from "sonner";
 import { logout, setUser } from "../features/auth/authSlice";
 
 const url = import.meta.env.VITE_URL_BACKEND;
+console.log(url);
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: url,
+  baseUrl: `${url}/api`,
 
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {

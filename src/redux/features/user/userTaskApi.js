@@ -6,7 +6,7 @@ const userCourseApi = baseApi.injectEndpoints({
       query: (data) => {
         const { courseId, contentId } = data;
         return {
-          url: `/task/content/${courseId}`,
+          url: `task/content/${courseId}`,
           method: "POST",
           body: { courseContentId: contentId },
         };
@@ -14,7 +14,7 @@ const userCourseApi = baseApi.injectEndpoints({
     }),
     completeTask: builder.mutation({
       query: (taskId, id) => ({
-        url: `/users/task-update`,
+        url: `users/task-update`,
         method: "PATCH",
         body: { completedTask: taskId },
       }),
@@ -22,7 +22,7 @@ const userCourseApi = baseApi.injectEndpoints({
     }),
     getTaskJwt: builder.mutation({
       query: (payload) => ({
-        url: `/jwt/task`,
+        url: `jwt/task`,
         method: "POST",
         body: payload,
       }),

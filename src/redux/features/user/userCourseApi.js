@@ -4,13 +4,13 @@ const userCourseApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getLearningMaterialById: builder.query({
       query: (id) => ({
-        url: `/material/${id}`,
+        url: `material/${id}`,
         method: "GET",
       }),
     }),
     getCourseMaterialById: builder.query({
       query: (id) => ({
-        url: `/task/${id}`,
+        url: `task/${id}`,
         method: "GET",
       }),
       providesTags: (result, error, id) => [{ type: "CourseMaterial", id }],
@@ -18,7 +18,7 @@ const userCourseApi = baseApi.injectEndpoints({
 
     inputJwt: builder.mutation({
       query: (jwt) => ({
-        url: "/jwt",
+        url: "jwt",
         method: "POST",
         headers: {
           "Content-Type": "application/json",

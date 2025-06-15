@@ -4,14 +4,14 @@ const adminApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     changeUserStatus: builder.mutation({
       query: (userInfo) => ({
-        url: "/users/change-status",
+        url: "users/change-status",
         method: "PATCH",
         body: userInfo,
       }),
     }),
     delateUser: builder.mutation({
       query: (userInfo) => ({
-        url: `/users/${userInfo.email}`,
+        url: `users/${userInfo.email}`,
         method: "DELETE",
         body: {
           isDeleted: userInfo.isDeleted,
@@ -20,13 +20,13 @@ const adminApi = baseApi.injectEndpoints({
     }),
     getUserinfo: builder.query({
       query: (userInfo) => ({
-        url: `/users/${userInfo.email}`,
+        url: `users/${userInfo.email}`,
         method: "GET",
       }),
     }),
     createUser: builder.mutation({
       query: (userInfo) => ({
-        url: `/users/create-user`,
+        url: `users/create-user`,
         method: "POST",
         body: userInfo,
       }),

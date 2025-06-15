@@ -4,21 +4,21 @@ const authApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     login: builder.mutation({
       query: (userInfo) => ({
-        url: "/auth/login",
+        url: "auth/login",
         method: "POST",
         body: userInfo,
       }),
     }),
     generatePassword: builder.mutation({
       query: (userInfo) => ({
-        url: "/auth/create-password",
+        url: "auth/create-password",
         method: "POST",
         body: userInfo,
       }),
     }),
     resetPassword: builder.mutation({
       query: (userInfo) => ({
-        url: "/auth/reset-password",
+        url: "auth/reset-password",
         method: "POST",
         body: {
           email: userInfo.email,
@@ -29,14 +29,14 @@ const authApi = baseApi.injectEndpoints({
     }),
     forgetPassword: builder.mutation({
       query: (userInfo) => ({
-        url: "/auth/forget-password",
+        url: "auth/forget-password",
         method: "POST",
         body: userInfo,
       }),
     }),
     changePassword: builder.mutation({
       query: (userInfo) => ({
-        url: "/auth/change-password",
+        url: "auth/change-password",
         method: "POST",
         body: userInfo,
       }),

@@ -4,7 +4,7 @@ const commonProgramApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getAllPrograms: builder.query({
       query: (info) => ({
-        url: "/program",
+        url: "program",
         method: "POST",
         body: info ? { info } : {},
       }),
