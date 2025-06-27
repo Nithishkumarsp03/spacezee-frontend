@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/fx.jpg";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
 import "./UserNavbar.css";
 import {
