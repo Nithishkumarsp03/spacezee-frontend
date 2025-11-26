@@ -96,7 +96,7 @@ function LoginForm() {
         </Form.Group>
         <div className="d-flex justify-content-between mb-3 flex-lg-row flex-column">
           <Link to="/forgotPassword" className="text-decoration-none">
-            Forgot Password?
+            Forgot?
           </Link>
           <Link to="/generatePassword" className="text-decoration-none">
             Don’t have a password? Generate Now
