@@ -26,15 +26,15 @@ const CourseTile = ({ title, image, id, name, barView, progress }) => {
           style={{ height: "80px", width: "80px", margin: "0 auto" }}
         />
         <Card.Body>
-          <Card.Text className="mb-0 text-dark tile-title">{title}</Card.Text>
-          {barView && (
+          <Card.Text className="mb-0 text-dark text-[18px] tile-title" style={{ fontSize: "18px" }}>{title}</Card.Text>
+          {/* {barView && (
             <ProgressBar
               now={progress}
               label={`${progress}%`}
               variant="success"
               className="mt-3"
             />
-          )}
+          )} */}
         </Card.Body>
       </Card>
     </Col>

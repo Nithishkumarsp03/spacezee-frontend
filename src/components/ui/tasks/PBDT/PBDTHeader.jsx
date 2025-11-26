@@ -1,5 +1,5 @@
 import styles from "./PBDTHeader.module.css";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../../assets/images/fx.jpg";
 import { useSelector } from "react-redux";
 import { selectTask } from "../../../../redux/features/user/userTaskSlice";
 
